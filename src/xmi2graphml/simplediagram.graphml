@@ -58,6 +58,16 @@
                 </y:ShapeNode>
             </data>
         </node>
+        <edge id="-64--88-2-8-233e55eb:1386ca46e5e:-8000:000000000000089E" source="SimpleDiagram" target="C">
+            <data key="d2">
+                <y:PolyLineEdge>
+                    <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
+                    <y:LineStyle color="#000000" type="line" width="1.0"/>
+                    <y:Arrows source="none" target="none"/>
+                    <y:BendStyle smoothed="false"/>
+                </y:PolyLineEdge>
+            </data>
+        </edge>
         <node id="SimpleDiagram">
             <data key="d1">
                 <y:ShapeNode>
