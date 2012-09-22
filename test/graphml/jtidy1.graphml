@@ -1,0 +1,2530 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<graphml xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://www.yworks.com/xml/schema/graphml/1.1/ygraphml.xsd" xmlns:UML="org.omg.xmi.namespace.UML" xmlns:yed="http://www.yworks.com/xml/yed/3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:y="http://www.yworks.com/xml/graphml" xmlns="http://graphml.graphdrawing.org/xmlns">
+    <key for="node" id="d1" yfiles.type="nodegraphics"/>
+    <key for="edge" id="d2" yfiles.type="edgegraphics"/>
+    <graph id="untitledModel" edgedefault="undirected">
+        <node id="String">
+            <data key="d1">
+                <y:ShapeNode>
+                    <y:Geometry height="30.0" width="30.0"/>
+                    <y:Fill color="#FFCC00" transparent="false"/>
+                    <y:BorderStyle color="#000000" type="line" width="1.0"/>
+                    <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.1328125" modelName="internal" modelPosition="c" textColor="#000000" visible="true" width="12.279296875" x="8.8603515625" y="5.93359375">String</y:NodeLabel>
+                    <y:Shape type="circle"/>
+                </y:ShapeNode>
+            </data>
+        </node>
+        <node id="Object">
+            <data key="d1">
+                <y:ShapeNode>
+                    <y:Geometry height="30.0" width="30.0"/>
+                    <y:Fill color="#FFCC00" transparent="false"/>
+                    <y:BorderStyle color="#000000" type="line" width="1.0"/>
+                    <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.1328125" modelName="internal" modelPosition="c" textColor="#000000" visible="true" width="12.279296875" x="8.8603515625" y="5.93359375">Object</y:NodeLabel>
+                    <y:Shape type="circle"/>
+                </y:ShapeNode>
+            </data>
+        </node>
+        <node id="Cloneable">
+            <data key="d1">
+                <y:ShapeNode>
+                    <y:Geometry height="30.0" width="30.0"/>
+                    <y:Fill color="#FFCC00" transparent="false"/>
+                    <y:BorderStyle color="#000000" type="line" width="1.0"/>
+                    <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.1328125" modelName="internal" modelPosition="c" textColor="#000000" visible="true" width="12.279296875" x="8.8603515625" y="5.93359375">Cloneable</y:NodeLabel>
+                    <y:Shape type="circle"/>
+                </y:ShapeNode>
+            </data>
+        </node>
+        <node id="Field">
+            <data key="d1">
+                <y:ShapeNode>
+                    <y:Geometry height="30.0" width="30.0"/>
+                    <y:Fill color="#FFCC00" transparent="false"/>
+                    <y:BorderStyle color="#000000" type="line" width="1.0"/>
+                    <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.1328125" modelName="internal" modelPosition="c" textColor="#000000" visible="true" width="12.279296875" x="8.8603515625" y="5.93359375">Field</y:NodeLabel>
+                    <y:Shape type="circle"/>
+                </y:ShapeNode>
+            </data>
+        </node>
+        <node id="Comparable">
+            <data key="d1">
+                <y:ShapeNode>
+                    <y:Geometry height="30.0" width="30.0"/>
+                    <y:Fill color="#FFCC00" transparent="false"/>
+                    <y:BorderStyle color="#000000" type="line" width="1.0"/>
+                    <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.1328125" modelName="internal" modelPosition="c" textColor="#000000" visible="true" width="12.279296875" x="8.8603515625" y="5.93359375">Comparable</y:NodeLabel>
+                    <y:Shape type="circle"/>
+                </y:ShapeNode>
+            </data>
+        </node>
+        <node id="HashMap">
+            <data key="d1">
+                <y:ShapeNode>
+                    <y:Geometry height="30.0" width="30.0"/>
+                    <y:Fill color="#FFCC00" transparent="false"/>
+                    <y:BorderStyle color="#000000" type="line" width="1.0"/>
+                    <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.1328125" modelName="internal" modelPosition="c" textColor="#000000" visible="true" width="12.279296875" x="8.8603515625" y="5.93359375">HashMap</y:NodeLabel>
+                    <y:Shape type="circle"/>
+                </y:ShapeNode>
+            </data>
+        </node>
+        <node id="Iterator">
+            <data key="d1">
+                <y:ShapeNode>
+                    <y:Geometry height="30.0" width="30.0"/>
+                    <y:Fill color="#FFCC00" transparent="false"/>
+                    <y:BorderStyle color="#000000" type="line" width="1.0"/>
+                    <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.1328125" modelName="internal" modelPosition="c" textColor="#000000" visible="true" width="12.279296875" x="8.8603515625" y="5.93359375">Iterator</y:NodeLabel>
+                    <y:Shape type="circle"/>
+                </y:ShapeNode>
+            </data>
+        </node>
+        <node id="Map">
+            <data key="d1">
+                <y:ShapeNode>
+                    <y:Geometry height="30.0" width="30.0"/>
+                    <y:Fill color="#FFCC00" transparent="false"/>
+                    <y:BorderStyle color="#000000" type="line" width="1.0"/>
+                    <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.1328125" modelName="internal" modelPosition="c" textColor="#000000" visible="true" width="12.279296875" x="8.8603515625" y="5.93359375">Map</y:NodeLabel>
+                    <y:Shape type="circle"/>
+                </y:ShapeNode>
+            </data>
+        </node>
+        <node id="Hashtable">
+            <data key="d1">
+                <y:ShapeNode>
+                    <y:Geometry height="30.0" width="30.0"/>
+                    <y:Fill color="#FFCC00" transparent="false"/>
+                    <y:BorderStyle color="#000000" type="line" width="1.0"/>
+                    <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.1328125" modelName="internal" modelPosition="c" textColor="#000000" visible="true" width="12.279296875" x="8.8603515625" y="5.93359375">Hashtable</y:NodeLabel>
+                    <y:Shape type="circle"/>
+                </y:ShapeNode>
+            </data>
+        </node>
+        <node id="ArrayList">
+            <data key="d1">
+                <y:ShapeNode>
+                    <y:Geometry height="30.0" width="30.0"/>
+                    <y:Fill color="#FFCC00" transparent="false"/>
+                    <y:BorderStyle color="#000000" type="line" width="1.0"/>
+                    <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.1328125" modelName="internal" modelPosition="c" textColor="#000000" visible="true" width="12.279296875" x="8.8603515625" y="5.93359375">ArrayList</y:NodeLabel>
+                    <y:Shape type="circle"/>
+                </y:ShapeNode>
+            </data>
+        </node>
+        <node id="Collections">
+            <data key="d1">
+                <y:ShapeNode>
+                    <y:Geometry height="30.0" width="30.0"/>
+                    <y:Fill color="#FFCC00" transparent="false"/>
+                    <y:BorderStyle color="#000000" type="line" width="1.0"/>
+                    <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.1328125" modelName="internal" modelPosition="c" textColor="#000000" visible="true" width="12.279296875" x="8.8603515625" y="5.93359375">Collections</y:NodeLabel>
+                    <y:Shape type="circle"/>
+                </y:ShapeNode>
+            </data>
+        </node>
+        <node id="Enumeration">
+            <data key="d1">
+                <y:ShapeNode>
+                    <y:Geometry height="30.0" width="30.0"/>
+                    <y:Fill color="#FFCC00" transparent="false"/>
+                    <y:BorderStyle color="#000000" type="line" width="1.0"/>
+                    <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.1328125" modelName="internal" modelPosition="c" textColor="#000000" visible="true" width="12.279296875" x="8.8603515625" y="5.93359375">Enumeration</y:NodeLabel>
+                    <y:Shape type="circle"/>
+                </y:ShapeNode>
+            </data>
+        </node>
+        <node id="List">
+            <data key="d1">
+                <y:ShapeNode>
+                    <y:Geometry height="30.0" width="30.0"/>
+                    <y:Fill color="#FFCC00" transparent="false"/>
+                    <y:BorderStyle color="#000000" type="line" width="1.0"/>
+                    <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.1328125" modelName="internal" modelPosition="c" textColor="#000000" visible="true" width="12.279296875" x="8.8603515625" y="5.93359375">List</y:NodeLabel>
+                    <y:Shape type="circle"/>
+                </y:ShapeNode>
+            </data>
+        </node>
+        <node id="Properties">
+            <data key="d1">
+                <y:ShapeNode>
+                    <y:Geometry height="30.0" width="30.0"/>
+                    <y:Fill color="#FFCC00" transparent="false"/>
+                    <y:BorderStyle color="#000000" type="line" width="1.0"/>
+                    <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.1328125" modelName="internal" modelPosition="c" textColor="#000000" visible="true" width="12.279296875" x="8.8603515625" y="5.93359375">Properties</y:NodeLabel>
+                    <y:Shape type="circle"/>
+                </y:ShapeNode>
+            </data>
+        </node>
+        <node id="Stack">
+            <data key="d1">
+                <y:ShapeNode>
+                    <y:Geometry height="30.0" width="30.0"/>
+                    <y:Fill color="#FFCC00" transparent="false"/>
+                    <y:BorderStyle color="#000000" type="line" width="1.0"/>
+                    <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.1328125" modelName="internal" modelPosition="c" textColor="#000000" visible="true" width="12.279296875" x="8.8603515625" y="5.93359375">Stack</y:NodeLabel>
+                    <y:Shape type="circle"/>
+                </y:ShapeNode>
+            </data>
+        </node>
+        <node id="Vector">
+            <data key="d1">
+                <y:ShapeNode>
+                    <y:Geometry height="30.0" width="30.0"/>
+                    <y:Fill color="#FFCC00" transparent="false"/>
+                    <y:BorderStyle color="#000000" type="line" width="1.0"/>
+                    <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.1328125" modelName="internal" modelPosition="c" textColor="#000000" visible="true" width="12.279296875" x="8.8603515625" y="5.93359375">Vector</y:NodeLabel>
+                    <y:Shape type="circle"/>
+                </y:ShapeNode>
+            </data>
+        </node>
+        <node id="StringTokenizer">
+            <data key="d1">
+                <y:ShapeNode>
+                    <y:Geometry height="30.0" width="30.0"/>
+                    <y:Fill color="#FFCC00" transparent="false"/>
+                    <y:BorderStyle color="#000000" type="line" width="1.0"/>
+                    <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.1328125" modelName="internal" modelPosition="c" textColor="#000000" visible="true" width="12.279296875" x="8.8603515625" y="5.93359375">StringTokenizer</y:NodeLabel>
+                    <y:Shape type="circle"/>
+                </y:ShapeNode>
+            </data>
+        </node>
+        <node id="MissingResourceException">
+            <data key="d1">
+                <y:ShapeNode>
+                    <y:Geometry height="30.0" width="30.0"/>
+                    <y:Fill color="#FFCC00" transparent="false"/>
+                    <y:BorderStyle color="#000000" type="line" width="1.0"/>
+                    <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.1328125" modelName="internal" modelPosition="c" textColor="#000000" visible="true" width="12.279296875" x="8.8603515625" y="5.93359375">MissingResourceException</y:NodeLabel>
+                    <y:Shape type="circle"/>
+                </y:ShapeNode>
+            </data>
+        </node>
+        <node id="ResourceBundle">
+            <data key="d1">
+                <y:ShapeNode>
+                    <y:Geometry height="30.0" width="30.0"/>
+                    <y:Fill color="#FFCC00" transparent="false"/>
+                    <y:BorderStyle color="#000000" type="line" width="1.0"/>
+                    <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.1328125" modelName="internal" modelPosition="c" textColor="#000000" visible="true" width="12.279296875" x="8.8603515625" y="5.93359375">ResourceBundle</y:NodeLabel>
+                    <y:Shape type="circle"/>
+                </y:ShapeNode>
+            </data>
+        </node>
+        <node id="FileInputStream">
+            <data key="d1">
+                <y:ShapeNode>
+                    <y:Geometry height="30.0" width="30.0"/>
+                    <y:Fill color="#FFCC00" transparent="false"/>
+                    <y:BorderStyle color="#000000" type="line" width="1.0"/>
+                    <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.1328125" modelName="internal" modelPosition="c" textColor="#000000" visible="true" width="12.279296875" x="8.8603515625" y="5.93359375">FileInputStream</y:NodeLabel>
+                    <y:Shape type="circle"/>
+                </y:ShapeNode>
+            </data>
+        </node>
+        <node id="IOException">
+            <data key="d1">
+                <y:ShapeNode>
+                    <y:Geometry height="30.0" width="30.0"/>
+                    <y:Fill color="#FFCC00" transparent="false"/>
+                    <y:BorderStyle color="#000000" type="line" width="1.0"/>
+                    <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.1328125" modelName="internal" modelPosition="c" textColor="#000000" visible="true" width="12.279296875" x="8.8603515625" y="5.93359375">IOException</y:NodeLabel>
+                    <y:Shape type="circle"/>
+                </y:ShapeNode>
+            </data>
+        </node>
+        <node id="Serializable">
+            <data key="d1">
+                <y:ShapeNode>
+                    <y:Geometry height="30.0" width="30.0"/>
+                    <y:Fill color="#FFCC00" transparent="false"/>
+                    <y:BorderStyle color="#000000" type="line" width="1.0"/>
+                    <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.1328125" modelName="internal" modelPosition="c" textColor="#000000" visible="true" width="12.279296875" x="8.8603515625" y="5.93359375">Serializable</y:NodeLabel>
+                    <y:Shape type="circle"/>
+                </y:ShapeNode>
+            </data>
+        </node>
+        <node id="Writer">
+            <data key="d1">
+                <y:ShapeNode>
+                    <y:Geometry height="30.0" width="30.0"/>
+                    <y:Fill color="#FFCC00" transparent="false"/>
+                    <y:BorderStyle color="#000000" type="line" width="1.0"/>
+                    <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.1328125" modelName="internal" modelPosition="c" textColor="#000000" visible="true" width="12.279296875" x="8.8603515625" y="5.93359375">Writer</y:NodeLabel>
+                    <y:Shape type="circle"/>
+                </y:ShapeNode>
+            </data>
+        </node>
+        <node id="PrintWriter">
+            <data key="d1">
+                <y:ShapeNode>
+                    <y:Geometry height="30.0" width="30.0"/>
+                    <y:Fill color="#FFCC00" transparent="false"/>
+                    <y:BorderStyle color="#000000" type="line" width="1.0"/>
+                    <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.1328125" modelName="internal" modelPosition="c" textColor="#000000" visible="true" width="12.279296875" x="8.8603515625" y="5.93359375">PrintWriter</y:NodeLabel>
+                    <y:Shape type="circle"/>
+                </y:ShapeNode>
+            </data>
+        </node>
+        <node id="OutputStream">
+            <data key="d1">
+                <y:ShapeNode>
+                    <y:Geometry height="30.0" width="30.0"/>
+                    <y:Fill color="#FFCC00" transparent="false"/>
+                    <y:BorderStyle color="#000000" type="line" width="1.0"/>
+                    <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.1328125" modelName="internal" modelPosition="c" textColor="#000000" visible="true" width="12.279296875" x="8.8603515625" y="5.93359375">OutputStream</y:NodeLabel>
+                    <y:Shape type="circle"/>
+                </y:ShapeNode>
+            </data>
+        </node>
+        <node id="UnsupportedEncodingException">
+            <data key="d1">
+                <y:ShapeNode>
+                    <y:Geometry height="30.0" width="30.0"/>
+                    <y:Fill color="#FFCC00" transparent="false"/>
+                    <y:BorderStyle color="#000000" type="line" width="1.0"/>
+                    <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.1328125" modelName="internal" modelPosition="c" textColor="#000000" visible="true" width="12.279296875" x="8.8603515625" y="5.93359375">UnsupportedEncodingException</y:NodeLabel>
+                    <y:Shape type="circle"/>
+                </y:ShapeNode>
+            </data>
+        </node>
+        <node id="OutputStreamWriter">
+            <data key="d1">
+                <y:ShapeNode>
+                    <y:Geometry height="30.0" width="30.0"/>
+                    <y:Fill color="#FFCC00" transparent="false"/>
+                    <y:BorderStyle color="#000000" type="line" width="1.0"/>
+                    <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.1328125" modelName="internal" modelPosition="c" textColor="#000000" visible="true" width="12.279296875" x="8.8603515625" y="5.93359375">OutputStreamWriter</y:NodeLabel>
+                    <y:Shape type="circle"/>
+                </y:ShapeNode>
+            </data>
+        </node>
+        <node id="File">
+            <data key="d1">
+                <y:ShapeNode>
+                    <y:Geometry height="30.0" width="30.0"/>
+                    <y:Fill color="#FFCC00" transparent="false"/>
+                    <y:BorderStyle color="#000000" type="line" width="1.0"/>
+                    <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.1328125" modelName="internal" modelPosition="c" textColor="#000000" visible="true" width="12.279296875" x="8.8603515625" y="5.93359375">File</y:NodeLabel>
+                    <y:Shape type="circle"/>
+                </y:ShapeNode>
+            </data>
+        </node>
+        <node id="FileOutputStream">
+            <data key="d1">
+                <y:ShapeNode>
+                    <y:Geometry height="30.0" width="30.0"/>
+                    <y:Fill color="#FFCC00" transparent="false"/>
+                    <y:BorderStyle color="#000000" type="line" width="1.0"/>
+                    <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.1328125" modelName="internal" modelPosition="c" textColor="#000000" visible="true" width="12.279296875" x="8.8603515625" y="5.93359375">FileOutputStream</y:NodeLabel>
+                    <y:Shape type="circle"/>
+                </y:ShapeNode>
+            </data>
+        </node>
+        <node id="InputStream">
+            <data key="d1">
+                <y:ShapeNode>
+                    <y:Geometry height="30.0" width="30.0"/>
+                    <y:Fill color="#FFCC00" transparent="false"/>
+                    <y:BorderStyle color="#000000" type="line" width="1.0"/>
+                    <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.1328125" modelName="internal" modelPosition="c" textColor="#000000" visible="true" width="12.279296875" x="8.8603515625" y="5.93359375">InputStream</y:NodeLabel>
+                    <y:Shape type="circle"/>
+                </y:ShapeNode>
+            </data>
+        </node>
+        <node id="Reader">
+            <data key="d1">
+                <y:ShapeNode>
+                    <y:Geometry height="30.0" width="30.0"/>
+                    <y:Fill color="#FFCC00" transparent="false"/>
+                    <y:BorderStyle color="#000000" type="line" width="1.0"/>
+                    <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.1328125" modelName="internal" modelPosition="c" textColor="#000000" visible="true" width="12.279296875" x="8.8603515625" y="5.93359375">Reader</y:NodeLabel>
+                    <y:Shape type="circle"/>
+                </y:ShapeNode>
+            </data>
+        </node>
+        <node id="InputStreamReader">
+            <data key="d1">
+                <y:ShapeNode>
+                    <y:Geometry height="30.0" width="30.0"/>
+                    <y:Fill color="#FFCC00" transparent="false"/>
+                    <y:BorderStyle color="#000000" type="line" width="1.0"/>
+                    <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.1328125" modelName="internal" modelPosition="c" textColor="#000000" visible="true" width="12.279296875" x="8.8603515625" y="5.93359375">InputStreamReader</y:NodeLabel>
+                    <y:Shape type="circle"/>
+                </y:ShapeNode>
+            </data>
+        </node>
+        <node id="FileNotFoundException">
+            <data key="d1">
+                <y:ShapeNode>
+                    <y:Geometry height="30.0" width="30.0"/>
+                    <y:Fill color="#FFCC00" transparent="false"/>
+                    <y:BorderStyle color="#000000" type="line" width="1.0"/>
+                    <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.1328125" modelName="internal" modelPosition="c" textColor="#000000" visible="true" width="12.279296875" x="8.8603515625" y="5.93359375">FileNotFoundException</y:NodeLabel>
+                    <y:Shape type="circle"/>
+                </y:ShapeNode>
+            </data>
+        </node>
+        <node id="FileWriter">
+            <data key="d1">
+                <y:ShapeNode>
+                    <y:Geometry height="30.0" width="30.0"/>
+                    <y:Fill color="#FFCC00" transparent="false"/>
+                    <y:BorderStyle color="#000000" type="line" width="1.0"/>
+                    <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.1328125" modelName="internal" modelPosition="c" textColor="#000000" visible="true" width="12.279296875" x="8.8603515625" y="5.93359375">FileWriter</y:NodeLabel>
+                    <y:Shape type="circle"/>
+                </y:ShapeNode>
+            </data>
+        </node>
+        <node id="BufferedInputStream">
+            <data key="d1">
+                <y:ShapeNode>
+                    <y:Geometry height="30.0" width="30.0"/>
+                    <y:Fill color="#FFCC00" transparent="false"/>
+                    <y:BorderStyle color="#000000" type="line" width="1.0"/>
+                    <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.1328125" modelName="internal" modelPosition="c" textColor="#000000" visible="true" width="12.279296875" x="8.8603515625" y="5.93359375">BufferedInputStream</y:NodeLabel>
+                    <y:Shape type="circle"/>
+                </y:ShapeNode>
+            </data>
+        </node>
+        <node id="BufferedOutputStream">
+            <data key="d1">
+                <y:ShapeNode>
+                    <y:Geometry height="30.0" width="30.0"/>
+                    <y:Fill color="#FFCC00" transparent="false"/>
+                    <y:BorderStyle color="#000000" type="line" width="1.0"/>
+                    <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.1328125" modelName="internal" modelPosition="c" textColor="#000000" visible="true" width="12.279296875" x="8.8603515625" y="5.93359375">BufferedOutputStream</y:NodeLabel>
+                    <y:Shape type="circle"/>
+                </y:ShapeNode>
+            </data>
+        </node>
+        <node id="ByteArrayOutputStream">
+            <data key="d1">
+                <y:ShapeNode>
+                    <y:Geometry height="30.0" width="30.0"/>
+                    <y:Fill color="#FFCC00" transparent="false"/>
+                    <y:BorderStyle color="#000000" type="line" width="1.0"/>
+                    <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.1328125" modelName="internal" modelPosition="c" textColor="#000000" visible="true" width="12.279296875" x="8.8603515625" y="5.93359375">ByteArrayOutputStream</y:NodeLabel>
+                    <y:Shape type="circle"/>
+                </y:ShapeNode>
+            </data>
+        </node>
+        <node id="NumberFormat">
+            <data key="d1">
+                <y:ShapeNode>
+                    <y:Geometry height="30.0" width="30.0"/>
+                    <y:Fill color="#FFCC00" transparent="false"/>
+                    <y:BorderStyle color="#000000" type="line" width="1.0"/>
+                    <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.1328125" modelName="internal" modelPosition="c" textColor="#000000" visible="true" width="12.279296875" x="8.8603515625" y="5.93359375">NumberFormat</y:NodeLabel>
+                    <y:Shape type="circle"/>
+                </y:ShapeNode>
+            </data>
+        </node>
+        <node id="MessageFormat">
+            <data key="d1">
+                <y:ShapeNode>
+                    <y:Geometry height="30.0" width="30.0"/>
+                    <y:Fill color="#FFCC00" transparent="false"/>
+                    <y:BorderStyle color="#000000" type="line" width="1.0"/>
+                    <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.1328125" modelName="internal" modelPosition="c" textColor="#000000" visible="true" width="12.279296875" x="8.8603515625" y="5.93359375">MessageFormat</y:NodeLabel>
+                    <y:Shape type="circle"/>
+                </y:ShapeNode>
+            </data>
+        </node>
+        <node id="Image">
+            <data key="d1">
+                <y:ShapeNode>
+                    <y:Geometry height="30.0" width="30.0"/>
+                    <y:Fill color="#FFCC00" transparent="false"/>
+                    <y:BorderStyle color="#000000" type="line" width="1.0"/>
+                    <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.1328125" modelName="internal" modelPosition="c" textColor="#000000" visible="true" width="12.279296875" x="8.8603515625" y="5.93359375">Image</y:NodeLabel>
+                    <y:Shape type="circle"/>
+                </y:ShapeNode>
+            </data>
+        </node>
+        <node id="SimpleBeanInfo">
+            <data key="d1">
+                <y:ShapeNode>
+                    <y:Geometry height="30.0" width="30.0"/>
+                    <y:Fill color="#FFCC00" transparent="false"/>
+                    <y:BorderStyle color="#000000" type="line" width="1.0"/>
+                    <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.1328125" modelName="internal" modelPosition="c" textColor="#000000" visible="true" width="12.279296875" x="8.8603515625" y="5.93359375">SimpleBeanInfo</y:NodeLabel>
+                    <y:Shape type="circle"/>
+                </y:ShapeNode>
+            </data>
+        </node>
+        <node id="Anchor">
+            <data key="d1">
+                <y:ShapeNode>
+                    <y:Geometry height="30.0" width="30.0"/>
+                    <y:Fill color="#FFCC00" transparent="false"/>
+                    <y:BorderStyle color="#000000" type="line" width="1.0"/>
+                    <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.1328125" modelName="internal" modelPosition="c" textColor="#000000" visible="true" width="12.279296875" x="8.8603515625" y="5.93359375">Anchor</y:NodeLabel>
+                    <y:Shape type="circle"/>
+                </y:ShapeNode>
+            </data>
+        </node>
+        <node id="AttrCheck">
+            <data key="d1">
+                <y:ShapeNode>
+                    <y:Geometry height="30.0" width="30.0"/>
+                    <y:Fill color="#FFCC00" transparent="false"/>
+                    <y:BorderStyle color="#000000" type="line" width="1.0"/>
+                    <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.1328125" modelName="internal" modelPosition="c" textColor="#000000" visible="true" width="12.279296875" x="8.8603515625" y="5.93359375">AttrCheck</y:NodeLabel>
+                    <y:Shape type="circle"/>
+                </y:ShapeNode>
+            </data>
+        </node>
+        <edge id="-96-75-26-45--3f468199:1382e9a0b8d:-8000:0000000000000A72" source="AttrCheckImpl" target="HashMap">
+            <data key="d2">
+                <y:PolyLineEdge>
+                    <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
+                    <y:LineStyle color="#000000" type="line" width="1.0"/>
+                    <y:Arrows source="none" target="none"/>
+                    <y:BendStyle smoothed="false"/>
+                </y:PolyLineEdge>
+            </data>
+        </edge>
+        <edge id="-96-75-26-45--3f468199:1382e9a0b8d:-8000:0000000000000A76" source="AttrCheckImpl" target="Iterator">
+            <data key="d2">
+                <y:PolyLineEdge>
+                    <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
+                    <y:LineStyle color="#000000" type="line" width="1.0"/>
+                    <y:Arrows source="none" target="none"/>
+                    <y:BendStyle smoothed="false"/>
+                </y:PolyLineEdge>
+            </data>
+        </edge>
+        <edge id="-96-75-26-45--3f468199:1382e9a0b8d:-8000:0000000000000A79" source="AttrCheckImpl" target="Map">
+            <data key="d2">
+                <y:PolyLineEdge>
+                    <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
+                    <y:LineStyle color="#000000" type="line" width="1.0"/>
+                    <y:Arrows source="none" target="none"/>
+                    <y:BendStyle smoothed="false"/>
+                </y:PolyLineEdge>
+            </data>
+        </edge>
+        <node id="AttrCheckImpl">
+            <data key="d1">
+                <y:ShapeNode>
+                    <y:Geometry height="30.0" width="30.0"/>
+                    <y:Fill color="#FFCC00" transparent="false"/>
+                    <y:BorderStyle color="#000000" type="line" width="1.0"/>
+                    <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.1328125" modelName="internal" modelPosition="c" textColor="#000000" visible="true" width="12.279296875" x="8.8603515625" y="5.93359375">AttrCheckImpl</y:NodeLabel>
+                    <y:Shape type="circle"/>
+                </y:ShapeNode>
+            </data>
+        </node>
+        <node id="Attribute">
+            <data key="d1">
+                <y:ShapeNode>
+                    <y:Geometry height="30.0" width="30.0"/>
+                    <y:Fill color="#FFCC00" transparent="false"/>
+                    <y:BorderStyle color="#000000" type="line" width="1.0"/>
+                    <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.1328125" modelName="internal" modelPosition="c" textColor="#000000" visible="true" width="12.279296875" x="8.8603515625" y="5.93359375">Attribute</y:NodeLabel>
+                    <y:Shape type="circle"/>
+                </y:ShapeNode>
+            </data>
+        </node>
+        <edge id="-96-75-26-45--3f468199:1382e9a0b8d:-8000:0000000000000D0D" source="AttributeTable" target="Hashtable">
+            <data key="d2">
+                <y:PolyLineEdge>
+                    <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
+                    <y:LineStyle color="#000000" type="line" width="1.0"/>
+                    <y:Arrows source="none" target="none"/>
+                    <y:BendStyle smoothed="false"/>
+                </y:PolyLineEdge>
+            </data>
+        </edge>
+        <edge id="-96-75-26-45--3f468199:1382e9a0b8d:-8000:0000000000000D0E" source="AttributeTable" target="Map">
+            <data key="d2">
+                <y:PolyLineEdge>
+                    <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
+                    <y:LineStyle color="#000000" type="line" width="1.0"/>
+                    <y:Arrows source="none" target="none"/>
+                    <y:BendStyle smoothed="false"/>
+                </y:PolyLineEdge>
+            </data>
+        </edge>
+        <node id="AttributeTable">
+            <data key="d1">
+                <y:ShapeNode>
+                    <y:Geometry height="30.0" width="30.0"/>
+                    <y:Fill color="#FFCC00" transparent="false"/>
+                    <y:BorderStyle color="#000000" type="line" width="1.0"/>
+                    <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.1328125" modelName="internal" modelPosition="c" textColor="#000000" visible="true" width="12.279296875" x="8.8603515625" y="5.93359375">AttributeTable</y:NodeLabel>
+                    <y:Shape type="circle"/>
+                </y:ShapeNode>
+            </data>
+        </node>
+        <edge id="-96-75-26-45--3f468199:1382e9a0b8d:-8000:0000000000000DDA" source="AttVal" target="Attr">
+            <data key="d2">
+                <y:PolyLineEdge>
+                    <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
+                    <y:LineStyle color="#000000" type="line" width="1.0"/>
+                    <y:Arrows source="none" target="none"/>
+                    <y:BendStyle smoothed="false"/>
+                </y:PolyLineEdge>
+            </data>
+        </edge>
+        <node id="AttVal">
+            <data key="d1">
+                <y:ShapeNode>
+                    <y:Geometry height="30.0" width="30.0"/>
+                    <y:Fill color="#FFCC00" transparent="false"/>
+                    <y:BorderStyle color="#000000" type="line" width="1.0"/>
+                    <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.1328125" modelName="internal" modelPosition="c" textColor="#000000" visible="true" width="12.279296875" x="8.8603515625" y="5.93359375">AttVal</y:NodeLabel>
+                    <y:Shape type="circle"/>
+                </y:ShapeNode>
+            </data>
+        </node>
+        <node id="Clean">
+            <data key="d1">
+                <y:ShapeNode>
+                    <y:Geometry height="30.0" width="30.0"/>
+                    <y:Fill color="#FFCC00" transparent="false"/>
+                    <y:BorderStyle color="#000000" type="line" width="1.0"/>
+                    <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.1328125" modelName="internal" modelPosition="c" textColor="#000000" visible="true" width="12.279296875" x="8.8603515625" y="5.93359375">Clean</y:NodeLabel>
+                    <y:Shape type="circle"/>
+                </y:ShapeNode>
+            </data>
+        </node>
+        <edge id="-96-75-26-45--3f468199:1382e9a0b8d:-8000:00000000000010BF" source="Configuration" target="FileInputStream">
+            <data key="d2">
+                <y:PolyLineEdge>
+                    <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
+                    <y:LineStyle color="#000000" type="line" width="1.0"/>
+                    <y:Arrows source="none" target="none"/>
+                    <y:BendStyle smoothed="false"/>
+                </y:PolyLineEdge>
+            </data>
+        </edge>
+        <edge id="-96-75-26-45--3f468199:1382e9a0b8d:-8000:00000000000010C2" source="Configuration" target="IOException">
+            <data key="d2">
+                <y:PolyLineEdge>
+                    <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
+                    <y:LineStyle color="#000000" type="line" width="1.0"/>
+                    <y:Arrows source="none" target="none"/>
+                    <y:BendStyle smoothed="false"/>
+                </y:PolyLineEdge>
+            </data>
+        </edge>
+        <edge id="-96-75-26-45--3f468199:1382e9a0b8d:-8000:00000000000010C5" source="Configuration" target="Serializable">
+            <data key="d2">
+                <y:PolyLineEdge>
+                    <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
+                    <y:LineStyle color="#000000" type="line" width="1.0"/>
+                    <y:Arrows source="none" target="none"/>
+                    <y:BendStyle smoothed="false"/>
+                </y:PolyLineEdge>
+            </data>
+        </edge>
+        <edge id="-96-75-26-45--3f468199:1382e9a0b8d:-8000:00000000000010C8" source="Configuration" target="Writer">
+            <data key="d2">
+                <y:PolyLineEdge>
+                    <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
+                    <y:LineStyle color="#000000" type="line" width="1.0"/>
+                    <y:Arrows source="none" target="none"/>
+                    <y:BendStyle smoothed="false"/>
+                </y:PolyLineEdge>
+            </data>
+        </edge>
+        <edge id="-96-75-26-45--3f468199:1382e9a0b8d:-8000:00000000000010CC" source="Configuration" target="Field">
+            <data key="d2">
+                <y:PolyLineEdge>
+                    <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
+                    <y:LineStyle color="#000000" type="line" width="1.0"/>
+                    <y:Arrows source="none" target="none"/>
+                    <y:BendStyle smoothed="false"/>
+                </y:PolyLineEdge>
+            </data>
+        </edge>
+        <edge id="-96-75-26-45--3f468199:1382e9a0b8d:-8000:00000000000010CF" source="Configuration" target="ArrayList">
+            <data key="d2">
+                <y:PolyLineEdge>
+                    <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
+                    <y:LineStyle color="#000000" type="line" width="1.0"/>
+                    <y:Arrows source="none" target="none"/>
+                    <y:BendStyle smoothed="false"/>
+                </y:PolyLineEdge>
+            </data>
+        </edge>
+        <edge id="-96-75-26-45--3f468199:1382e9a0b8d:-8000:00000000000010D2" source="Configuration" target="Collections">
+            <data key="d2">
+                <y:PolyLineEdge>
+                    <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
+                    <y:LineStyle color="#000000" type="line" width="1.0"/>
+                    <y:Arrows source="none" target="none"/>
+                    <y:BendStyle smoothed="false"/>
+                </y:PolyLineEdge>
+            </data>
+        </edge>
+        <edge id="-96-75-26-45--3f468199:1382e9a0b8d:-8000:00000000000010D5" source="Configuration" target="Enumeration">
+            <data key="d2">
+                <y:PolyLineEdge>
+                    <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
+                    <y:LineStyle color="#000000" type="line" width="1.0"/>
+                    <y:Arrows source="none" target="none"/>
+                    <y:BendStyle smoothed="false"/>
+                </y:PolyLineEdge>
+            </data>
+        </edge>
+        <edge id="-96-75-26-45--3f468199:1382e9a0b8d:-8000:00000000000010D6" source="Configuration" target="HashMap">
+            <data key="d2">
+                <y:PolyLineEdge>
+                    <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
+                    <y:LineStyle color="#000000" type="line" width="1.0"/>
+                    <y:Arrows source="none" target="none"/>
+                    <y:BendStyle smoothed="false"/>
+                </y:PolyLineEdge>
+            </data>
+        </edge>
+        <edge id="-96-75-26-45--3f468199:1382e9a0b8d:-8000:00000000000010D7" source="Configuration" target="Iterator">
+            <data key="d2">
+                <y:PolyLineEdge>
+                    <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
+                    <y:LineStyle color="#000000" type="line" width="1.0"/>
+                    <y:Arrows source="none" target="none"/>
+                    <y:BendStyle smoothed="false"/>
+                </y:PolyLineEdge>
+            </data>
+        </edge>
+        <edge id="-96-75-26-45--3f468199:1382e9a0b8d:-8000:00000000000010DA" source="Configuration" target="List">
+            <data key="d2">
+                <y:PolyLineEdge>
+                    <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
+                    <y:LineStyle color="#000000" type="line" width="1.0"/>
+                    <y:Arrows source="none" target="none"/>
+                    <y:BendStyle smoothed="false"/>
+                </y:PolyLineEdge>
+            </data>
+        </edge>
+        <edge id="-96-75-26-45--3f468199:1382e9a0b8d:-8000:00000000000010DB" source="Configuration" target="Map">
+            <data key="d2">
+                <y:PolyLineEdge>
+                    <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
+                    <y:LineStyle color="#000000" type="line" width="1.0"/>
+                    <y:Arrows source="none" target="none"/>
+                    <y:BendStyle smoothed="false"/>
+                </y:PolyLineEdge>
+            </data>
+        </edge>
+        <edge id="-96-75-26-45--3f468199:1382e9a0b8d:-8000:00000000000010DE" source="Configuration" target="Properties">
+            <data key="d2">
+                <y:PolyLineEdge>
+                    <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
+                    <y:LineStyle color="#000000" type="line" width="1.0"/>
+                    <y:Arrows source="none" target="none"/>
+                    <y:BendStyle smoothed="false"/>
+                </y:PolyLineEdge>
+            </data>
+        </edge>
+        <node id="Configuration">
+            <data key="d1">
+                <y:ShapeNode>
+                    <y:Geometry height="30.0" width="30.0"/>
+                    <y:Fill color="#FFCC00" transparent="false"/>
+                    <y:BorderStyle color="#000000" type="line" width="1.0"/>
+                    <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.1328125" modelName="internal" modelPosition="c" textColor="#000000" visible="true" width="12.279296875" x="8.8603515625" y="5.93359375">Configuration</y:NodeLabel>
+                    <y:Shape type="circle"/>
+                </y:ShapeNode>
+            </data>
+        </node>
+        <node id="Dict">
+            <data key="d1">
+                <y:ShapeNode>
+                    <y:Geometry height="30.0" width="30.0"/>
+                    <y:Fill color="#FFCC00" transparent="false"/>
+                    <y:BorderStyle color="#000000" type="line" width="1.0"/>
+                    <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.1328125" modelName="internal" modelPosition="c" textColor="#000000" visible="true" width="12.279296875" x="8.8603515625" y="5.93359375">Dict</y:NodeLabel>
+                    <y:Shape type="circle"/>
+                </y:ShapeNode>
+            </data>
+        </node>
+        <edge id="-96-75-26-45--3f468199:1382e9a0b8d:-8000:00000000000015FD" source="DOMAttrImpl" target="DOMException">
+            <data key="d2">
+                <y:PolyLineEdge>
+                    <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
+                    <y:LineStyle color="#000000" type="line" width="1.0"/>
+                    <y:Arrows source="none" target="none"/>
+                    <y:BendStyle smoothed="false"/>
+                </y:PolyLineEdge>
+            </data>
+        </edge>
+        <edge id="-96-75-26-45--3f468199:1382e9a0b8d:-8000:0000000000001600" source="DOMAttrImpl" target="TypeInfo">
+            <data key="d2">
+                <y:PolyLineEdge>
+                    <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
+                    <y:LineStyle color="#000000" type="line" width="1.0"/>
+                    <y:Arrows source="none" target="none"/>
+                    <y:BendStyle smoothed="false"/>
+                </y:PolyLineEdge>
+            </data>
+        </edge>
+        <node id="DOMAttrImpl">
+            <data key="d1">
+                <y:ShapeNode>
+                    <y:Geometry height="30.0" width="30.0"/>
+                    <y:Fill color="#FFCC00" transparent="false"/>
+                    <y:BorderStyle color="#000000" type="line" width="1.0"/>
+                    <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.1328125" modelName="internal" modelPosition="c" textColor="#000000" visible="true" width="12.279296875" x="8.8603515625" y="5.93359375">DOMAttrImpl</y:NodeLabel>
+                    <y:Shape type="circle"/>
+                </y:ShapeNode>
+            </data>
+        </node>
+        <edge id="-96-75-26-45--3f468199:1382e9a0b8d:-8000:00000000000016E2" source="DOMAttrMapImpl" target="DOMException">
+            <data key="d2">
+                <y:PolyLineEdge>
+                    <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
+                    <y:LineStyle color="#000000" type="line" width="1.0"/>
+                    <y:Arrows source="none" target="none"/>
+                    <y:BendStyle smoothed="false"/>
+                </y:PolyLineEdge>
+            </data>
+        </edge>
+        <node id="DOMAttrMapImpl">
+            <data key="d1">
+                <y:ShapeNode>
+                    <y:Geometry height="30.0" width="30.0"/>
+                    <y:Fill color="#FFCC00" transparent="false"/>
+                    <y:BorderStyle color="#000000" type="line" width="1.0"/>
+                    <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.1328125" modelName="internal" modelPosition="c" textColor="#000000" visible="true" width="12.279296875" x="8.8603515625" y="5.93359375">DOMAttrMapImpl</y:NodeLabel>
+                    <y:Shape type="circle"/>
+                </y:ShapeNode>
+            </data>
+        </node>
+        <node id="DOMCDATASectionImpl">
+            <data key="d1">
+                <y:ShapeNode>
+                    <y:Geometry height="30.0" width="30.0"/>
+                    <y:Fill color="#FFCC00" transparent="false"/>
+                    <y:BorderStyle color="#000000" type="line" width="1.0"/>
+                    <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.1328125" modelName="internal" modelPosition="c" textColor="#000000" visible="true" width="12.279296875" x="8.8603515625" y="5.93359375">DOMCDATASectionImpl</y:NodeLabel>
+                    <y:Shape type="circle"/>
+                </y:ShapeNode>
+            </data>
+        </node>
+        <edge id="-96-75-26-45--3f468199:1382e9a0b8d:-8000:0000000000001750" source="DOMCharacterDataImpl" target="DOMException">
+            <data key="d2">
+                <y:PolyLineEdge>
+                    <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
+                    <y:LineStyle color="#000000" type="line" width="1.0"/>
+                    <y:Arrows source="none" target="none"/>
+                    <y:BendStyle smoothed="false"/>
+                </y:PolyLineEdge>
+            </data>
+        </edge>
+        <node id="DOMCharacterDataImpl">
+            <data key="d1">
+                <y:ShapeNode>
+                    <y:Geometry height="30.0" width="30.0"/>
+                    <y:Fill color="#FFCC00" transparent="false"/>
+                    <y:BorderStyle color="#000000" type="line" width="1.0"/>
+                    <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.1328125" modelName="internal" modelPosition="c" textColor="#000000" visible="true" width="12.279296875" x="8.8603515625" y="5.93359375">DOMCharacterDataImpl</y:NodeLabel>
+                    <y:Shape type="circle"/>
+                </y:ShapeNode>
+            </data>
+        </node>
+        <node id="DOMCommentImpl">
+            <data key="d1">
+                <y:ShapeNode>
+                    <y:Geometry height="30.0" width="30.0"/>
+                    <y:Fill color="#FFCC00" transparent="false"/>
+                    <y:BorderStyle color="#000000" type="line" width="1.0"/>
+                    <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.1328125" modelName="internal" modelPosition="c" textColor="#000000" visible="true" width="12.279296875" x="8.8603515625" y="5.93359375">DOMCommentImpl</y:NodeLabel>
+                    <y:Shape type="circle"/>
+                </y:ShapeNode>
+            </data>
+        </node>
+        <edge id="-96-75-26-45--3f468199:1382e9a0b8d:-8000:00000000000017BE" source="DOMDocumentImpl" target="DOMConfiguration">
+            <data key="d2">
+                <y:PolyLineEdge>
+                    <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
+                    <y:LineStyle color="#000000" type="line" width="1.0"/>
+                    <y:Arrows source="none" target="none"/>
+                    <y:BendStyle smoothed="false"/>
+                </y:PolyLineEdge>
+            </data>
+        </edge>
+        <edge id="-96-75-26-45--3f468199:1382e9a0b8d:-8000:00000000000017BF" source="DOMDocumentImpl" target="DOMException">
+            <data key="d2">
+                <y:PolyLineEdge>
+                    <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
+                    <y:LineStyle color="#000000" type="line" width="1.0"/>
+                    <y:Arrows source="none" target="none"/>
+                    <y:BendStyle smoothed="false"/>
+                </y:PolyLineEdge>
+            </data>
+        </edge>
+        <node id="DOMDocumentImpl">
+            <data key="d1">
+                <y:ShapeNode>
+                    <y:Geometry height="30.0" width="30.0"/>
+                    <y:Fill color="#FFCC00" transparent="false"/>
+                    <y:BorderStyle color="#000000" type="line" width="1.0"/>
+                    <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.1328125" modelName="internal" modelPosition="c" textColor="#000000" visible="true" width="12.279296875" x="8.8603515625" y="5.93359375">DOMDocumentImpl</y:NodeLabel>
+                    <y:Shape type="circle"/>
+                </y:ShapeNode>
+            </data>
+        </node>
+        <node id="DOMDocumentTypeImpl">
+            <data key="d1">
+                <y:ShapeNode>
+                    <y:Geometry height="30.0" width="30.0"/>
+                    <y:Fill color="#FFCC00" transparent="false"/>
+                    <y:BorderStyle color="#000000" type="line" width="1.0"/>
+                    <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.1328125" modelName="internal" modelPosition="c" textColor="#000000" visible="true" width="12.279296875" x="8.8603515625" y="5.93359375">DOMDocumentTypeImpl</y:NodeLabel>
+                    <y:Shape type="circle"/>
+                </y:ShapeNode>
+            </data>
+        </node>
+        <edge id="-96-75-26-45--3f468199:1382e9a0b8d:-8000:000000000000193E" source="DOMElementImpl" target="Attr">
+            <data key="d2">
+                <y:PolyLineEdge>
+                    <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
+                    <y:LineStyle color="#000000" type="line" width="1.0"/>
+                    <y:Arrows source="none" target="none"/>
+                    <y:BendStyle smoothed="false"/>
+                </y:PolyLineEdge>
+            </data>
+        </edge>
+        <edge id="-96-75-26-45--3f468199:1382e9a0b8d:-8000:000000000000193F" source="DOMElementImpl" target="DOMException">
+            <data key="d2">
+                <y:PolyLineEdge>
+                    <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
+                    <y:LineStyle color="#000000" type="line" width="1.0"/>
+                    <y:Arrows source="none" target="none"/>
+                    <y:BendStyle smoothed="false"/>
+                </y:PolyLineEdge>
+            </data>
+        </edge>
+        <edge id="-96-75-26-45--3f468199:1382e9a0b8d:-8000:0000000000001940" source="DOMElementImpl" target="TypeInfo">
+            <data key="d2">
+                <y:PolyLineEdge>
+                    <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
+                    <y:LineStyle color="#000000" type="line" width="1.0"/>
+                    <y:Arrows source="none" target="none"/>
+                    <y:BendStyle smoothed="false"/>
+                </y:PolyLineEdge>
+            </data>
+        </edge>
+        <node id="DOMElementImpl">
+            <data key="d1">
+                <y:ShapeNode>
+                    <y:Geometry height="30.0" width="30.0"/>
+                    <y:Fill color="#FFCC00" transparent="false"/>
+                    <y:BorderStyle color="#000000" type="line" width="1.0"/>
+                    <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.1328125" modelName="internal" modelPosition="c" textColor="#000000" visible="true" width="12.279296875" x="8.8603515625" y="5.93359375">DOMElementImpl</y:NodeLabel>
+                    <y:Shape type="circle"/>
+                </y:ShapeNode>
+            </data>
+        </node>
+        <edge id="-96-75-26-45--3f468199:1382e9a0b8d:-8000:0000000000001A11" source="DOMNodeImpl" target="DOMException">
+            <data key="d2">
+                <y:PolyLineEdge>
+                    <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
+                    <y:LineStyle color="#000000" type="line" width="1.0"/>
+                    <y:Arrows source="none" target="none"/>
+                    <y:BendStyle smoothed="false"/>
+                </y:PolyLineEdge>
+            </data>
+        </edge>
+        <edge id="-96-75-26-45--3f468199:1382e9a0b8d:-8000:0000000000001A14" source="DOMNodeImpl" target="UserDataHandler">
+            <data key="d2">
+                <y:PolyLineEdge>
+                    <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
+                    <y:LineStyle color="#000000" type="line" width="1.0"/>
+                    <y:Arrows source="none" target="none"/>
+                    <y:BendStyle smoothed="false"/>
+                </y:PolyLineEdge>
+            </data>
+        </edge>
+        <node id="DOMNodeImpl">
+            <data key="d1">
+                <y:ShapeNode>
+                    <y:Geometry height="30.0" width="30.0"/>
+                    <y:Fill color="#FFCC00" transparent="false"/>
+                    <y:BorderStyle color="#000000" type="line" width="1.0"/>
+                    <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.1328125" modelName="internal" modelPosition="c" textColor="#000000" visible="true" width="12.279296875" x="8.8603515625" y="5.93359375">DOMNodeImpl</y:NodeLabel>
+                    <y:Shape type="circle"/>
+                </y:ShapeNode>
+            </data>
+        </node>
+        <node id="DOMNodeListByTagNameImpl">
+            <data key="d1">
+                <y:ShapeNode>
+                    <y:Geometry height="30.0" width="30.0"/>
+                    <y:Fill color="#FFCC00" transparent="false"/>
+                    <y:BorderStyle color="#000000" type="line" width="1.0"/>
+                    <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.1328125" modelName="internal" modelPosition="c" textColor="#000000" visible="true" width="12.279296875" x="8.8603515625" y="5.93359375">DOMNodeListByTagNameImpl</y:NodeLabel>
+                    <y:Shape type="circle"/>
+                </y:ShapeNode>
+            </data>
+        </node>
+        <node id="DOMNodeListImpl">
+            <data key="d1">
+                <y:ShapeNode>
+                    <y:Geometry height="30.0" width="30.0"/>
+                    <y:Fill color="#FFCC00" transparent="false"/>
+                    <y:BorderStyle color="#000000" type="line" width="1.0"/>
+                    <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.1328125" modelName="internal" modelPosition="c" textColor="#000000" visible="true" width="12.279296875" x="8.8603515625" y="5.93359375">DOMNodeListImpl</y:NodeLabel>
+                    <y:Shape type="circle"/>
+                </y:ShapeNode>
+            </data>
+        </node>
+        <edge id="-96-75-26-45--3f468199:1382e9a0b8d:-8000:0000000000001BB1" source="DOMProcessingInstructionImpl" target="DOMException">
+            <data key="d2">
+                <y:PolyLineEdge>
+                    <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
+                    <y:LineStyle color="#000000" type="line" width="1.0"/>
+                    <y:Arrows source="none" target="none"/>
+                    <y:BendStyle smoothed="false"/>
+                </y:PolyLineEdge>
+            </data>
+        </edge>
+        <node id="DOMProcessingInstructionImpl">
+            <data key="d1">
+                <y:ShapeNode>
+                    <y:Geometry height="30.0" width="30.0"/>
+                    <y:Fill color="#FFCC00" transparent="false"/>
+                    <y:BorderStyle color="#000000" type="line" width="1.0"/>
+                    <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.1328125" modelName="internal" modelPosition="c" textColor="#000000" visible="true" width="12.279296875" x="8.8603515625" y="5.93359375">DOMProcessingInstructionImpl</y:NodeLabel>
+                    <y:Shape type="circle"/>
+                </y:ShapeNode>
+            </data>
+        </node>
+        <edge id="-96-75-26-45--3f468199:1382e9a0b8d:-8000:0000000000001BDB" source="DOMTextImpl" target="DOMException">
+            <data key="d2">
+                <y:PolyLineEdge>
+                    <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
+                    <y:LineStyle color="#000000" type="line" width="1.0"/>
+                    <y:Arrows source="none" target="none"/>
+                    <y:BendStyle smoothed="false"/>
+                </y:PolyLineEdge>
+            </data>
+        </edge>
+        <edge id="-96-75-26-45--3f468199:1382e9a0b8d:-8000:0000000000001BDC" source="DOMTextImpl" target="Text">
+            <data key="d2">
+                <y:PolyLineEdge>
+                    <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
+                    <y:LineStyle color="#000000" type="line" width="1.0"/>
+                    <y:Arrows source="none" target="none"/>
+                    <y:BendStyle smoothed="false"/>
+                </y:PolyLineEdge>
+            </data>
+        </edge>
+        <node id="DOMTextImpl">
+            <data key="d1">
+                <y:ShapeNode>
+                    <y:Geometry height="30.0" width="30.0"/>
+                    <y:Fill color="#FFCC00" transparent="false"/>
+                    <y:BorderStyle color="#000000" type="line" width="1.0"/>
+                    <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.1328125" modelName="internal" modelPosition="c" textColor="#000000" visible="true" width="12.279296875" x="8.8603515625" y="5.93359375">DOMTextImpl</y:NodeLabel>
+                    <y:Shape type="circle"/>
+                </y:ShapeNode>
+            </data>
+        </node>
+        <edge id="-96-75-26-45--3f468199:1382e9a0b8d:-8000:0000000000001C18" source="EncodingNameMapper" target="HashMap">
+            <data key="d2">
+                <y:PolyLineEdge>
+                    <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
+                    <y:LineStyle color="#000000" type="line" width="1.0"/>
+                    <y:Arrows source="none" target="none"/>
+                    <y:BendStyle smoothed="false"/>
+                </y:PolyLineEdge>
+            </data>
+        </edge>
+        <edge id="-96-75-26-45--3f468199:1382e9a0b8d:-8000:0000000000001C19" source="EncodingNameMapper" target="Map">
+            <data key="d2">
+                <y:PolyLineEdge>
+                    <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
+                    <y:LineStyle color="#000000" type="line" width="1.0"/>
+                    <y:Arrows source="none" target="none"/>
+                    <y:BendStyle smoothed="false"/>
+                </y:PolyLineEdge>
+            </data>
+        </edge>
+        <node id="EncodingNameMapper">
+            <data key="d1">
+                <y:ShapeNode>
+                    <y:Geometry height="30.0" width="30.0"/>
+                    <y:Fill color="#FFCC00" transparent="false"/>
+                    <y:BorderStyle color="#000000" type="line" width="1.0"/>
+                    <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.1328125" modelName="internal" modelPosition="c" textColor="#000000" visible="true" width="12.279296875" x="8.8603515625" y="5.93359375">EncodingNameMapper</y:NodeLabel>
+                    <y:Shape type="circle"/>
+                </y:ShapeNode>
+            </data>
+        </node>
+        <node id="EncodingUtils">
+            <data key="d1">
+                <y:ShapeNode>
+                    <y:Geometry height="30.0" width="30.0"/>
+                    <y:Fill color="#FFCC00" transparent="false"/>
+                    <y:BorderStyle color="#000000" type="line" width="1.0"/>
+                    <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.1328125" modelName="internal" modelPosition="c" textColor="#000000" visible="true" width="12.279296875" x="8.8603515625" y="5.93359375">EncodingUtils</y:NodeLabel>
+                    <y:Shape type="circle"/>
+                </y:ShapeNode>
+            </data>
+        </node>
+        <node id="Entity">
+            <data key="d1">
+                <y:ShapeNode>
+                    <y:Geometry height="30.0" width="30.0"/>
+                    <y:Fill color="#FFCC00" transparent="false"/>
+                    <y:BorderStyle color="#000000" type="line" width="1.0"/>
+                    <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.1328125" modelName="internal" modelPosition="c" textColor="#000000" visible="true" width="12.279296875" x="8.8603515625" y="5.93359375">Entity</y:NodeLabel>
+                    <y:Shape type="circle"/>
+                </y:ShapeNode>
+            </data>
+        </node>
+        <edge id="-96-75-26-45--3f468199:1382e9a0b8d:-8000:0000000000001D6F" source="EntityTable" target="Hashtable">
+            <data key="d2">
+                <y:PolyLineEdge>
+                    <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
+                    <y:LineStyle color="#000000" type="line" width="1.0"/>
+                    <y:Arrows source="none" target="none"/>
+                    <y:BendStyle smoothed="false"/>
+                </y:PolyLineEdge>
+            </data>
+        </edge>
+        <edge id="-96-75-26-45--3f468199:1382e9a0b8d:-8000:0000000000001D70" source="EntityTable" target="Iterator">
+            <data key="d2">
+                <y:PolyLineEdge>
+                    <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
+                    <y:LineStyle color="#000000" type="line" width="1.0"/>
+                    <y:Arrows source="none" target="none"/>
+                    <y:BendStyle smoothed="false"/>
+                </y:PolyLineEdge>
+            </data>
+        </edge>
+        <edge id="-96-75-26-45--3f468199:1382e9a0b8d:-8000:0000000000001D71" source="EntityTable" target="Map">
+            <data key="d2">
+                <y:PolyLineEdge>
+                    <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
+                    <y:LineStyle color="#000000" type="line" width="1.0"/>
+                    <y:Arrows source="none" target="none"/>
+                    <y:BendStyle smoothed="false"/>
+                </y:PolyLineEdge>
+            </data>
+        </edge>
+        <node id="EntityTable">
+            <data key="d1">
+                <y:ShapeNode>
+                    <y:Geometry height="30.0" width="30.0"/>
+                    <y:Fill color="#FFCC00" transparent="false"/>
+                    <y:BorderStyle color="#000000" type="line" width="1.0"/>
+                    <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.1328125" modelName="internal" modelPosition="c" textColor="#000000" visible="true" width="12.279296875" x="8.8603515625" y="5.93359375">EntityTable</y:NodeLabel>
+                    <y:Shape type="circle"/>
+                </y:ShapeNode>
+            </data>
+        </node>
+        <node id="IStack">
+            <data key="d1">
+                <y:ShapeNode>
+                    <y:Geometry height="30.0" width="30.0"/>
+                    <y:Fill color="#FFCC00" transparent="false"/>
+                    <y:BorderStyle color="#000000" type="line" width="1.0"/>
+                    <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.1328125" modelName="internal" modelPosition="c" textColor="#000000" visible="true" width="12.279296875" x="8.8603515625" y="5.93359375">IStack</y:NodeLabel>
+                    <y:Shape type="circle"/>
+                </y:ShapeNode>
+            </data>
+        </node>
+        <edge id="-96-75-26-45--3f468199:1382e9a0b8d:-8000:0000000000001DD5" source="Lexer" target="PrintWriter">
+            <data key="d2">
+                <y:PolyLineEdge>
+                    <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
+                    <y:LineStyle color="#000000" type="line" width="1.0"/>
+                    <y:Arrows source="none" target="none"/>
+                    <y:BendStyle smoothed="false"/>
+                </y:PolyLineEdge>
+            </data>
+        </edge>
+        <edge id="-96-75-26-45--3f468199:1382e9a0b8d:-8000:0000000000001DD6" source="Lexer" target="List">
+            <data key="d2">
+                <y:PolyLineEdge>
+                    <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
+                    <y:LineStyle color="#000000" type="line" width="1.0"/>
+                    <y:Arrows source="none" target="none"/>
+                    <y:BendStyle smoothed="false"/>
+                </y:PolyLineEdge>
+            </data>
+        </edge>
+        <edge id="-96-75-26-45--3f468199:1382e9a0b8d:-8000:0000000000001DD9" source="Lexer" target="Stack">
+            <data key="d2">
+                <y:PolyLineEdge>
+                    <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
+                    <y:LineStyle color="#000000" type="line" width="1.0"/>
+                    <y:Arrows source="none" target="none"/>
+                    <y:BendStyle smoothed="false"/>
+                </y:PolyLineEdge>
+            </data>
+        </edge>
+        <edge id="-96-75-26-45--3f468199:1382e9a0b8d:-8000:0000000000001DDC" source="Lexer" target="Vector">
+            <data key="d2">
+                <y:PolyLineEdge>
+                    <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
+                    <y:LineStyle color="#000000" type="line" width="1.0"/>
+                    <y:Arrows source="none" target="none"/>
+                    <y:BendStyle smoothed="false"/>
+                </y:PolyLineEdge>
+            </data>
+        </edge>
+        <node id="Lexer">
+            <data key="d1">
+                <y:ShapeNode>
+                    <y:Geometry height="30.0" width="30.0"/>
+                    <y:Fill color="#FFCC00" transparent="false"/>
+                    <y:BorderStyle color="#000000" type="line" width="1.0"/>
+                    <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.1328125" modelName="internal" modelPosition="c" textColor="#000000" visible="true" width="12.279296875" x="8.8603515625" y="5.93359375">Lexer</y:NodeLabel>
+                    <y:Shape type="circle"/>
+                </y:ShapeNode>
+            </data>
+        </node>
+        <node id="Node">
+            <data key="d1">
+                <y:ShapeNode>
+                    <y:Geometry height="30.0" width="30.0"/>
+                    <y:Fill color="#FFCC00" transparent="false"/>
+                    <y:BorderStyle color="#000000" type="line" width="1.0"/>
+                    <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.1328125" modelName="internal" modelPosition="c" textColor="#000000" visible="true" width="12.279296875" x="8.8603515625" y="5.93359375">Node</y:NodeLabel>
+                    <y:Shape type="circle"/>
+                </y:ShapeNode>
+            </data>
+        </node>
+        <node id="Out">
+            <data key="d1">
+                <y:ShapeNode>
+                    <y:Geometry height="30.0" width="30.0"/>
+                    <y:Fill color="#FFCC00" transparent="false"/>
+                    <y:BorderStyle color="#000000" type="line" width="1.0"/>
+                    <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.1328125" modelName="internal" modelPosition="c" textColor="#000000" visible="true" width="12.279296875" x="8.8603515625" y="5.93359375">Out</y:NodeLabel>
+                    <y:Shape type="circle"/>
+                </y:ShapeNode>
+            </data>
+        </node>
+        <edge id="-96-75-26-45--3f468199:1382e9a0b8d:-8000:000000000000239B" source="OutFactory" target="OutputStream">
+            <data key="d2">
+                <y:PolyLineEdge>
+                    <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
+                    <y:LineStyle color="#000000" type="line" width="1.0"/>
+                    <y:Arrows source="none" target="none"/>
+                    <y:BendStyle smoothed="false"/>
+                </y:PolyLineEdge>
+            </data>
+        </edge>
+        <edge id="-96-75-26-45--3f468199:1382e9a0b8d:-8000:000000000000239E" source="OutFactory" target="UnsupportedEncodingException">
+            <data key="d2">
+                <y:PolyLineEdge>
+                    <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
+                    <y:LineStyle color="#000000" type="line" width="1.0"/>
+                    <y:Arrows source="none" target="none"/>
+                    <y:BendStyle smoothed="false"/>
+                </y:PolyLineEdge>
+            </data>
+        </edge>
+        <edge id="-96-75-26-45--3f468199:1382e9a0b8d:-8000:000000000000239F" source="OutFactory" target="Writer">
+            <data key="d2">
+                <y:PolyLineEdge>
+                    <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
+                    <y:LineStyle color="#000000" type="line" width="1.0"/>
+                    <y:Arrows source="none" target="none"/>
+                    <y:BendStyle smoothed="false"/>
+                </y:PolyLineEdge>
+            </data>
+        </edge>
+        <node id="OutFactory">
+            <data key="d1">
+                <y:ShapeNode>
+                    <y:Geometry height="30.0" width="30.0"/>
+                    <y:Fill color="#FFCC00" transparent="false"/>
+                    <y:BorderStyle color="#000000" type="line" width="1.0"/>
+                    <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.1328125" modelName="internal" modelPosition="c" textColor="#000000" visible="true" width="12.279296875" x="8.8603515625" y="5.93359375">OutFactory</y:NodeLabel>
+                    <y:Shape type="circle"/>
+                </y:ShapeNode>
+            </data>
+        </node>
+        <edge id="-96-75-26-45--3f468199:1382e9a0b8d:-8000:00000000000023BB" source="OutJavaImpl" target="IOException">
+            <data key="d2">
+                <y:PolyLineEdge>
+                    <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
+                    <y:LineStyle color="#000000" type="line" width="1.0"/>
+                    <y:Arrows source="none" target="none"/>
+                    <y:BendStyle smoothed="false"/>
+                </y:PolyLineEdge>
+            </data>
+        </edge>
+        <edge id="-96-75-26-45--3f468199:1382e9a0b8d:-8000:00000000000023BC" source="OutJavaImpl" target="OutputStream">
+            <data key="d2">
+                <y:PolyLineEdge>
+                    <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
+                    <y:LineStyle color="#000000" type="line" width="1.0"/>
+                    <y:Arrows source="none" target="none"/>
+                    <y:BendStyle smoothed="false"/>
+                </y:PolyLineEdge>
+            </data>
+        </edge>
+        <edge id="-96-75-26-45--3f468199:1382e9a0b8d:-8000:00000000000023BF" source="OutJavaImpl" target="OutputStreamWriter">
+            <data key="d2">
+                <y:PolyLineEdge>
+                    <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
+                    <y:LineStyle color="#000000" type="line" width="1.0"/>
+                    <y:Arrows source="none" target="none"/>
+                    <y:BendStyle smoothed="false"/>
+                </y:PolyLineEdge>
+            </data>
+        </edge>
+        <edge id="-96-75-26-45--3f468199:1382e9a0b8d:-8000:00000000000023C0" source="OutJavaImpl" target="UnsupportedEncodingException">
+            <data key="d2">
+                <y:PolyLineEdge>
+                    <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
+                    <y:LineStyle color="#000000" type="line" width="1.0"/>
+                    <y:Arrows source="none" target="none"/>
+                    <y:BendStyle smoothed="false"/>
+                </y:PolyLineEdge>
+            </data>
+        </edge>
+        <edge id="-96-75-26-45--3f468199:1382e9a0b8d:-8000:00000000000023C1" source="OutJavaImpl" target="Writer">
+            <data key="d2">
+                <y:PolyLineEdge>
+                    <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
+                    <y:LineStyle color="#000000" type="line" width="1.0"/>
+                    <y:Arrows source="none" target="none"/>
+                    <y:BendStyle smoothed="false"/>
+                </y:PolyLineEdge>
+            </data>
+        </edge>
+        <node id="OutJavaImpl">
+            <data key="d1">
+                <y:ShapeNode>
+                    <y:Geometry height="30.0" width="30.0"/>
+                    <y:Fill color="#FFCC00" transparent="false"/>
+                    <y:BorderStyle color="#000000" type="line" width="1.0"/>
+                    <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.1328125" modelName="internal" modelPosition="c" textColor="#000000" visible="true" width="12.279296875" x="8.8603515625" y="5.93359375">OutJavaImpl</y:NodeLabel>
+                    <y:Shape type="circle"/>
+                </y:ShapeNode>
+            </data>
+        </node>
+        <node id="ParseProperty">
+            <data key="d1">
+                <y:ShapeNode>
+                    <y:Geometry height="30.0" width="30.0"/>
+                    <y:Fill color="#FFCC00" transparent="false"/>
+                    <y:BorderStyle color="#000000" type="line" width="1.0"/>
+                    <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.1328125" modelName="internal" modelPosition="c" textColor="#000000" visible="true" width="12.279296875" x="8.8603515625" y="5.93359375">ParseProperty</y:NodeLabel>
+                    <y:Shape type="circle"/>
+                </y:ShapeNode>
+            </data>
+        </node>
+        <edge id="-96-75-26-45--3f468199:1382e9a0b8d:-8000:0000000000002422" source="ParsePropertyImpl" target="Iterator">
+            <data key="d2">
+                <y:PolyLineEdge>
+                    <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
+                    <y:LineStyle color="#000000" type="line" width="1.0"/>
+                    <y:Arrows source="none" target="none"/>
+                    <y:BendStyle smoothed="false"/>
+                </y:PolyLineEdge>
+            </data>
+        </edge>
+        <edge id="-96-75-26-45--3f468199:1382e9a0b8d:-8000:0000000000002423" source="ParsePropertyImpl" target="List">
+            <data key="d2">
+                <y:PolyLineEdge>
+                    <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
+                    <y:LineStyle color="#000000" type="line" width="1.0"/>
+                    <y:Arrows source="none" target="none"/>
+                    <y:BendStyle smoothed="false"/>
+                </y:PolyLineEdge>
+            </data>
+        </edge>
+        <edge id="-96-75-26-45--3f468199:1382e9a0b8d:-8000:0000000000002426" source="ParsePropertyImpl" target="StringTokenizer">
+            <data key="d2">
+                <y:PolyLineEdge>
+                    <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
+                    <y:LineStyle color="#000000" type="line" width="1.0"/>
+                    <y:Arrows source="none" target="none"/>
+                    <y:BendStyle smoothed="false"/>
+                </y:PolyLineEdge>
+            </data>
+        </edge>
+        <node id="ParsePropertyImpl">
+            <data key="d1">
+                <y:ShapeNode>
+                    <y:Geometry height="30.0" width="30.0"/>
+                    <y:Fill color="#FFCC00" transparent="false"/>
+                    <y:BorderStyle color="#000000" type="line" width="1.0"/>
+                    <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.1328125" modelName="internal" modelPosition="c" textColor="#000000" visible="true" width="12.279296875" x="8.8603515625" y="5.93359375">ParsePropertyImpl</y:NodeLabel>
+                    <y:Shape type="circle"/>
+                </y:ShapeNode>
+            </data>
+        </node>
+        <node id="Parser">
+            <data key="d1">
+                <y:ShapeNode>
+                    <y:Geometry height="30.0" width="30.0"/>
+                    <y:Fill color="#FFCC00" transparent="false"/>
+                    <y:BorderStyle color="#000000" type="line" width="1.0"/>
+                    <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.1328125" modelName="internal" modelPosition="c" textColor="#000000" visible="true" width="12.279296875" x="8.8603515625" y="5.93359375">Parser</y:NodeLabel>
+                    <y:Shape type="circle"/>
+                </y:ShapeNode>
+            </data>
+        </node>
+        <node id="ParserImpl">
+            <data key="d1">
+                <y:ShapeNode>
+                    <y:Geometry height="30.0" width="30.0"/>
+                    <y:Fill color="#FFCC00" transparent="false"/>
+                    <y:BorderStyle color="#000000" type="line" width="1.0"/>
+                    <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.1328125" modelName="internal" modelPosition="c" textColor="#000000" visible="true" width="12.279296875" x="8.8603515625" y="5.93359375">ParserImpl</y:NodeLabel>
+                    <y:Shape type="circle"/>
+                </y:ShapeNode>
+            </data>
+        </node>
+        <edge id="-96-75-26-45--3f468199:1382e9a0b8d:-8000:0000000000002803" source="PPrint" target="File">
+            <data key="d2">
+                <y:PolyLineEdge>
+                    <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
+                    <y:LineStyle color="#000000" type="line" width="1.0"/>
+                    <y:Arrows source="none" target="none"/>
+                    <y:BendStyle smoothed="false"/>
+                </y:PolyLineEdge>
+            </data>
+        </edge>
+        <edge id="-96-75-26-45--3f468199:1382e9a0b8d:-8000:0000000000002806" source="PPrint" target="FileOutputStream">
+            <data key="d2">
+                <y:PolyLineEdge>
+                    <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
+                    <y:LineStyle color="#000000" type="line" width="1.0"/>
+                    <y:Arrows source="none" target="none"/>
+                    <y:BendStyle smoothed="false"/>
+                </y:PolyLineEdge>
+            </data>
+        </edge>
+        <edge id="-96-75-26-45--3f468199:1382e9a0b8d:-8000:0000000000002807" source="PPrint" target="IOException">
+            <data key="d2">
+                <y:PolyLineEdge>
+                    <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
+                    <y:LineStyle color="#000000" type="line" width="1.0"/>
+                    <y:Arrows source="none" target="none"/>
+                    <y:BendStyle smoothed="false"/>
+                </y:PolyLineEdge>
+            </data>
+        </edge>
+        <edge id="-96-75-26-45--3f468199:1382e9a0b8d:-8000:000000000000280B" source="PPrint" target="NumberFormat">
+            <data key="d2">
+                <y:PolyLineEdge>
+                    <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
+                    <y:LineStyle color="#000000" type="line" width="1.0"/>
+                    <y:Arrows source="none" target="none"/>
+                    <y:BendStyle smoothed="false"/>
+                </y:PolyLineEdge>
+            </data>
+        </edge>
+        <node id="PPrint">
+            <data key="d1">
+                <y:ShapeNode>
+                    <y:Geometry height="30.0" width="30.0"/>
+                    <y:Fill color="#FFCC00" transparent="false"/>
+                    <y:BorderStyle color="#000000" type="line" width="1.0"/>
+                    <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.1328125" modelName="internal" modelPosition="c" textColor="#000000" visible="true" width="12.279296875" x="8.8603515625" y="5.93359375">PPrint</y:NodeLabel>
+                    <y:Shape type="circle"/>
+                </y:ShapeNode>
+            </data>
+        </node>
+        <edge id="-96-75-26-45--3f468199:1382e9a0b8d:-8000:0000000000002A51" source="Report" target="InputStream">
+            <data key="d2">
+                <y:PolyLineEdge>
+                    <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
+                    <y:LineStyle color="#000000" type="line" width="1.0"/>
+                    <y:Arrows source="none" target="none"/>
+                    <y:BendStyle smoothed="false"/>
+                </y:PolyLineEdge>
+            </data>
+        </edge>
+        <edge id="-96-75-26-45--3f468199:1382e9a0b8d:-8000:0000000000002A52" source="Report" target="PrintWriter">
+            <data key="d2">
+                <y:PolyLineEdge>
+                    <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
+                    <y:LineStyle color="#000000" type="line" width="1.0"/>
+                    <y:Arrows source="none" target="none"/>
+                    <y:BendStyle smoothed="false"/>
+                </y:PolyLineEdge>
+            </data>
+        </edge>
+        <edge id="-96-75-26-45--3f468199:1382e9a0b8d:-8000:0000000000002A55" source="Report" target="MessageFormat">
+            <data key="d2">
+                <y:PolyLineEdge>
+                    <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
+                    <y:LineStyle color="#000000" type="line" width="1.0"/>
+                    <y:Arrows source="none" target="none"/>
+                    <y:BendStyle smoothed="false"/>
+                </y:PolyLineEdge>
+            </data>
+        </edge>
+        <edge id="-96-75-26-45--3f468199:1382e9a0b8d:-8000:0000000000002A58" source="Report" target="MissingResourceException">
+            <data key="d2">
+                <y:PolyLineEdge>
+                    <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
+                    <y:LineStyle color="#000000" type="line" width="1.0"/>
+                    <y:Arrows source="none" target="none"/>
+                    <y:BendStyle smoothed="false"/>
+                </y:PolyLineEdge>
+            </data>
+        </edge>
+        <edge id="-96-75-26-45--3f468199:1382e9a0b8d:-8000:0000000000002A59" source="Report" target="Properties">
+            <data key="d2">
+                <y:PolyLineEdge>
+                    <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
+                    <y:LineStyle color="#000000" type="line" width="1.0"/>
+                    <y:Arrows source="none" target="none"/>
+                    <y:BendStyle smoothed="false"/>
+                </y:PolyLineEdge>
+            </data>
+        </edge>
+        <edge id="-96-75-26-45--3f468199:1382e9a0b8d:-8000:0000000000002A5C" source="Report" target="ResourceBundle">
+            <data key="d2">
+                <y:PolyLineEdge>
+                    <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
+                    <y:LineStyle color="#000000" type="line" width="1.0"/>
+                    <y:Arrows source="none" target="none"/>
+                    <y:BendStyle smoothed="false"/>
+                </y:PolyLineEdge>
+            </data>
+        </edge>
+        <edge id="-96-75-26-45--3f468199:1382e9a0b8d:-8000:0000000000002A5E" source="Report" target="Level">
+            <data key="d2">
+                <y:PolyLineEdge>
+                    <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
+                    <y:LineStyle color="#000000" type="line" width="1.0"/>
+                    <y:Arrows source="none" target="none"/>
+                    <y:BendStyle smoothed="false"/>
+                </y:PolyLineEdge>
+            </data>
+        </edge>
+        <node id="Report">
+            <data key="d1">
+                <y:ShapeNode>
+                    <y:Geometry height="30.0" width="30.0"/>
+                    <y:Fill color="#FFCC00" transparent="false"/>
+                    <y:BorderStyle color="#000000" type="line" width="1.0"/>
+                    <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.1328125" modelName="internal" modelPosition="c" textColor="#000000" visible="true" width="12.279296875" x="8.8603515625" y="5.93359375">Report</y:NodeLabel>
+                    <y:Shape type="circle"/>
+                </y:ShapeNode>
+            </data>
+        </node>
+        <node id="StreamIn">
+            <data key="d1">
+                <y:ShapeNode>
+                    <y:Geometry height="30.0" width="30.0"/>
+                    <y:Fill color="#FFCC00" transparent="false"/>
+                    <y:BorderStyle color="#000000" type="line" width="1.0"/>
+                    <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.1328125" modelName="internal" modelPosition="c" textColor="#000000" visible="true" width="12.279296875" x="8.8603515625" y="5.93359375">StreamIn</y:NodeLabel>
+                    <y:Shape type="circle"/>
+                </y:ShapeNode>
+            </data>
+        </node>
+        <edge id="-96-75-26-45--3f468199:1382e9a0b8d:-8000:0000000000002E91" source="StreamInFactory" target="InputStream">
+            <data key="d2">
+                <y:PolyLineEdge>
+                    <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
+                    <y:LineStyle color="#000000" type="line" width="1.0"/>
+                    <y:Arrows source="none" target="none"/>
+                    <y:BendStyle smoothed="false"/>
+                </y:PolyLineEdge>
+            </data>
+        </edge>
+        <edge id="-96-75-26-45--3f468199:1382e9a0b8d:-8000:0000000000002E94" source="StreamInFactory" target="Reader">
+            <data key="d2">
+                <y:PolyLineEdge>
+                    <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
+                    <y:LineStyle color="#000000" type="line" width="1.0"/>
+                    <y:Arrows source="none" target="none"/>
+                    <y:BendStyle smoothed="false"/>
+                </y:PolyLineEdge>
+            </data>
+        </edge>
+        <edge id="-96-75-26-45--3f468199:1382e9a0b8d:-8000:0000000000002E95" source="StreamInFactory" target="UnsupportedEncodingException">
+            <data key="d2">
+                <y:PolyLineEdge>
+                    <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
+                    <y:LineStyle color="#000000" type="line" width="1.0"/>
+                    <y:Arrows source="none" target="none"/>
+                    <y:BendStyle smoothed="false"/>
+                </y:PolyLineEdge>
+            </data>
+        </edge>
+        <node id="StreamInFactory">
+            <data key="d1">
+                <y:ShapeNode>
+                    <y:Geometry height="30.0" width="30.0"/>
+                    <y:Fill color="#FFCC00" transparent="false"/>
+                    <y:BorderStyle color="#000000" type="line" width="1.0"/>
+                    <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.1328125" modelName="internal" modelPosition="c" textColor="#000000" visible="true" width="12.279296875" x="8.8603515625" y="5.93359375">StreamInFactory</y:NodeLabel>
+                    <y:Shape type="circle"/>
+                </y:ShapeNode>
+            </data>
+        </node>
+        <edge id="-96-75-26-45--3f468199:1382e9a0b8d:-8000:0000000000002EB1" source="StreamInJavaImpl" target="IOException">
+            <data key="d2">
+                <y:PolyLineEdge>
+                    <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
+                    <y:LineStyle color="#000000" type="line" width="1.0"/>
+                    <y:Arrows source="none" target="none"/>
+                    <y:BendStyle smoothed="false"/>
+                </y:PolyLineEdge>
+            </data>
+        </edge>
+        <edge id="-96-75-26-45--3f468199:1382e9a0b8d:-8000:0000000000002EB2" source="StreamInJavaImpl" target="InputStream">
+            <data key="d2">
+                <y:PolyLineEdge>
+                    <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
+                    <y:LineStyle color="#000000" type="line" width="1.0"/>
+                    <y:Arrows source="none" target="none"/>
+                    <y:BendStyle smoothed="false"/>
+                </y:PolyLineEdge>
+            </data>
+        </edge>
+        <edge id="-96-75-26-45--3f468199:1382e9a0b8d:-8000:0000000000002EB5" source="StreamInJavaImpl" target="InputStreamReader">
+            <data key="d2">
+                <y:PolyLineEdge>
+                    <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
+                    <y:LineStyle color="#000000" type="line" width="1.0"/>
+                    <y:Arrows source="none" target="none"/>
+                    <y:BendStyle smoothed="false"/>
+                </y:PolyLineEdge>
+            </data>
+        </edge>
+        <edge id="-96-75-26-45--3f468199:1382e9a0b8d:-8000:0000000000002EB6" source="StreamInJavaImpl" target="Reader">
+            <data key="d2">
+                <y:PolyLineEdge>
+                    <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
+                    <y:LineStyle color="#000000" type="line" width="1.0"/>
+                    <y:Arrows source="none" target="none"/>
+                    <y:BendStyle smoothed="false"/>
+                </y:PolyLineEdge>
+            </data>
+        </edge>
+        <edge id="-96-75-26-45--3f468199:1382e9a0b8d:-8000:0000000000002EB7" source="StreamInJavaImpl" target="UnsupportedEncodingException">
+            <data key="d2">
+                <y:PolyLineEdge>
+                    <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
+                    <y:LineStyle color="#000000" type="line" width="1.0"/>
+                    <y:Arrows source="none" target="none"/>
+                    <y:BendStyle smoothed="false"/>
+                </y:PolyLineEdge>
+            </data>
+        </edge>
+        <node id="StreamInJavaImpl">
+            <data key="d1">
+                <y:ShapeNode>
+                    <y:Geometry height="30.0" width="30.0"/>
+                    <y:Fill color="#FFCC00" transparent="false"/>
+                    <y:BorderStyle color="#000000" type="line" width="1.0"/>
+                    <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.1328125" modelName="internal" modelPosition="c" textColor="#000000" visible="true" width="12.279296875" x="8.8603515625" y="5.93359375">StreamInJavaImpl</y:NodeLabel>
+                    <y:Shape type="circle"/>
+                </y:ShapeNode>
+            </data>
+        </node>
+        <node id="Style">
+            <data key="d1">
+                <y:ShapeNode>
+                    <y:Geometry height="30.0" width="30.0"/>
+                    <y:Fill color="#FFCC00" transparent="false"/>
+                    <y:BorderStyle color="#000000" type="line" width="1.0"/>
+                    <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.1328125" modelName="internal" modelPosition="c" textColor="#000000" visible="true" width="12.279296875" x="8.8603515625" y="5.93359375">Style</y:NodeLabel>
+                    <y:Shape type="circle"/>
+                </y:ShapeNode>
+            </data>
+        </node>
+        <node id="StyleProp">
+            <data key="d1">
+                <y:ShapeNode>
+                    <y:Geometry height="30.0" width="30.0"/>
+                    <y:Fill color="#FFCC00" transparent="false"/>
+                    <y:BorderStyle color="#000000" type="line" width="1.0"/>
+                    <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.1328125" modelName="internal" modelPosition="c" textColor="#000000" visible="true" width="12.279296875" x="8.8603515625" y="5.93359375">StyleProp</y:NodeLabel>
+                    <y:Shape type="circle"/>
+                </y:ShapeNode>
+            </data>
+        </node>
+        <node id="TagCheck">
+            <data key="d1">
+                <y:ShapeNode>
+                    <y:Geometry height="30.0" width="30.0"/>
+                    <y:Fill color="#FFCC00" transparent="false"/>
+                    <y:BorderStyle color="#000000" type="line" width="1.0"/>
+                    <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.1328125" modelName="internal" modelPosition="c" textColor="#000000" visible="true" width="12.279296875" x="8.8603515625" y="5.93359375">TagCheck</y:NodeLabel>
+                    <y:Shape type="circle"/>
+                </y:ShapeNode>
+            </data>
+        </node>
+        <node id="TagCheckImpl">
+            <data key="d1">
+                <y:ShapeNode>
+                    <y:Geometry height="30.0" width="30.0"/>
+                    <y:Fill color="#FFCC00" transparent="false"/>
+                    <y:BorderStyle color="#000000" type="line" width="1.0"/>
+                    <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.1328125" modelName="internal" modelPosition="c" textColor="#000000" visible="true" width="12.279296875" x="8.8603515625" y="5.93359375">TagCheckImpl</y:NodeLabel>
+                    <y:Shape type="circle"/>
+                </y:ShapeNode>
+            </data>
+        </node>
+        <edge id="-96-75-26-45--3f468199:1382e9a0b8d:-8000:0000000000003097" source="TagTable" target="ArrayList">
+            <data key="d2">
+                <y:PolyLineEdge>
+                    <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
+                    <y:LineStyle color="#000000" type="line" width="1.0"/>
+                    <y:Arrows source="none" target="none"/>
+                    <y:BendStyle smoothed="false"/>
+                </y:PolyLineEdge>
+            </data>
+        </edge>
+        <edge id="-96-75-26-45--3f468199:1382e9a0b8d:-8000:0000000000003098" source="TagTable" target="Hashtable">
+            <data key="d2">
+                <y:PolyLineEdge>
+                    <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
+                    <y:LineStyle color="#000000" type="line" width="1.0"/>
+                    <y:Arrows source="none" target="none"/>
+                    <y:BendStyle smoothed="false"/>
+                </y:PolyLineEdge>
+            </data>
+        </edge>
+        <edge id="-96-75-26-45--3f468199:1382e9a0b8d:-8000:0000000000003099" source="TagTable" target="Iterator">
+            <data key="d2">
+                <y:PolyLineEdge>
+                    <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
+                    <y:LineStyle color="#000000" type="line" width="1.0"/>
+                    <y:Arrows source="none" target="none"/>
+                    <y:BendStyle smoothed="false"/>
+                </y:PolyLineEdge>
+            </data>
+        </edge>
+        <edge id="-96-75-26-45--3f468199:1382e9a0b8d:-8000:000000000000309A" source="TagTable" target="List">
+            <data key="d2">
+                <y:PolyLineEdge>
+                    <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
+                    <y:LineStyle color="#000000" type="line" width="1.0"/>
+                    <y:Arrows source="none" target="none"/>
+                    <y:BendStyle smoothed="false"/>
+                </y:PolyLineEdge>
+            </data>
+        </edge>
+        <edge id="-96-75-26-45--3f468199:1382e9a0b8d:-8000:000000000000309B" source="TagTable" target="Map">
+            <data key="d2">
+                <y:PolyLineEdge>
+                    <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
+                    <y:LineStyle color="#000000" type="line" width="1.0"/>
+                    <y:Arrows source="none" target="none"/>
+                    <y:BendStyle smoothed="false"/>
+                </y:PolyLineEdge>
+            </data>
+        </edge>
+        <node id="TagTable">
+            <data key="d1">
+                <y:ShapeNode>
+                    <y:Geometry height="30.0" width="30.0"/>
+                    <y:Fill color="#FFCC00" transparent="false"/>
+                    <y:BorderStyle color="#000000" type="line" width="1.0"/>
+                    <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.1328125" modelName="internal" modelPosition="c" textColor="#000000" visible="true" width="12.279296875" x="8.8603515625" y="5.93359375">TagTable</y:NodeLabel>
+                    <y:Shape type="circle"/>
+                </y:ShapeNode>
+            </data>
+        </node>
+        <edge id="-96-75-26-45--3f468199:1382e9a0b8d:-8000:00000000000032BC" source="Tidy" target="FileInputStream">
+            <data key="d2">
+                <y:PolyLineEdge>
+                    <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
+                    <y:LineStyle color="#000000" type="line" width="1.0"/>
+                    <y:Arrows source="none" target="none"/>
+                    <y:BendStyle smoothed="false"/>
+                </y:PolyLineEdge>
+            </data>
+        </edge>
+        <edge id="-96-75-26-45--3f468199:1382e9a0b8d:-8000:00000000000032BF" source="Tidy" target="FileNotFoundException">
+            <data key="d2">
+                <y:PolyLineEdge>
+                    <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
+                    <y:LineStyle color="#000000" type="line" width="1.0"/>
+                    <y:Arrows source="none" target="none"/>
+                    <y:BendStyle smoothed="false"/>
+                </y:PolyLineEdge>
+            </data>
+        </edge>
+        <edge id="-96-75-26-45--3f468199:1382e9a0b8d:-8000:00000000000032C0" source="Tidy" target="FileOutputStream">
+            <data key="d2">
+                <y:PolyLineEdge>
+                    <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
+                    <y:LineStyle color="#000000" type="line" width="1.0"/>
+                    <y:Arrows source="none" target="none"/>
+                    <y:BendStyle smoothed="false"/>
+                </y:PolyLineEdge>
+            </data>
+        </edge>
+        <edge id="-96-75-26-45--3f468199:1382e9a0b8d:-8000:00000000000032C3" source="Tidy" target="FileWriter">
+            <data key="d2">
+                <y:PolyLineEdge>
+                    <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
+                    <y:LineStyle color="#000000" type="line" width="1.0"/>
+                    <y:Arrows source="none" target="none"/>
+                    <y:BendStyle smoothed="false"/>
+                </y:PolyLineEdge>
+            </data>
+        </edge>
+        <edge id="-96-75-26-45--3f468199:1382e9a0b8d:-8000:00000000000032C4" source="Tidy" target="IOException">
+            <data key="d2">
+                <y:PolyLineEdge>
+                    <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
+                    <y:LineStyle color="#000000" type="line" width="1.0"/>
+                    <y:Arrows source="none" target="none"/>
+                    <y:BendStyle smoothed="false"/>
+                </y:PolyLineEdge>
+            </data>
+        </edge>
+        <edge id="-96-75-26-45--3f468199:1382e9a0b8d:-8000:00000000000032C5" source="Tidy" target="InputStream">
+            <data key="d2">
+                <y:PolyLineEdge>
+                    <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
+                    <y:LineStyle color="#000000" type="line" width="1.0"/>
+                    <y:Arrows source="none" target="none"/>
+                    <y:BendStyle smoothed="false"/>
+                </y:PolyLineEdge>
+            </data>
+        </edge>
+        <edge id="-96-75-26-45--3f468199:1382e9a0b8d:-8000:00000000000032C6" source="Tidy" target="OutputStream">
+            <data key="d2">
+                <y:PolyLineEdge>
+                    <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
+                    <y:LineStyle color="#000000" type="line" width="1.0"/>
+                    <y:Arrows source="none" target="none"/>
+                    <y:BendStyle smoothed="false"/>
+                </y:PolyLineEdge>
+            </data>
+        </edge>
+        <edge id="-96-75-26-45--3f468199:1382e9a0b8d:-8000:00000000000032C7" source="Tidy" target="PrintWriter">
+            <data key="d2">
+                <y:PolyLineEdge>
+                    <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
+                    <y:LineStyle color="#000000" type="line" width="1.0"/>
+                    <y:Arrows source="none" target="none"/>
+                    <y:BendStyle smoothed="false"/>
+                </y:PolyLineEdge>
+            </data>
+        </edge>
+        <edge id="-96-75-26-45--3f468199:1382e9a0b8d:-8000:00000000000032C8" source="Tidy" target="Reader">
+            <data key="d2">
+                <y:PolyLineEdge>
+                    <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
+                    <y:LineStyle color="#000000" type="line" width="1.0"/>
+                    <y:Arrows source="none" target="none"/>
+                    <y:BendStyle smoothed="false"/>
+                </y:PolyLineEdge>
+            </data>
+        </edge>
+        <edge id="-96-75-26-45--3f468199:1382e9a0b8d:-8000:00000000000032C9" source="Tidy" target="Serializable">
+            <data key="d2">
+                <y:PolyLineEdge>
+                    <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
+                    <y:LineStyle color="#000000" type="line" width="1.0"/>
+                    <y:Arrows source="none" target="none"/>
+                    <y:BendStyle smoothed="false"/>
+                </y:PolyLineEdge>
+            </data>
+        </edge>
+        <edge id="-96-75-26-45--3f468199:1382e9a0b8d:-8000:00000000000032CA" source="Tidy" target="Writer">
+            <data key="d2">
+                <y:PolyLineEdge>
+                    <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
+                    <y:LineStyle color="#000000" type="line" width="1.0"/>
+                    <y:Arrows source="none" target="none"/>
+                    <y:BendStyle smoothed="false"/>
+                </y:PolyLineEdge>
+            </data>
+        </edge>
+        <edge id="-96-75-26-45--3f468199:1382e9a0b8d:-8000:00000000000032CB" source="Tidy" target="HashMap">
+            <data key="d2">
+                <y:PolyLineEdge>
+                    <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
+                    <y:LineStyle color="#000000" type="line" width="1.0"/>
+                    <y:Arrows source="none" target="none"/>
+                    <y:BendStyle smoothed="false"/>
+                </y:PolyLineEdge>
+            </data>
+        </edge>
+        <edge id="-96-75-26-45--3f468199:1382e9a0b8d:-8000:00000000000032CC" source="Tidy" target="Map">
+            <data key="d2">
+                <y:PolyLineEdge>
+                    <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
+                    <y:LineStyle color="#000000" type="line" width="1.0"/>
+                    <y:Arrows source="none" target="none"/>
+                    <y:BendStyle smoothed="false"/>
+                </y:PolyLineEdge>
+            </data>
+        </edge>
+        <edge id="-96-75-26-45--3f468199:1382e9a0b8d:-8000:00000000000032CD" source="Tidy" target="Properties">
+            <data key="d2">
+                <y:PolyLineEdge>
+                    <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
+                    <y:LineStyle color="#000000" type="line" width="1.0"/>
+                    <y:Arrows source="none" target="none"/>
+                    <y:BendStyle smoothed="false"/>
+                </y:PolyLineEdge>
+            </data>
+        </edge>
+        <node id="Tidy">
+            <data key="d1">
+                <y:ShapeNode>
+                    <y:Geometry height="30.0" width="30.0"/>
+                    <y:Fill color="#FFCC00" transparent="false"/>
+                    <y:BorderStyle color="#000000" type="line" width="1.0"/>
+                    <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.1328125" modelName="internal" modelPosition="c" textColor="#000000" visible="true" width="12.279296875" x="8.8603515625" y="5.93359375">Tidy</y:NodeLabel>
+                    <y:Shape type="circle"/>
+                </y:ShapeNode>
+            </data>
+        </node>
+        <edge id="-96-75-26-45--3f468199:1382e9a0b8d:-8000:000000000000382B" source="TidyBeanInfo" target="Image">
+            <data key="d2">
+                <y:PolyLineEdge>
+                    <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
+                    <y:LineStyle color="#000000" type="line" width="1.0"/>
+                    <y:Arrows source="none" target="none"/>
+                    <y:BendStyle smoothed="false"/>
+                </y:PolyLineEdge>
+            </data>
+        </edge>
+        <edge id="-96-75-26-45--3f468199:1382e9a0b8d:-8000:000000000000382F" source="TidyBeanInfo" target="SimpleBeanInfo">
+            <data key="d2">
+                <y:PolyLineEdge>
+                    <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
+                    <y:LineStyle color="#000000" type="line" width="1.0"/>
+                    <y:Arrows source="none" target="none"/>
+                    <y:BendStyle smoothed="false"/>
+                </y:PolyLineEdge>
+            </data>
+        </edge>
+        <node id="TidyBeanInfo">
+            <data key="d1">
+                <y:ShapeNode>
+                    <y:Geometry height="30.0" width="30.0"/>
+                    <y:Fill color="#FFCC00" transparent="false"/>
+                    <y:BorderStyle color="#000000" type="line" width="1.0"/>
+                    <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.1328125" modelName="internal" modelPosition="c" textColor="#000000" visible="true" width="12.279296875" x="8.8603515625" y="5.93359375">TidyBeanInfo</y:NodeLabel>
+                    <y:Shape type="circle"/>
+                </y:ShapeNode>
+            </data>
+        </node>
+        <node id="TidyMessage">
+            <data key="d1">
+                <y:ShapeNode>
+                    <y:Geometry height="30.0" width="30.0"/>
+                    <y:Fill color="#FFCC00" transparent="false"/>
+                    <y:BorderStyle color="#000000" type="line" width="1.0"/>
+                    <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.1328125" modelName="internal" modelPosition="c" textColor="#000000" visible="true" width="12.279296875" x="8.8603515625" y="5.93359375">TidyMessage</y:NodeLabel>
+                    <y:Shape type="circle"/>
+                </y:ShapeNode>
+            </data>
+        </node>
+        <node id="TidyMessageListener">
+            <data key="d1">
+                <y:ShapeNode>
+                    <y:Geometry height="30.0" width="30.0"/>
+                    <y:Fill color="#FFCC00" transparent="false"/>
+                    <y:BorderStyle color="#000000" type="line" width="1.0"/>
+                    <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.1328125" modelName="internal" modelPosition="c" textColor="#000000" visible="true" width="12.279296875" x="8.8603515625" y="5.93359375">TidyMessageListener</y:NodeLabel>
+                    <y:Shape type="circle"/>
+                </y:ShapeNode>
+            </data>
+        </node>
+        <node id="TidyUtils">
+            <data key="d1">
+                <y:ShapeNode>
+                    <y:Geometry height="30.0" width="30.0"/>
+                    <y:Fill color="#FFCC00" transparent="false"/>
+                    <y:BorderStyle color="#000000" type="line" width="1.0"/>
+                    <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.1328125" modelName="internal" modelPosition="c" textColor="#000000" visible="true" width="12.279296875" x="8.8603515625" y="5.93359375">TidyUtils</y:NodeLabel>
+                    <y:Shape type="circle"/>
+                </y:ShapeNode>
+            </data>
+        </node>
+        <node id="ValidUTF8Sequence">
+            <data key="d1">
+                <y:ShapeNode>
+                    <y:Geometry height="30.0" width="30.0"/>
+                    <y:Fill color="#FFCC00" transparent="false"/>
+                    <y:BorderStyle color="#000000" type="line" width="1.0"/>
+                    <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.1328125" modelName="internal" modelPosition="c" textColor="#000000" visible="true" width="12.279296875" x="8.8603515625" y="5.93359375">ValidUTF8Sequence</y:NodeLabel>
+                    <y:Shape type="circle"/>
+                </y:ShapeNode>
+            </data>
+        </node>
+        <edge id="-96-75-26-45--3f468199:1382e9a0b8d:-8000:0000000000003A54" source="JTidyTask" target="BufferedInputStream">
+            <data key="d2">
+                <y:PolyLineEdge>
+                    <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
+                    <y:LineStyle color="#000000" type="line" width="1.0"/>
+                    <y:Arrows source="none" target="none"/>
+                    <y:BendStyle smoothed="false"/>
+                </y:PolyLineEdge>
+            </data>
+        </edge>
+        <edge id="-96-75-26-45--3f468199:1382e9a0b8d:-8000:0000000000003A57" source="JTidyTask" target="BufferedOutputStream">
+            <data key="d2">
+                <y:PolyLineEdge>
+                    <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
+                    <y:LineStyle color="#000000" type="line" width="1.0"/>
+                    <y:Arrows source="none" target="none"/>
+                    <y:BendStyle smoothed="false"/>
+                </y:PolyLineEdge>
+            </data>
+        </edge>
+        <edge id="-96-75-26-45--3f468199:1382e9a0b8d:-8000:0000000000003A5A" source="JTidyTask" target="ByteArrayOutputStream">
+            <data key="d2">
+                <y:PolyLineEdge>
+                    <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
+                    <y:LineStyle color="#000000" type="line" width="1.0"/>
+                    <y:Arrows source="none" target="none"/>
+                    <y:BendStyle smoothed="false"/>
+                </y:PolyLineEdge>
+            </data>
+        </edge>
+        <edge id="-96-75-26-45--3f468199:1382e9a0b8d:-8000:0000000000003A5B" source="JTidyTask" target="File">
+            <data key="d2">
+                <y:PolyLineEdge>
+                    <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
+                    <y:LineStyle color="#000000" type="line" width="1.0"/>
+                    <y:Arrows source="none" target="none"/>
+                    <y:BendStyle smoothed="false"/>
+                </y:PolyLineEdge>
+            </data>
+        </edge>
+        <edge id="-96-75-26-45--3f468199:1382e9a0b8d:-8000:0000000000003A5C" source="JTidyTask" target="FileInputStream">
+            <data key="d2">
+                <y:PolyLineEdge>
+                    <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
+                    <y:LineStyle color="#000000" type="line" width="1.0"/>
+                    <y:Arrows source="none" target="none"/>
+                    <y:BendStyle smoothed="false"/>
+                </y:PolyLineEdge>
+            </data>
+        </edge>
+        <edge id="-96-75-26-45--3f468199:1382e9a0b8d:-8000:0000000000003A5D" source="JTidyTask" target="FileOutputStream">
+            <data key="d2">
+                <y:PolyLineEdge>
+                    <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
+                    <y:LineStyle color="#000000" type="line" width="1.0"/>
+                    <y:Arrows source="none" target="none"/>
+                    <y:BendStyle smoothed="false"/>
+                </y:PolyLineEdge>
+            </data>
+        </edge>
+        <edge id="-96-75-26-45--3f468199:1382e9a0b8d:-8000:0000000000003A5E" source="JTidyTask" target="IOException">
+            <data key="d2">
+                <y:PolyLineEdge>
+                    <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
+                    <y:LineStyle color="#000000" type="line" width="1.0"/>
+                    <y:Arrows source="none" target="none"/>
+                    <y:BendStyle smoothed="false"/>
+                </y:PolyLineEdge>
+            </data>
+        </edge>
+        <edge id="-96-75-26-45--3f468199:1382e9a0b8d:-8000:0000000000003A5F" source="JTidyTask" target="InputStream">
+            <data key="d2">
+                <y:PolyLineEdge>
+                    <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
+                    <y:LineStyle color="#000000" type="line" width="1.0"/>
+                    <y:Arrows source="none" target="none"/>
+                    <y:BendStyle smoothed="false"/>
+                </y:PolyLineEdge>
+            </data>
+        </edge>
+        <edge id="-96-75-26-45--3f468199:1382e9a0b8d:-8000:0000000000003A60" source="JTidyTask" target="OutputStream">
+            <data key="d2">
+                <y:PolyLineEdge>
+                    <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
+                    <y:LineStyle color="#000000" type="line" width="1.0"/>
+                    <y:Arrows source="none" target="none"/>
+                    <y:BendStyle smoothed="false"/>
+                </y:PolyLineEdge>
+            </data>
+        </edge>
+        <edge id="-96-75-26-45--3f468199:1382e9a0b8d:-8000:0000000000003A61" source="JTidyTask" target="PrintWriter">
+            <data key="d2">
+                <y:PolyLineEdge>
+                    <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
+                    <y:LineStyle color="#000000" type="line" width="1.0"/>
+                    <y:Arrows source="none" target="none"/>
+                    <y:BendStyle smoothed="false"/>
+                </y:PolyLineEdge>
+            </data>
+        </edge>
+        <edge id="-96-75-26-45--3f468199:1382e9a0b8d:-8000:0000000000003A62" source="JTidyTask" target="ArrayList">
+            <data key="d2">
+                <y:PolyLineEdge>
+                    <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
+                    <y:LineStyle color="#000000" type="line" width="1.0"/>
+                    <y:Arrows source="none" target="none"/>
+                    <y:BendStyle smoothed="false"/>
+                </y:PolyLineEdge>
+            </data>
+        </edge>
+        <edge id="-96-75-26-45--3f468199:1382e9a0b8d:-8000:0000000000003A63" source="JTidyTask" target="Iterator">
+            <data key="d2">
+                <y:PolyLineEdge>
+                    <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
+                    <y:LineStyle color="#000000" type="line" width="1.0"/>
+                    <y:Arrows source="none" target="none"/>
+                    <y:BendStyle smoothed="false"/>
+                </y:PolyLineEdge>
+            </data>
+        </edge>
+        <edge id="-96-75-26-45--3f468199:1382e9a0b8d:-8000:0000000000003A64" source="JTidyTask" target="List">
+            <data key="d2">
+                <y:PolyLineEdge>
+                    <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
+                    <y:LineStyle color="#000000" type="line" width="1.0"/>
+                    <y:Arrows source="none" target="none"/>
+                    <y:BendStyle smoothed="false"/>
+                </y:PolyLineEdge>
+            </data>
+        </edge>
+        <edge id="-96-75-26-45--3f468199:1382e9a0b8d:-8000:0000000000003A65" source="JTidyTask" target="Properties">
+            <data key="d2">
+                <y:PolyLineEdge>
+                    <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
+                    <y:LineStyle color="#000000" type="line" width="1.0"/>
+                    <y:Arrows source="none" target="none"/>
+                    <y:BendStyle smoothed="false"/>
+                </y:PolyLineEdge>
+            </data>
+        </edge>
+        <edge id="-96-75-26-45--3f468199:1382e9a0b8d:-8000:0000000000003A6A" source="JTidyTask" target="BuildException">
+            <data key="d2">
+                <y:PolyLineEdge>
+                    <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
+                    <y:LineStyle color="#000000" type="line" width="1.0"/>
+                    <y:Arrows source="none" target="none"/>
+                    <y:BendStyle smoothed="false"/>
+                </y:PolyLineEdge>
+            </data>
+        </edge>
+        <edge id="-96-75-26-45--3f468199:1382e9a0b8d:-8000:0000000000003A6C" source="JTidyTask" target="DirectoryScanner">
+            <data key="d2">
+                <y:PolyLineEdge>
+                    <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
+                    <y:LineStyle color="#000000" type="line" width="1.0"/>
+                    <y:Arrows source="none" target="none"/>
+                    <y:BendStyle smoothed="false"/>
+                </y:PolyLineEdge>
+            </data>
+        </edge>
+        <edge id="-96-75-26-45--3f468199:1382e9a0b8d:-8000:0000000000003A6E" source="JTidyTask" target="Project">
+            <data key="d2">
+                <y:PolyLineEdge>
+                    <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
+                    <y:LineStyle color="#000000" type="line" width="1.0"/>
+                    <y:Arrows source="none" target="none"/>
+                    <y:BendStyle smoothed="false"/>
+                </y:PolyLineEdge>
+            </data>
+        </edge>
+        <edge id="-96-75-26-45--3f468199:1382e9a0b8d:-8000:0000000000003A70" source="JTidyTask" target="Task">
+            <data key="d2">
+                <y:PolyLineEdge>
+                    <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
+                    <y:LineStyle color="#000000" type="line" width="1.0"/>
+                    <y:Arrows source="none" target="none"/>
+                    <y:BendStyle smoothed="false"/>
+                </y:PolyLineEdge>
+            </data>
+        </edge>
+        <edge id="-96-75-26-45--3f468199:1382e9a0b8d:-8000:0000000000003A73" source="JTidyTask" target="FileSet">
+            <data key="d2">
+                <y:PolyLineEdge>
+                    <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
+                    <y:LineStyle color="#000000" type="line" width="1.0"/>
+                    <y:Arrows source="none" target="none"/>
+                    <y:BendStyle smoothed="false"/>
+                </y:PolyLineEdge>
+            </data>
+        </edge>
+        <edge id="-96-75-26-45--3f468199:1382e9a0b8d:-8000:0000000000003A75" source="JTidyTask" target="Parameter">
+            <data key="d2">
+                <y:PolyLineEdge>
+                    <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
+                    <y:LineStyle color="#000000" type="line" width="1.0"/>
+                    <y:Arrows source="none" target="none"/>
+                    <y:BendStyle smoothed="false"/>
+                </y:PolyLineEdge>
+            </data>
+        </edge>
+        <edge id="-96-75-26-45--3f468199:1382e9a0b8d:-8000:0000000000003A78" source="JTidyTask" target="FileNameMapper">
+            <data key="d2">
+                <y:PolyLineEdge>
+                    <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
+                    <y:LineStyle color="#000000" type="line" width="1.0"/>
+                    <y:Arrows source="none" target="none"/>
+                    <y:BendStyle smoothed="false"/>
+                </y:PolyLineEdge>
+            </data>
+        </edge>
+        <edge id="-96-75-26-45--3f468199:1382e9a0b8d:-8000:0000000000003A7A" source="JTidyTask" target="FlatFileNameMapper">
+            <data key="d2">
+                <y:PolyLineEdge>
+                    <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
+                    <y:LineStyle color="#000000" type="line" width="1.0"/>
+                    <y:Arrows source="none" target="none"/>
+                    <y:BendStyle smoothed="false"/>
+                </y:PolyLineEdge>
+            </data>
+        </edge>
+        <edge id="-96-75-26-45--3f468199:1382e9a0b8d:-8000:0000000000003A7C" source="JTidyTask" target="IdentityMapper">
+            <data key="d2">
+                <y:PolyLineEdge>
+                    <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
+                    <y:LineStyle color="#000000" type="line" width="1.0"/>
+                    <y:Arrows source="none" target="none"/>
+                    <y:BendStyle smoothed="false"/>
+                </y:PolyLineEdge>
+            </data>
+        </edge>
+        <edge id="-96-75-26-45--3f468199:1382e9a0b8d:-8000:0000000000003A7D" source="JTidyTask" target="Tidy">
+            <data key="d2">
+                <y:PolyLineEdge>
+                    <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
+                    <y:LineStyle color="#000000" type="line" width="1.0"/>
+                    <y:Arrows source="none" target="none"/>
+                    <y:BendStyle smoothed="false"/>
+                </y:PolyLineEdge>
+            </data>
+        </edge>
+        <node id="JTidyTask">
+            <data key="d1">
+                <y:ShapeNode>
+                    <y:Geometry height="30.0" width="30.0"/>
+                    <y:Fill color="#FFCC00" transparent="false"/>
+                    <y:BorderStyle color="#000000" type="line" width="1.0"/>
+                    <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.1328125" modelName="internal" modelPosition="c" textColor="#000000" visible="true" width="12.279296875" x="8.8603515625" y="5.93359375">JTidyTask</y:NodeLabel>
+                    <y:Shape type="circle"/>
+                </y:ShapeNode>
+            </data>
+        </node>
+        <node id="Level">
+            <data key="d1">
+                <y:ShapeNode>
+                    <y:Geometry height="30.0" width="30.0"/>
+                    <y:Fill color="#FFCC00" transparent="false"/>
+                    <y:BorderStyle color="#000000" type="line" width="1.0"/>
+                    <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.1328125" modelName="internal" modelPosition="c" textColor="#000000" visible="true" width="12.279296875" x="8.8603515625" y="5.93359375">Level</y:NodeLabel>
+                    <y:Shape type="circle"/>
+                </y:ShapeNode>
+            </data>
+        </node>
+        <node id="Attr">
+            <data key="d1">
+                <y:ShapeNode>
+                    <y:Geometry height="30.0" width="30.0"/>
+                    <y:Fill color="#FFCC00" transparent="false"/>
+                    <y:BorderStyle color="#000000" type="line" width="1.0"/>
+                    <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.1328125" modelName="internal" modelPosition="c" textColor="#000000" visible="true" width="12.279296875" x="8.8603515625" y="5.93359375">Attr</y:NodeLabel>
+                    <y:Shape type="circle"/>
+                </y:ShapeNode>
+            </data>
+        </node>
+        <node id="DOMException">
+            <data key="d1">
+                <y:ShapeNode>
+                    <y:Geometry height="30.0" width="30.0"/>
+                    <y:Fill color="#FFCC00" transparent="false"/>
+                    <y:BorderStyle color="#000000" type="line" width="1.0"/>
+                    <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.1328125" modelName="internal" modelPosition="c" textColor="#000000" visible="true" width="12.279296875" x="8.8603515625" y="5.93359375">DOMException</y:NodeLabel>
+                    <y:Shape type="circle"/>
+                </y:ShapeNode>
+            </data>
+        </node>
+        <node id="TypeInfo">
+            <data key="d1">
+                <y:ShapeNode>
+                    <y:Geometry height="30.0" width="30.0"/>
+                    <y:Fill color="#FFCC00" transparent="false"/>
+                    <y:BorderStyle color="#000000" type="line" width="1.0"/>
+                    <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.1328125" modelName="internal" modelPosition="c" textColor="#000000" visible="true" width="12.279296875" x="8.8603515625" y="5.93359375">TypeInfo</y:NodeLabel>
+                    <y:Shape type="circle"/>
+                </y:ShapeNode>
+            </data>
+        </node>
+        <node id="Node">
+            <data key="d1">
+                <y:ShapeNode>
+                    <y:Geometry height="30.0" width="30.0"/>
+                    <y:Fill color="#FFCC00" transparent="false"/>
+                    <y:BorderStyle color="#000000" type="line" width="1.0"/>
+                    <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.1328125" modelName="internal" modelPosition="c" textColor="#000000" visible="true" width="12.279296875" x="8.8603515625" y="5.93359375">Node</y:NodeLabel>
+                    <y:Shape type="circle"/>
+                </y:ShapeNode>
+            </data>
+        </node>
+        <node id="NodeList">
+            <data key="d1">
+                <y:ShapeNode>
+                    <y:Geometry height="30.0" width="30.0"/>
+                    <y:Fill color="#FFCC00" transparent="false"/>
+                    <y:BorderStyle color="#000000" type="line" width="1.0"/>
+                    <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.1328125" modelName="internal" modelPosition="c" textColor="#000000" visible="true" width="12.279296875" x="8.8603515625" y="5.93359375">NodeList</y:NodeLabel>
+                    <y:Shape type="circle"/>
+                </y:ShapeNode>
+            </data>
+        </node>
+        <node id="NamedNodeMap">
+            <data key="d1">
+                <y:ShapeNode>
+                    <y:Geometry height="30.0" width="30.0"/>
+                    <y:Fill color="#FFCC00" transparent="false"/>
+                    <y:BorderStyle color="#000000" type="line" width="1.0"/>
+                    <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.1328125" modelName="internal" modelPosition="c" textColor="#000000" visible="true" width="12.279296875" x="8.8603515625" y="5.93359375">NamedNodeMap</y:NodeLabel>
+                    <y:Shape type="circle"/>
+                </y:ShapeNode>
+            </data>
+        </node>
+        <node id="Document">
+            <data key="d1">
+                <y:ShapeNode>
+                    <y:Geometry height="30.0" width="30.0"/>
+                    <y:Fill color="#FFCC00" transparent="false"/>
+                    <y:BorderStyle color="#000000" type="line" width="1.0"/>
+                    <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.1328125" modelName="internal" modelPosition="c" textColor="#000000" visible="true" width="12.279296875" x="8.8603515625" y="5.93359375">Document</y:NodeLabel>
+                    <y:Shape type="circle"/>
+                </y:ShapeNode>
+            </data>
+        </node>
+        <node id="Element">
+            <data key="d1">
+                <y:ShapeNode>
+                    <y:Geometry height="30.0" width="30.0"/>
+                    <y:Fill color="#FFCC00" transparent="false"/>
+                    <y:BorderStyle color="#000000" type="line" width="1.0"/>
+                    <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.1328125" modelName="internal" modelPosition="c" textColor="#000000" visible="true" width="12.279296875" x="8.8603515625" y="5.93359375">Element</y:NodeLabel>
+                    <y:Shape type="circle"/>
+                </y:ShapeNode>
+            </data>
+        </node>
+        <node id="CDATASection">
+            <data key="d1">
+                <y:ShapeNode>
+                    <y:Geometry height="30.0" width="30.0"/>
+                    <y:Fill color="#FFCC00" transparent="false"/>
+                    <y:BorderStyle color="#000000" type="line" width="1.0"/>
+                    <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.1328125" modelName="internal" modelPosition="c" textColor="#000000" visible="true" width="12.279296875" x="8.8603515625" y="5.93359375">CDATASection</y:NodeLabel>
+                    <y:Shape type="circle"/>
+                </y:ShapeNode>
+            </data>
+        </node>
+        <node id="CharacterData">
+            <data key="d1">
+                <y:ShapeNode>
+                    <y:Geometry height="30.0" width="30.0"/>
+                    <y:Fill color="#FFCC00" transparent="false"/>
+                    <y:BorderStyle color="#000000" type="line" width="1.0"/>
+                    <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.1328125" modelName="internal" modelPosition="c" textColor="#000000" visible="true" width="12.279296875" x="8.8603515625" y="5.93359375">CharacterData</y:NodeLabel>
+                    <y:Shape type="circle"/>
+                </y:ShapeNode>
+            </data>
+        </node>
+        <node id="Comment">
+            <data key="d1">
+                <y:ShapeNode>
+                    <y:Geometry height="30.0" width="30.0"/>
+                    <y:Fill color="#FFCC00" transparent="false"/>
+                    <y:BorderStyle color="#000000" type="line" width="1.0"/>
+                    <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.1328125" modelName="internal" modelPosition="c" textColor="#000000" visible="true" width="12.279296875" x="8.8603515625" y="5.93359375">Comment</y:NodeLabel>
+                    <y:Shape type="circle"/>
+                </y:ShapeNode>
+            </data>
+        </node>
+        <node id="DOMConfiguration">
+            <data key="d1">
+                <y:ShapeNode>
+                    <y:Geometry height="30.0" width="30.0"/>
+                    <y:Fill color="#FFCC00" transparent="false"/>
+                    <y:BorderStyle color="#000000" type="line" width="1.0"/>
+                    <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.1328125" modelName="internal" modelPosition="c" textColor="#000000" visible="true" width="12.279296875" x="8.8603515625" y="5.93359375">DOMConfiguration</y:NodeLabel>
+                    <y:Shape type="circle"/>
+                </y:ShapeNode>
+            </data>
+        </node>
+        <node id="DocumentType">
+            <data key="d1">
+                <y:ShapeNode>
+                    <y:Geometry height="30.0" width="30.0"/>
+                    <y:Fill color="#FFCC00" transparent="false"/>
+                    <y:BorderStyle color="#000000" type="line" width="1.0"/>
+                    <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.1328125" modelName="internal" modelPosition="c" textColor="#000000" visible="true" width="12.279296875" x="8.8603515625" y="5.93359375">DocumentType</y:NodeLabel>
+                    <y:Shape type="circle"/>
+                </y:ShapeNode>
+            </data>
+        </node>
+        <node id="DOMImplementation">
+            <data key="d1">
+                <y:ShapeNode>
+                    <y:Geometry height="30.0" width="30.0"/>
+                    <y:Fill color="#FFCC00" transparent="false"/>
+                    <y:BorderStyle color="#000000" type="line" width="1.0"/>
+                    <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.1328125" modelName="internal" modelPosition="c" textColor="#000000" visible="true" width="12.279296875" x="8.8603515625" y="5.93359375">DOMImplementation</y:NodeLabel>
+                    <y:Shape type="circle"/>
+                </y:ShapeNode>
+            </data>
+        </node>
+        <node id="DocumentFragment">
+            <data key="d1">
+                <y:ShapeNode>
+                    <y:Geometry height="30.0" width="30.0"/>
+                    <y:Fill color="#FFCC00" transparent="false"/>
+                    <y:BorderStyle color="#000000" type="line" width="1.0"/>
+                    <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.1328125" modelName="internal" modelPosition="c" textColor="#000000" visible="true" width="12.279296875" x="8.8603515625" y="5.93359375">DocumentFragment</y:NodeLabel>
+                    <y:Shape type="circle"/>
+                </y:ShapeNode>
+            </data>
+        </node>
+        <node id="Text">
+            <data key="d1">
+                <y:ShapeNode>
+                    <y:Geometry height="30.0" width="30.0"/>
+                    <y:Fill color="#FFCC00" transparent="false"/>
+                    <y:BorderStyle color="#000000" type="line" width="1.0"/>
+                    <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.1328125" modelName="internal" modelPosition="c" textColor="#000000" visible="true" width="12.279296875" x="8.8603515625" y="5.93359375">Text</y:NodeLabel>
+                    <y:Shape type="circle"/>
+                </y:ShapeNode>
+            </data>
+        </node>
+        <node id="ProcessingInstruction">
+            <data key="d1">
+                <y:ShapeNode>
+                    <y:Geometry height="30.0" width="30.0"/>
+                    <y:Fill color="#FFCC00" transparent="false"/>
+                    <y:BorderStyle color="#000000" type="line" width="1.0"/>
+                    <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.1328125" modelName="internal" modelPosition="c" textColor="#000000" visible="true" width="12.279296875" x="8.8603515625" y="5.93359375">ProcessingInstruction</y:NodeLabel>
+                    <y:Shape type="circle"/>
+                </y:ShapeNode>
+            </data>
+        </node>
+        <node id="EntityReference">
+            <data key="d1">
+                <y:ShapeNode>
+                    <y:Geometry height="30.0" width="30.0"/>
+                    <y:Fill color="#FFCC00" transparent="false"/>
+                    <y:BorderStyle color="#000000" type="line" width="1.0"/>
+                    <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.1328125" modelName="internal" modelPosition="c" textColor="#000000" visible="true" width="12.279296875" x="8.8603515625" y="5.93359375">EntityReference</y:NodeLabel>
+                    <y:Shape type="circle"/>
+                </y:ShapeNode>
+            </data>
+        </node>
+        <node id="UserDataHandler">
+            <data key="d1">
+                <y:ShapeNode>
+                    <y:Geometry height="30.0" width="30.0"/>
+                    <y:Fill color="#FFCC00" transparent="false"/>
+                    <y:BorderStyle color="#000000" type="line" width="1.0"/>
+                    <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.1328125" modelName="internal" modelPosition="c" textColor="#000000" visible="true" width="12.279296875" x="8.8603515625" y="5.93359375">UserDataHandler</y:NodeLabel>
+                    <y:Shape type="circle"/>
+                </y:ShapeNode>
+            </data>
+        </node>
+        <node id="BuildException">
+            <data key="d1">
+                <y:ShapeNode>
+                    <y:Geometry height="30.0" width="30.0"/>
+                    <y:Fill color="#FFCC00" transparent="false"/>
+                    <y:BorderStyle color="#000000" type="line" width="1.0"/>
+                    <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.1328125" modelName="internal" modelPosition="c" textColor="#000000" visible="true" width="12.279296875" x="8.8603515625" y="5.93359375">BuildException</y:NodeLabel>
+                    <y:Shape type="circle"/>
+                </y:ShapeNode>
+            </data>
+        </node>
+        <node id="DirectoryScanner">
+            <data key="d1">
+                <y:ShapeNode>
+                    <y:Geometry height="30.0" width="30.0"/>
+                    <y:Fill color="#FFCC00" transparent="false"/>
+                    <y:BorderStyle color="#000000" type="line" width="1.0"/>
+                    <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.1328125" modelName="internal" modelPosition="c" textColor="#000000" visible="true" width="12.279296875" x="8.8603515625" y="5.93359375">DirectoryScanner</y:NodeLabel>
+                    <y:Shape type="circle"/>
+                </y:ShapeNode>
+            </data>
+        </node>
+        <node id="Project">
+            <data key="d1">
+                <y:ShapeNode>
+                    <y:Geometry height="30.0" width="30.0"/>
+                    <y:Fill color="#FFCC00" transparent="false"/>
+                    <y:BorderStyle color="#000000" type="line" width="1.0"/>
+                    <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.1328125" modelName="internal" modelPosition="c" textColor="#000000" visible="true" width="12.279296875" x="8.8603515625" y="5.93359375">Project</y:NodeLabel>
+                    <y:Shape type="circle"/>
+                </y:ShapeNode>
+            </data>
+        </node>
+        <node id="Task">
+            <data key="d1">
+                <y:ShapeNode>
+                    <y:Geometry height="30.0" width="30.0"/>
+                    <y:Fill color="#FFCC00" transparent="false"/>
+                    <y:BorderStyle color="#000000" type="line" width="1.0"/>
+                    <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.1328125" modelName="internal" modelPosition="c" textColor="#000000" visible="true" width="12.279296875" x="8.8603515625" y="5.93359375">Task</y:NodeLabel>
+                    <y:Shape type="circle"/>
+                </y:ShapeNode>
+            </data>
+        </node>
+        <node id="FileSet">
+            <data key="d1">
+                <y:ShapeNode>
+                    <y:Geometry height="30.0" width="30.0"/>
+                    <y:Fill color="#FFCC00" transparent="false"/>
+                    <y:BorderStyle color="#000000" type="line" width="1.0"/>
+                    <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.1328125" modelName="internal" modelPosition="c" textColor="#000000" visible="true" width="12.279296875" x="8.8603515625" y="5.93359375">FileSet</y:NodeLabel>
+                    <y:Shape type="circle"/>
+                </y:ShapeNode>
+            </data>
+        </node>
+        <node id="Parameter">
+            <data key="d1">
+                <y:ShapeNode>
+                    <y:Geometry height="30.0" width="30.0"/>
+                    <y:Fill color="#FFCC00" transparent="false"/>
+                    <y:BorderStyle color="#000000" type="line" width="1.0"/>
+                    <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.1328125" modelName="internal" modelPosition="c" textColor="#000000" visible="true" width="12.279296875" x="8.8603515625" y="5.93359375">Parameter</y:NodeLabel>
+                    <y:Shape type="circle"/>
+                </y:ShapeNode>
+            </data>
+        </node>
+        <node id="FileNameMapper">
+            <data key="d1">
+                <y:ShapeNode>
+                    <y:Geometry height="30.0" width="30.0"/>
+                    <y:Fill color="#FFCC00" transparent="false"/>
+                    <y:BorderStyle color="#000000" type="line" width="1.0"/>
+                    <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.1328125" modelName="internal" modelPosition="c" textColor="#000000" visible="true" width="12.279296875" x="8.8603515625" y="5.93359375">FileNameMapper</y:NodeLabel>
+                    <y:Shape type="circle"/>
+                </y:ShapeNode>
+            </data>
+        </node>
+        <node id="FlatFileNameMapper">
+            <data key="d1">
+                <y:ShapeNode>
+                    <y:Geometry height="30.0" width="30.0"/>
+                    <y:Fill color="#FFCC00" transparent="false"/>
+                    <y:BorderStyle color="#000000" type="line" width="1.0"/>
+                    <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.1328125" modelName="internal" modelPosition="c" textColor="#000000" visible="true" width="12.279296875" x="8.8603515625" y="5.93359375">FlatFileNameMapper</y:NodeLabel>
+                    <y:Shape type="circle"/>
+                </y:ShapeNode>
+            </data>
+        </node>
+        <node id="IdentityMapper">
+            <data key="d1">
+                <y:ShapeNode>
+                    <y:Geometry height="30.0" width="30.0"/>
+                    <y:Fill color="#FFCC00" transparent="false"/>
+                    <y:BorderStyle color="#000000" type="line" width="1.0"/>
+                    <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.1328125" modelName="internal" modelPosition="c" textColor="#000000" visible="true" width="12.279296875" x="8.8603515625" y="5.93359375">IdentityMapper</y:NodeLabel>
+                    <y:Shape type="circle"/>
+                </y:ShapeNode>
+            </data>
+        </node>
+    </graph>
+</graphml>

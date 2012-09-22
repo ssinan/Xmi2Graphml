@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<graphml xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://www.yworks.com/xml/schema/graphml/1.1/ygraphml.xsd" xmlns:UML="org.omg.xmi.namespace.UML" xmlns:yed="http://www.yworks.com/xml/yed/3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:y="http://www.yworks.com/xml/graphml" xmlns="http://graphml.graphdrawing.org/xmlns">
+    <key for="node" id="d1" yfiles.type="nodegraphics"/>
+    <key for="edge" id="d2" yfiles.type="edgegraphics"/>
+    <graph id="untitledModel" edgedefault="undirected">
+        <node id="A">
+            <data key="d1">
+                <y:ShapeNode>
+                    <y:Geometry height="30.0" width="30.0"/>
+                    <y:Fill color="#FFCC00" transparent="false"/>
+                    <y:BorderStyle color="#000000" type="line" width="1.0"/>
+                    <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.1328125" modelName="internal" modelPosition="c" textColor="#000000" visible="true" width="12.279296875" x="8.8603515625" y="5.93359375">A</y:NodeLabel>
+                    <y:Shape type="circle"/>
+                </y:ShapeNode>
+            </data>
+        </node>
+        <node id="B">
+            <data key="d1">
+                <y:ShapeNode>
+                    <y:Geometry height="30.0" width="30.0"/>
+                    <y:Fill color="#FFCC00" transparent="false"/>
+                    <y:BorderStyle color="#000000" type="line" width="1.0"/>
+                    <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.1328125" modelName="internal" modelPosition="c" textColor="#000000" visible="true" width="12.279296875" x="8.8603515625" y="5.93359375">B</y:NodeLabel>
+                    <y:Shape type="circle"/>
+                </y:ShapeNode>
+            </data>
+        </node>
+        <node id="Base">
+            <data key="d1">
+                <y:ShapeNode>
+                    <y:Geometry height="30.0" width="30.0"/>
+                    <y:Fill color="#FFCC00" transparent="false"/>
+                    <y:BorderStyle color="#000000" type="line" width="1.0"/>
+                    <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.1328125" modelName="internal" modelPosition="c" textColor="#000000" visible="true" width="12.279296875" x="8.8603515625" y="5.93359375">Base</y:NodeLabel>
+                    <y:Shape type="circle"/>
+                </y:ShapeNode>
+            </data>
+        </node>
+        <node id="C">
+            <data key="d1">
+                <y:ShapeNode>
+                    <y:Geometry height="30.0" width="30.0"/>
+                    <y:Fill color="#FFCC00" transparent="false"/>
+                    <y:BorderStyle color="#000000" type="line" width="1.0"/>
+                    <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.1328125" modelName="internal" modelPosition="c" textColor="#000000" visible="true" width="12.279296875" x="8.8603515625" y="5.93359375">C</y:NodeLabel>
+                    <y:Shape type="circle"/>
+                </y:ShapeNode>
+            </data>
+        </node>
+        <node id="Interface">
+            <data key="d1">
+                <y:ShapeNode>
+                    <y:Geometry height="30.0" width="30.0"/>
+                    <y:Fill color="#FFCC00" transparent="false"/>
+                    <y:BorderStyle color="#000000" type="line" width="1.0"/>
+                    <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.1328125" modelName="internal" modelPosition="c" textColor="#000000" visible="true" width="12.279296875" x="8.8603515625" y="5.93359375">Interface</y:NodeLabel>
+                    <y:Shape type="circle"/>
+                </y:ShapeNode>
+            </data>
+        </node>
+        <edge id="-64--88-2-8-233e55eb:1386ca46e5e:-8000:000000000000089E" source="SimpleDiagram" target="C">
+            <data key="d2">
+                <y:PolyLineEdge>
+                    <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
+                    <y:LineStyle color="#000000" type="line" width="1.0"/>
+                    <y:Arrows source="none" target="none"/>
+                    <y:BendStyle smoothed="false"/>
+                </y:PolyLineEdge>
+            </data>
+        </edge>
+        <node id="SimpleDiagram">
+            <data key="d1">
+                <y:ShapeNode>
+                    <y:Geometry height="30.0" width="30.0"/>
+                    <y:Fill color="#FFCC00" transparent="false"/>
+                    <y:BorderStyle color="#000000" type="line" width="1.0"/>
+                    <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.1328125" modelName="internal" modelPosition="c" textColor="#000000" visible="true" width="12.279296875" x="8.8603515625" y="5.93359375">SimpleDiagram</y:NodeLabel>
+                    <y:Shape type="circle"/>
+                </y:ShapeNode>
+            </data>
+        </node>
+    </graph>
+</graphml>

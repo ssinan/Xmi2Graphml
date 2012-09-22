@@ -5,13 +5,36 @@
 package xmi2graphml;
 
 import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.IOException;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 import javax.xml.transform.OutputKeys;
+import java.io.Console;
+import java.util.List;
+import simpleformat.AuthorityClassFinder;
+import simpleformat.CycleClassFinder;
+import simpleformat.FileFormatNotSupportedException;
 
 /**
  *
  * @author saricas
  */
 public class Xmi2Graphml {
+
+    public enum TransformType {
+        GRAPHML,
+        SIMPLEFORMAT
+    }
+
+    public static String XSL_GRAPHML = "./src/xmi2graphml/xmi2graphml.xsl";
+    public static String XSL_SIMPLEFORMAT = "./src/xmi2simpleformat/xmi2simpleformat.xsl";
+
+    public static String FILE_EXTENSION_GRAPHML = "graphml";
+    public static String FILE_EXTENSION_SIMPLEFORMAT = "txt";
+
+    public static String FOLDER_NAME_GRAPHML = "graphml";
+    public static String FOLDER_NAME_SIMPLEFORMAT = "txt";
 
     /**
      * Accept two command line arguments: the name of an XML file, and
@@ -54,5 +77,24 @@ public class Xmi2Graphml {
         trans.transform(xmlSource, result);
         if (args.length == 3)
             System.out.println("Transformation completed. Output file: " + args[2]);
+
+        File txtFile = new File("./test/txt/testdiagram.txt");
+        simpleformat.Tokenizer tokenizer = new simpleformat.Tokenizer(txtFile);
+        try {
+            List<simpleformat.Class> klasses = tokenizer.tokenize();
+            AuthorityClassFinder authorityClassFinder = 
+                    new AuthorityClassFinder(klasses, tokenizer.getEdgeCount(), (float) 0.05);
+            List<simpleformat.Class> authorityList = authorityClassFinder.find();
+            authorityList.size();
+            CycleClassFinder cycleClassFinder = new CycleClassFinder(klasses);
+            List<simpleformat.Class> cycleList = cycleClassFinder.find();
+            cycleList.size();
+        } catch (FileNotFoundException ex) {
+            Logger.getLogger(Xmi2Graphml.class.getName()).log(Level.SEVERE, null, ex);
+        } catch (IOException ex) {
+            Logger.getLogger(Xmi2Graphml.class.getName()).log(Level.SEVERE, null, ex);
+        } catch (FileFormatNotSupportedException ex) {
+            Logger.getLogger(Xmi2Graphml.class.getName()).log(Level.SEVERE, null, ex);
+        }
     }
 }
