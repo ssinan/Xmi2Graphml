@@ -57,7 +57,7 @@ public class Xmi2Graphml {
         } else {
 
             int type = SIMPLEFORMAT;
-            String fileName = "testdiagram";
+            String fileName = "xmi2graphml";
 
             switch (type) {
                 case SIMPLEFORMAT:
