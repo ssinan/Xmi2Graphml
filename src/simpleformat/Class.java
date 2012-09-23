@@ -26,6 +26,7 @@ public class Class {
     private List<Class> inList;
     private List<Class> outList;
     private int type = 0;
+    private int tag;
 
     public Class(String name) {
         this.name = name;
@@ -105,6 +106,20 @@ public class Class {
      */
     public void setType(int type) {
         this.type = type;
+    }
+
+    /**
+     * @return the tag
+     */
+    public int getTag() {
+        return tag;
+    }
+
+    /**
+     * @param tag the tag to set
+     */
+    public void setTag(int tag) {
+        this.tag = tag;
     }
 
 }

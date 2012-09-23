@@ -22,7 +22,7 @@ import java.util.List;
  */
 public class Tokenizer {
 
-    private static String SEPERATOR = " -> ";
+    private static String SEPARATOR = " -> ";
     private File file;
     private List<Class> classList;
     private int edgeCount;
@@ -62,11 +62,11 @@ public class Tokenizer {
         String strLine;
         while ((strLine = br.readLine()) != null) {
 
-            if (!strLine.contains(SEPERATOR)) {
+            if (!strLine.contains(SEPARATOR)) {
                 throw new FileFormatNotSupportedException();
             }
 
-            String[] klasses = strLine.split(SEPERATOR);
+            String[] klasses = strLine.split(SEPARATOR);
             if (klasses.length != 2) {
                 throw new FileFormatNotSupportedException();
             }
