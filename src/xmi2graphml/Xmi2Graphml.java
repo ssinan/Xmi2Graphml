@@ -5,16 +5,7 @@
 package xmi2graphml;
 
 import java.io.File;
-import java.io.FileNotFoundException;
-import java.io.IOException;
-import java.util.logging.Level;
-import java.util.logging.Logger;
 import javax.xml.transform.OutputKeys;
-import java.io.Console;
-import java.util.List;
-import simpleformat.AuthorityClassFinder;
-import simpleformat.CycleClassFinder;
-import simpleformat.FileFormatNotSupportedException;
 
 /**
  *
@@ -22,19 +13,18 @@ import simpleformat.FileFormatNotSupportedException;
  */
 public class Xmi2Graphml {
 
-    public enum TransformType {
-        GRAPHML,
-        SIMPLEFORMAT
-    }
+    public static final int MODE_COMMANDLINE = 0;
+    public static final int MODE_IDE_RUN = 1;
+
+    public static final int GRAPHML = 100;
+    public static final int SIMPLEFORMAT = 101;
 
     public static String XSL_GRAPHML = "./src/xmi2graphml/xmi2graphml.xsl";
     public static String XSL_SIMPLEFORMAT = "./src/xmi2simpleformat/xmi2simpleformat.xsl";
 
-    public static String FILE_EXTENSION_GRAPHML = "graphml";
-    public static String FILE_EXTENSION_SIMPLEFORMAT = "txt";
-
-    public static String FOLDER_NAME_GRAPHML = "graphml";
-    public static String FOLDER_NAME_SIMPLEFORMAT = "txt";
+    public static String EXTENSION_GRAPHML = "graphml";
+    public static String EXTENSION_SIMPLEFORMAT = "txt";
+    public static String EXTENSION_XML = "xmi";
 
     /**
      * Accept two command line arguments: the name of an XML file, and
@@ -43,26 +33,57 @@ public class Xmi2Graphml {
      */
     public static void main(String[] args)
             throws javax.xml.transform.TransformerException {
-        if (args.length <= 2) {
-            System.err.println("Usage:");
-            System.err.println("  java " + Xmi2Graphml.class.getName(  )
-                    + " xmlFileName xsltFileName xmlOutputName(opt)");
-            System.exit(1);
+
+        int mode = MODE_IDE_RUN;
+
+        File xsltFile = null;
+        File xmlFile = null;
+        File outputFile = null;
+
+        if (mode == MODE_COMMANDLINE) {
+            if (args.length < 2) {
+                System.err.println("Usage:");
+                System.err.println("  java " + Xmi2Graphml.class.getName(  )
+                        + " xmlFileName xsltFileName xmlOutputName(opt)");
+                System.exit(1);
+            }
+            xsltFile = new File(args[0]);
+            xmlFile = new File(args[1]);
+            
+            if (args.length == 3) {
+                outputFile = new File(args[2]);
+            }
+
+        } else {
+
+            int type = SIMPLEFORMAT;
+            String fileName = "testdiagram";
+
+            switch (type) {
+                case SIMPLEFORMAT:
+                    xsltFile = new File(XSL_SIMPLEFORMAT);
+                    outputFile = new File("./test/" + EXTENSION_SIMPLEFORMAT
+                            + "/" + fileName + "." + EXTENSION_SIMPLEFORMAT);
+                    break;
+                default:
+                    xsltFile = new File(XSL_GRAPHML);
+                    outputFile = new File("./test/" + EXTENSION_GRAPHML + "/"
+                            + fileName + "." + EXTENSION_GRAPHML);
+                    break;
+            }
+            xmlFile = new File("./test/" + EXTENSION_XML + "/" + fileName + "." + EXTENSION_XML);
         }
 
-        File xsltFile = new File(args[0]);
-        File xmlFile = new File(args[1]);
- 
         javax.xml.transform.Source xsltSource =
                 new javax.xml.transform.stream.StreamSource(xsltFile);
         javax.xml.transform.Source xmlSource =
                 new javax.xml.transform.stream.StreamSource(xmlFile);
         javax.xml.transform.Result result;
-        if (args.length == 3) {
-            File outputFile = new File(args[2]);
-            result = new javax.xml.transform.stream.StreamResult(outputFile);
+
+        if (mode == MODE_COMMANDLINE && args.length != 3) {
+            result = new javax.xml.transform.stream.StreamResult(System.out);
         } else {
-            result = new javax.xml.transform.stream.StreamResult(System.out);   
+            result = new javax.xml.transform.stream.StreamResult(outputFile);
         }
  
         // create an instance of TransformerFactory
@@ -75,26 +96,7 @@ public class Xmi2Graphml {
         trans.setOutputProperty(OutputKeys.INDENT, "yes");
         trans.setOutputProperty("{http://xml.apache.org/xslt}indent-amount", "4");
         trans.transform(xmlSource, result);
-        if (args.length == 3)
-            System.out.println("Transformation completed. Output file: " + args[2]);
-
-        File txtFile = new File("./test/txt/testdiagram.txt");
-        simpleformat.Tokenizer tokenizer = new simpleformat.Tokenizer(txtFile);
-        try {
-            List<simpleformat.Class> klasses = tokenizer.tokenize();
-            AuthorityClassFinder authorityClassFinder = 
-                    new AuthorityClassFinder(klasses, tokenizer.getEdgeCount(), (float) 0.05);
-            List<simpleformat.Class> authorityList = authorityClassFinder.find();
-            authorityList.size();
-            CycleClassFinder cycleClassFinder = new CycleClassFinder(klasses);
-            List<simpleformat.Class> cycleList = cycleClassFinder.find();
-            cycleList.size();
-        } catch (FileNotFoundException ex) {
-            Logger.getLogger(Xmi2Graphml.class.getName()).log(Level.SEVERE, null, ex);
-        } catch (IOException ex) {
-            Logger.getLogger(Xmi2Graphml.class.getName()).log(Level.SEVERE, null, ex);
-        } catch (FileFormatNotSupportedException ex) {
-            Logger.getLogger(Xmi2Graphml.class.getName()).log(Level.SEVERE, null, ex);
-        }
+        if (mode == MODE_IDE_RUN || (mode == MODE_COMMANDLINE && args.length == 3))
+            System.out.println("Transformation completed. Output file: " + outputFile);
     }
 }
