@@ -19,7 +19,7 @@ public class Test {
 
     public static void main(String[] args) {
 
-        File txtFile = new File("./test/txt/testdiagram.txt");
+        File txtFile = new File("./test/txt/jtidy1.txt");
         simpleformat.Tokenizer tokenizer = new simpleformat.Tokenizer(txtFile);
 
         try {
@@ -27,7 +27,7 @@ public class Test {
             List<simpleformat.Class> klasses = tokenizer.tokenize();
 
             AuthorityClassFinder authorityClassFinder =
-                    new AuthorityClassFinder(klasses, tokenizer.getEdgeCount(), (float) 0.2);
+                    new AuthorityClassFinder(klasses, tokenizer.getEdgeCount(), (float) 0.05);
             List<simpleformat.Class> authorityList = authorityClassFinder.find();
             authorityList.size();
 
