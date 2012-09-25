@@ -54,6 +54,9 @@ public class Tokenizer {
 
     public List<Class> tokenize() throws FileNotFoundException,
             IOException, FileFormatNotSupportedException {
+        
+        if (classList.size() > 0)
+            return classList;
 
         FileInputStream fstream = new FileInputStream(file);
         DataInputStream in = new DataInputStream(fstream);
