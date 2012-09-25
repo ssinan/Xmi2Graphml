@@ -62,18 +62,20 @@ public class Class {
         return outList;
     }
 
-    public void addInClass(Class klass) {
-        this.addClass(getInList(), klass);
+    public boolean addInClass(Class klass) {
+        return this.addClass(getInList(), klass);
     }
 
-    public void addOutClass(Class klass) {
-        this.addClass(getOutList(), klass);
+    public boolean addOutClass(Class klass) {
+        return this.addClass(getOutList(), klass);
     }
 
-    private void addClass(List<Class> list, Class klass) {
+    private boolean addClass(List<Class> list, Class klass) {
         if (!list.contains(klass)) {
             list.add(klass);
+            return true;
         }
+        return false;
     }
 
     @Override

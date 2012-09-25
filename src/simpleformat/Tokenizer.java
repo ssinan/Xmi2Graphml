@@ -80,8 +80,13 @@ public class Tokenizer {
                 c2 = classList.get(classList.indexOf(c2));
             }
 
-            c1.addOutClass(c2);
-            c2.addInClass(c1);
+            boolean newEdge = false;
+            if (c1.addOutClass(c2))
+                newEdge = true;
+            if (c2.addInClass(c1))
+                newEdge = true;
+            if (newEdge)
+                edgeCount++;
 
             if (!classList.contains(c1)) {
                 classList.add(c1);
@@ -89,8 +94,6 @@ public class Tokenizer {
             if (!classList.contains(c2)) {
                 classList.add(c2);
             }
-
-            edgeCount++;
         }
 
         in.close();

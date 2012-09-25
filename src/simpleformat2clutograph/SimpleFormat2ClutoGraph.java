@@ -57,6 +57,7 @@ public class SimpleFormat2ClutoGraph {
             }
         }
 
+        wr.newLine();
         wr.close();
     }
 }
