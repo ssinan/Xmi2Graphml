@@ -1,7 +1,5 @@
 
-import java.io.File;
-import java.io.FileNotFoundException;
-import java.io.IOException;
+import java.io.*;
 import java.util.List;
 import javax.xml.transform.*;
 import javax.xml.transform.stream.StreamResult;
@@ -31,16 +29,18 @@ public class Program {
         }
         
         File xmiFile = new File("./" + args[0]);
-        File xslGraphml = new File("./xmi2graphml.xsl");
-        File xslSimpleFormat = new File("./xmi2simpleformat.xsl");        
+        InputStream xslGraphml = 
+                Program.class.getResourceAsStream("/xmi2graphml/xmi2graphml.xsl");
+        InputStream xslSimpleFormat = 
+                Program.class.getResourceAsStream("/xmi2simpleformat/xmi2simpleformat.xsl");
 
         Source xmiSource = new StreamSource(xmiFile);
         Source xsltGraphml = new StreamSource(xslGraphml);
         Source xsltSimpleFormat = new StreamSource(xslSimpleFormat);
         
         String fileName = args[0].substring(0, args[0].indexOf(".xmi"));
-        File graphml = new File("./graphml/" + fileName + ".graphml");
-        File simpleFormat = new File("./simpleformat/" + fileName + ".txt");
+        File graphml = new File("./" + fileName + ".graphml");
+        File simpleFormat = new File("./" + fileName + ".smpl");
 
         Result resultGraphml = new StreamResult(graphml);
         Result resultSimpleFormat = new StreamResult(simpleFormat);
@@ -67,42 +67,60 @@ public class Program {
             System.out.println("Transformation completed. Output file: " + simpleFormat.getCanonicalPath());
         }
         
-        // calculate authority, hub and cycle classes from simpleformat
-        System.out.println("Calculating authority, hub and cycle classes.");
-        Tokenizer tokenizer = new Tokenizer(simpleFormat);
-        List<simpleformat.Class> klasses = tokenizer.tokenize();
-
-        AuthorityClassFinder authorityClassFinder =
-                new AuthorityClassFinder(klasses, tokenizer.getEdgeCount(), (float) Float.parseFloat(args[1]));
-        List<simpleformat.Class> authorityList = authorityClassFinder.find();
-        printResults("Authority", authorityList);
-
-        HubClassFinder hubClassFinder =
-                new HubClassFinder(klasses, tokenizer.getEdgeCount(), (float) Float.parseFloat(args[2]));
-        List<simpleformat.Class> hubList = hubClassFinder.find();
-        printResults("Hub", hubList);
-
-        CycleClassFinder cycleClassFinder = new CycleClassFinder(klasses);
-        List<simpleformat.Class> cycleList = cycleClassFinder.find();
-        printResults("Cycle", cycleList);
-        
         // create sparse graph matrix file for cluto clustering tool
-        File graphFile = new File("./graph/" + fileName + ".graph");
+        File graphFile = new File("./" + fileName + ".graph");
         if (createFile(graphFile)) {
             System.out.println("Creating graph file...");
             SimpleFormat2ClutoGraph sf2cg = new SimpleFormat2ClutoGraph(simpleFormat);
             sf2cg.write(graphFile);
-        }
+            System.out.println("Transformation completed. Output file: " + graphFile.getCanonicalPath());
+        }        
         
-        System.out.println("Transformation completed. Output file: " + graphFile.getCanonicalPath());
+        // calculate authority, hub and cycle classes from simpleformat
+        System.out.println("Calculating authority, hub and cycle classes.");
+        Tokenizer tokenizer = new Tokenizer(simpleFormat);
+        List<simpleformat.Class> klasses = tokenizer.tokenize();
         
+        File resultsFile = new File("./" + fileName + ".txt");
+        createFile(resultsFile);
+        FileOutputStream ostream = new FileOutputStream(resultsFile);
+        DataOutputStream out = new DataOutputStream(ostream);
+        BufferedWriter wr = new BufferedWriter(new OutputStreamWriter(out));
+        wr.write("Authority parameter: " + String.valueOf(Float.parseFloat(args[1])));
+        wr.newLine();
+        wr.write("Hub parameter: " + String.valueOf(Float.parseFloat(args[2])));
+        wr.newLine();
+        wr.newLine();
+
+        AuthorityClassFinder authorityClassFinder =
+                new AuthorityClassFinder(klasses, tokenizer.getEdgeCount(), Float.parseFloat(args[1]));
+        List<simpleformat.Class> authorityList = authorityClassFinder.find();
+        printResults("Authority", authorityList, wr);
+
+        HubClassFinder hubClassFinder =
+                new HubClassFinder(klasses, tokenizer.getEdgeCount(), Float.parseFloat(args[2]));
+        List<simpleformat.Class> hubList = hubClassFinder.find();
+        printResults("Hub", hubList, wr);
+
+        CycleClassFinder cycleClassFinder = new CycleClassFinder(klasses);
+        List<simpleformat.Class> cycleList = cycleClassFinder.find();
+        printResults("Cycle", cycleList, wr);
+
+        wr.close();
     }
     
-    private static void printResults(String title, List<simpleformat.Class> list) {
+    private static void printResults(String title, List<simpleformat.Class> list, BufferedWriter wr) 
+            throws IOException {
         System.out.println(title + " count: " + String.valueOf(list.size()));
+        wr.write(title + " count: " + String.valueOf(list.size()));
+        wr.newLine();
         for (simpleformat.Class c : list) {
             System.out.println("- " + c.getName());
+            wr.write("- " + c.getName());
+            wr.newLine();
         }
+        System.out.println();
+        wr.newLine();
     }
     
     private static boolean createFile(File f) throws IOException {
