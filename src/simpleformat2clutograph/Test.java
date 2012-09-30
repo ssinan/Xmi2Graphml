@@ -20,8 +20,8 @@ public class Test {
 
     public static void main(String[] args) {
 
-        File inFile = new File("./test/txt/xmi2graphml.txt");
-        File outFile = new File("./test/graph/xmi2graphml.graph");
+        File inFile = new File("./test/txt/scout.txt");
+        File outFile = new File("./test/graph/scout.graph");
 
         SimpleFormat2ClutoGraph sf2cg = new SimpleFormat2ClutoGraph(inFile);
         

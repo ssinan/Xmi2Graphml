@@ -51,8 +51,9 @@
 			</xsl:for-each>
 		</xsl:variable>
 
-                <xsl:value-of select="$source"/> -> <xsl:value-of select="$target"/><xsl:text>&#xa;</xsl:text>
-                
+                <xsl:if test="$source != '' and $target != ''">
+                    <xsl:value-of select="$source"/> -> <xsl:value-of select="$target"/><xsl:text>&#xa;</xsl:text>
+                </xsl:if>
 	</xsl:template>
 
 	<xsl:template match="UML:Usage[@xmi.id]">
@@ -77,8 +78,9 @@
 			</xsl:for-each>
 		</xsl:variable>
 
-                <xsl:value-of select="$source"/> -> <xsl:value-of select="$target"/><xsl:text>&#xa;</xsl:text>
-                
+                <xsl:if test="$source != '' and $target != ''">
+                    <xsl:value-of select="$source"/> -> <xsl:value-of select="$target"/><xsl:text>&#xa;</xsl:text>
+                </xsl:if>
 	</xsl:template>
 
 	<xsl:template match="UML:Association">
@@ -103,8 +105,9 @@
 			</xsl:for-each>
 		</xsl:variable>
 
-                <xsl:value-of select="$source"/> -> <xsl:value-of select="$target"/><xsl:text>&#xa;</xsl:text>
-                
+                <xsl:if test="$source != '' and $target != ''">
+                    <xsl:value-of select="$source"/> -> <xsl:value-of select="$target"/><xsl:text>&#xa;</xsl:text>
+                </xsl:if>
 	</xsl:template>
 
 </xsl:stylesheet>

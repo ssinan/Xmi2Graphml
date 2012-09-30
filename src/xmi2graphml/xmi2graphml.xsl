@@ -103,16 +103,18 @@
 			</xsl:for-each>
 		</xsl:variable>
                 
-		<edge id="{@xmi.id}" source="{$source}" target="{$target}">
-                    <data key="d2">
-                        <y:PolyLineEdge>
-                        <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
-                        <y:LineStyle color="#000000" type="line" width="1.0"/>
-                        <y:Arrows source="none" target="none"/>
-                        <y:BendStyle smoothed="false"/>
-                        </y:PolyLineEdge>
-                    </data>
-                </edge>
+                <xsl:if test="$source != '' and $target != ''">
+                    <edge id="{@xmi.id}" source="{$source}" target="{$target}">
+                        <data key="d2">
+                            <y:PolyLineEdge>
+                            <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
+                            <y:LineStyle color="#000000" type="line" width="1.0"/>
+                            <y:Arrows source="none" target="none"/>
+                            <y:BendStyle smoothed="false"/>
+                            </y:PolyLineEdge>
+                        </data>
+                    </edge>
+                </xsl:if>
 	</xsl:template>
 
 	<xsl:template match="UML:Usage[@xmi.id]">
@@ -137,16 +139,18 @@
 			</xsl:for-each>
 		</xsl:variable>
                 
-		<edge id="{@xmi.id}" source="{$source}" target="{$target}">
-                    <data key="d2">
-                        <y:PolyLineEdge>
-                        <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
-                        <y:LineStyle color="#000000" type="line" width="1.0"/>
-                        <y:Arrows source="none" target="standart"/>
-                        <y:BendStyle smoothed="false"/>
-                        </y:PolyLineEdge>
-                    </data>
-                </edge>
+                <xsl:if test="$source != '' and $target != ''">           
+                    <edge id="{@xmi.id}" source="{$source}" target="{$target}">
+                        <data key="d2">
+                            <y:PolyLineEdge>
+                            <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
+                            <y:LineStyle color="#000000" type="line" width="1.0"/>
+                            <y:Arrows source="none" target="standart"/>
+                            <y:BendStyle smoothed="false"/>
+                            </y:PolyLineEdge>
+                        </data>
+                    </edge>
+                </xsl:if>
 	</xsl:template>
         
 	<xsl:template match="UML:Association">
@@ -171,16 +175,18 @@
 			</xsl:for-each>
 		</xsl:variable>
 		
-		<edge id="{@xmi.id}" source="{$source}" target="{$target}">
-                    <data key="d2">
-                        <y:PolyLineEdge>
-                        <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
-                        <y:LineStyle color="#000000" type="line" width="1.0"/>
-                        <y:Arrows source="none" target="standart"/>
-                        <y:BendStyle smoothed="false"/>
-                        </y:PolyLineEdge>
-                    </data>
-                </edge>
+                <xsl:if test="$source != '' and $target != ''">
+                    <edge id="{@xmi.id}" source="{$source}" target="{$target}">
+                        <data key="d2">
+                            <y:PolyLineEdge>
+                            <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
+                            <y:LineStyle color="#000000" type="line" width="1.0"/>
+                            <y:Arrows source="none" target="standart"/>
+                            <y:BendStyle smoothed="false"/>
+                            </y:PolyLineEdge>
+                        </data>
+                    </edge>
+                </xsl:if>
 	</xsl:template>
 
 </xsl:stylesheet>

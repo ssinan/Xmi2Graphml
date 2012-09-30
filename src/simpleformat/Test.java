@@ -19,7 +19,7 @@ public class Test {
 
     public static void main(String[] args) {
 
-        File txtFile = new File("./test/txt/jtidy1.txt");
+        File txtFile = new File("./test/txt/scout.txt");
         simpleformat.Tokenizer tokenizer = new simpleformat.Tokenizer(txtFile);
 
         try {
@@ -27,12 +27,12 @@ public class Test {
             List<simpleformat.Class> klasses = tokenizer.tokenize();
 
             AuthorityClassFinder authorityClassFinder =
-                    new AuthorityClassFinder(klasses, tokenizer.getEdgeCount(), (float) 0.05);
+                    new AuthorityClassFinder(klasses, tokenizer.getEdgeCount(), (float) 0.03);
             List<simpleformat.Class> authorityList = authorityClassFinder.find();
             authorityList.size();
 
             HubClassFinder hubClassFinder =
-                    new HubClassFinder(klasses, tokenizer.getEdgeCount(), (float) 0.2);
+                    new HubClassFinder(klasses, tokenizer.getEdgeCount(), (float) 0.03);
             List<simpleformat.Class> hubList = hubClassFinder.find();
             hubList.size();
 
