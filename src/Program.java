@@ -41,7 +41,6 @@ public class Program {
         String fileName = args[0].substring(0, args[0].indexOf(".xmi"));
         File graphml = new File("./graphml/" + fileName + ".graphml");
         File simpleFormat = new File("./simpleformat/" + fileName + ".txt");
-        createFile(simpleFormat);
 
         Result resultGraphml = new StreamResult(graphml);
         Result resultSimpleFormat = new StreamResult(simpleFormat);
@@ -88,12 +87,12 @@ public class Program {
         printResults("Cycle", cycleList);
         
         // create sparse graph matrix file for cluto clustering tool
-        System.out.println("Creating graph file...");
         File graphFile = new File("./graph/" + fileName + ".graph");
-        createFile(graphFile);
-        
-        SimpleFormat2ClutoGraph sf2cg = new SimpleFormat2ClutoGraph(simpleFormat);
-        sf2cg.write(graphFile);
+        if (createFile(graphFile)) {
+            System.out.println("Creating graph file...");
+            SimpleFormat2ClutoGraph sf2cg = new SimpleFormat2ClutoGraph(simpleFormat);
+            sf2cg.write(graphFile);
+        }
         
         System.out.println("Transformation completed. Output file: " + graphFile.getCanonicalPath());
         
