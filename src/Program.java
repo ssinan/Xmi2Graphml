@@ -1,5 +1,6 @@
 
 import java.io.*;
+import java.util.ArrayList;
 import java.util.List;
 import javax.xml.transform.*;
 import javax.xml.transform.stream.StreamResult;
@@ -95,11 +96,24 @@ public class Program {
         AuthorityClassFinder authorityClassFinder =
                 new AuthorityClassFinder(klasses, tokenizer.getEdgeCount(), Float.parseFloat(args[1]));
         List<simpleformat.Class> authorityList = authorityClassFinder.find();
-        printResults("Authority", authorityList, wr);
 
         HubClassFinder hubClassFinder =
                 new HubClassFinder(klasses, tokenizer.getEdgeCount(), Float.parseFloat(args[2]));
         List<simpleformat.Class> hubList = hubClassFinder.find();
+        
+        // filter out god classes
+        List<simpleformat.Class> godList = new ArrayList<simpleformat.Class>();
+        for (simpleformat.Class c : authorityList) {
+            if (hubList.contains(c)) {
+                c.setType(simpleformat.Class.GOD);
+                authorityList.remove(c);
+                hubList.remove(c);
+                godList.add(c);
+            }
+        }
+        
+        printResults("God", godList, wr);
+        printResults("Authority", authorityList, wr);        
         printResults("Hub", hubList, wr);
 
         CycleClassFinder cycleClassFinder = new CycleClassFinder(klasses);

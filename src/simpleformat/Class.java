@@ -14,13 +14,15 @@ import java.util.List;
 public class Class {
 
     public static final int NONCLASSIFIED = 0;
-    // Single class dependecy patterns
+    // Single class dependency patterns
     public static final int AUTHORITY = 1;
     public static final int HUB = 2;
     public static final int CYCLE = 3;
     // Multi class dependency patterns
     public static final int ISLAND = 4;
     public static final int BRIDGE = 5;
+    // This one is a defect type
+    public static final int GOD = 6;
 
     private String name;
     private List<Class> inList;
