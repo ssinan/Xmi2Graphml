@@ -103,12 +103,15 @@ public class Program {
         
         // filter out god classes
         List<simpleformat.Class> godList = new ArrayList<simpleformat.Class>();
-        for (simpleformat.Class c : authorityList) {
+        for (int i=0; i < authorityList.size(); i++)
+        {
+            simpleformat.Class c = authorityList.get(i);
             if (hubList.contains(c)) {
                 c.setType(simpleformat.Class.GOD);
                 authorityList.remove(c);
                 hubList.remove(c);
                 godList.add(c);
+                i--;
             }
         }
         
