@@ -49,7 +49,7 @@
         <xsl:template match="UML:TaggedValue.dataValue">
 	</xsl:template>
 
-	<xsl:template match="UML:Class[@name]" priority="2">
+	<xsl:template match="UML:Class[@name]">
             <xsl:if test="@name!=''">
 		<node id="{@name}">
                     <data key="d1">
@@ -65,7 +65,7 @@
             </xsl:if>
 	</xsl:template>
         
-	<xsl:template match="UML:Interface[@name]" priority="2">
+	<xsl:template match="UML:Interface[@name]">
             <xsl:if test="@name!=''">
 		<node id="{@name}">
                     <data key="d1">
@@ -81,7 +81,7 @@
             </xsl:if>
 	</xsl:template>
         
-	<xsl:template match="UML:Dependency[@xmi.id]" priority="1">
+	<xsl:template match="UML:Dependency[@xmi.id]">
 		<xsl:variable name="src"> 
 			<xsl:value-of select=".//UML:Dependency.client/UML:Class/@xmi.idref | .//UML:Dependency.client/UML:Interface/@xmi.idref | .//UML:Dependency.client/UML:Component/@xmi.idref"/> 
 		</xsl:variable>
@@ -104,6 +104,32 @@
 		</xsl:variable>
                 
                 <xsl:if test="$source != '' and $target != ''">
+                    <node id="{$source}">
+                        <data key="d1">
+                            <y:ShapeNode>
+                                <y:Geometry height="30.0" width="30.0" />
+                                <y:Fill color="#FFCC00" transparent="false"/>
+                                <y:BorderStyle color="#000000" type="line" width="1.0"/>
+                                <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.1328125" modelName="internal" modelPosition="c" textColor="#000000" visible="true" width="12.279296875" x="8.8603515625" y="5.93359375">
+                                    <xsl:copy-of select="$source" />
+                                </y:NodeLabel>
+                                <y:Shape type="circle"/>
+                            </y:ShapeNode>
+                        </data>
+                    </node>
+                    <node id="{$target}">
+                        <data key="d1">
+                            <y:ShapeNode>
+                                <y:Geometry height="30.0" width="30.0" />
+                                <y:Fill color="#FFCC00" transparent="false"/>
+                                <y:BorderStyle color="#000000" type="line" width="1.0"/>
+                                <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.1328125" modelName="internal" modelPosition="c" textColor="#000000" visible="true" width="12.279296875" x="8.8603515625" y="5.93359375">
+                                    <xsl:copy-of select="$target" />
+                                </y:NodeLabel>
+                                <y:Shape type="circle"/>
+                            </y:ShapeNode>
+                        </data>
+                    </node>
                     <edge id="{@xmi.id}" source="{$source}" target="{$target}">
                         <data key="d2">
                             <y:PolyLineEdge>
@@ -139,7 +165,33 @@
 			</xsl:for-each>
 		</xsl:variable>
                 
-                <xsl:if test="$source != '' and $target != ''">           
+                <xsl:if test="$source != '' and $target != ''">   
+                    <node id="{$source}">
+                        <data key="d1">
+                            <y:ShapeNode>
+                                <y:Geometry height="30.0" width="30.0" />
+                                <y:Fill color="#FFCC00" transparent="false"/>
+                                <y:BorderStyle color="#000000" type="line" width="1.0"/>
+                                <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.1328125" modelName="internal" modelPosition="c" textColor="#000000" visible="true" width="12.279296875" x="8.8603515625" y="5.93359375">
+                                    <xsl:copy-of select="$source" />
+                                </y:NodeLabel>
+                                <y:Shape type="circle"/>
+                            </y:ShapeNode>
+                        </data>
+                    </node>
+                    <node id="{$target}">
+                        <data key="d1">
+                            <y:ShapeNode>
+                                <y:Geometry height="30.0" width="30.0" />
+                                <y:Fill color="#FFCC00" transparent="false"/>
+                                <y:BorderStyle color="#000000" type="line" width="1.0"/>
+                                <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.1328125" modelName="internal" modelPosition="c" textColor="#000000" visible="true" width="12.279296875" x="8.8603515625" y="5.93359375">
+                                    <xsl:copy-of select="$target" />
+                                </y:NodeLabel>
+                                <y:Shape type="circle"/>
+                            </y:ShapeNode>
+                        </data>
+                    </node>         
                     <edge id="{@xmi.id}" source="{$source}" target="{$target}">
                         <data key="d2">
                             <y:PolyLineEdge>
@@ -176,6 +228,32 @@
 		</xsl:variable>
 		
                 <xsl:if test="$source != '' and $target != ''">
+                    <node id="{$source}">
+                        <data key="d1">
+                            <y:ShapeNode>
+                                <y:Geometry height="30.0" width="30.0" />
+                                <y:Fill color="#FFCC00" transparent="false"/>
+                                <y:BorderStyle color="#000000" type="line" width="1.0"/>
+                                <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.1328125" modelName="internal" modelPosition="c" textColor="#000000" visible="true" width="12.279296875" x="8.8603515625" y="5.93359375">
+                                    <xsl:copy-of select="$source" />
+                                </y:NodeLabel>
+                                <y:Shape type="circle"/>
+                            </y:ShapeNode>
+                        </data>
+                    </node>
+                    <node id="{$target}">
+                        <data key="d1">
+                            <y:ShapeNode>
+                                <y:Geometry height="30.0" width="30.0" />
+                                <y:Fill color="#FFCC00" transparent="false"/>
+                                <y:BorderStyle color="#000000" type="line" width="1.0"/>
+                                <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="18.1328125" modelName="internal" modelPosition="c" textColor="#000000" visible="true" width="12.279296875" x="8.8603515625" y="5.93359375">
+                                    <xsl:copy-of select="$target" />
+                                </y:NodeLabel>
+                                <y:Shape type="circle"/>
+                            </y:ShapeNode>
+                        </data>
+                    </node>                   
                     <edge id="{@xmi.id}" source="{$source}" target="{$target}">
                         <data key="d2">
                             <y:PolyLineEdge>
