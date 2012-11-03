@@ -2,9 +2,20 @@
 import java.io.*;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.logging.Level;
+import java.util.logging.Logger;
+import javax.xml.parsers.DocumentBuilder;
+import javax.xml.parsers.DocumentBuilderFactory;
+import javax.xml.parsers.ParserConfigurationException;
 import javax.xml.transform.*;
+import javax.xml.transform.dom.DOMSource;
 import javax.xml.transform.stream.StreamResult;
 import javax.xml.transform.stream.StreamSource;
+import org.w3c.dom.Document;
+import org.w3c.dom.NamedNodeMap;
+import org.w3c.dom.Node;
+import org.w3c.dom.NodeList;
+import org.xml.sax.SAXException;
 import simpleformat.*;
 import simpleformat2clutograph.SimpleFormat2ClutoGraph;
 
@@ -20,12 +31,14 @@ import simpleformat2clutograph.SimpleFormat2ClutoGraph;
 public class Program {
 
     public static void main(String[] args) 
-            throws TransformerConfigurationException, TransformerException, IOException, FileNotFoundException, FileFormatNotSupportedException {      
+            throws TransformerConfigurationException, TransformerException, IOException, 
+            FileNotFoundException, FileFormatNotSupportedException, ParserConfigurationException,
+            SAXException, InterruptedException {
         
-        if (args.length != 3) {
+        if (args.length != 7) {
             System.err.println("Usage:");
             System.err.println("  java -jar Xmi2Graphml.jar xmiFileName"
-                    + " authorityThreshold(float) hubThreshold(float)");
+                    + " authorityThreshold(float) hubThreshold(float) pathToSDMetrics.jar pathToAuthorityXml pathToHubXml pathToCycleXml");
             System.exit(1);
         }
         
@@ -124,8 +137,80 @@ public class Program {
         printResults("Cycle", cycleList, wr);
 
         wr.close();
+        
+        // calculate metrics with SDMetrics
+        String pathToSDMetricsjar = args[3];
+        String pathToAuthorityXml = args[4];
+        String pathToHubXml = args[5];
+        String pathToCycleXml = args[6];
+        
+        Runtime r = Runtime.getRuntime();
+        // java -jar SDMetrics.jar -xmi projects/antlrworks-1.4.3/xmi/antlrworks_bo_12.xmi -f xml projects/antlrworks-1.4.3/xmi/antlrworks_bo_12.xml
+        Process p = r.exec("java -jar " + pathToSDMetricsjar + " -xmi " + fileName + ".xmi -f xml " +  fileName + ".xml");
+        p.waitFor();
+  
+        File metricsFile = new File(fileName + "_Class.xml"); 
+        // search for authority-hub-cycle class metrics
+        DocumentBuilderFactory dbFactory = DocumentBuilderFactory.newInstance();
+        DocumentBuilder dBuilder = dbFactory.newDocumentBuilder();
+
+        Document metricsDoc = dBuilder.parse(metricsFile);
+        metricsDoc.getDocumentElement().normalize();
+
+        File authFile = new File(pathToAuthorityXml);
+        Document authDoc = dBuilder.parse(authFile);
+        authDoc.getDocumentElement().normalize();
+
+        File hubFile = new File(pathToHubXml);
+        Document hubDoc = dBuilder.parse(hubFile);
+        hubDoc.getDocumentElement().normalize();
+
+        File cycleFile = new File(pathToCycleXml);
+        Document cycleDoc = dBuilder.parse(cycleFile);
+        cycleDoc.getDocumentElement().normalize();
+
+        NodeList nodeList = metricsDoc.getElementsByTagName("Data");
+        for (int i = 0; i < nodeList.getLength(); i++)
+        {
+            Node node = nodeList.item(i);
+            Node attr = node.getAttributes().item(0);
+            if (!"ss:Type".equals(attr.getNodeName()) || !"String".equals(attr.getNodeValue()))
+                continue;
+
+            if(!searchForMetrics(authorityList, node, authDoc)) {
+                if (!searchForMetrics(hubList, node, hubDoc)) {
+                    searchForMetrics(cycleList, node, cycleDoc);
+                }
+            }
+        }
+
+        // write found metric values
+        Transformer xmlTrans = transFact.newTransformer();
+        xmlTrans.transform(new DOMSource(authDoc), new StreamResult(authFile));
+        xmlTrans.transform(new DOMSource(hubDoc), new StreamResult(hubFile));
+        xmlTrans.transform(new DOMSource(cycleDoc), new StreamResult(cycleFile));
     }
-    
+
+    private static boolean searchForMetrics(List<simpleformat.Class> list, Node node, Document doc)
+    {
+        if (node.getFirstChild().getNodeType() == Node.TEXT_NODE)
+        {
+            String value = node.getFirstChild().getNodeValue();
+            for (simpleformat.Class c : list)
+            {
+                int index = value.indexOf("." + c.getName());
+                if (index > 0 && (index + c.getName().length() + 1) == value.length())
+                {
+                    NodeList nodeList = doc.getElementsByTagName("Table");
+                    Node importedNode = doc.importNode(node.getParentNode().getParentNode(), true);
+                    nodeList.item(0).appendChild(importedNode);
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
+
     private static void printResults(String title, List<simpleformat.Class> list, BufferedWriter wr) 
             throws IOException {
         System.out.println(title + " count: " + String.valueOf(list.size()));
