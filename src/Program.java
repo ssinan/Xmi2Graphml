@@ -193,7 +193,7 @@ public class Program {
 
     private static boolean searchForMetrics(List<simpleformat.Class> list, Node node, Document doc)
     {
-        if (node.getFirstChild().getNodeType() == Node.TEXT_NODE)
+        if (node.getFirstChild() != null && node.getFirstChild().getNodeType() == Node.TEXT_NODE)
         {
             String value = node.getFirstChild().getNodeValue();
             for (simpleformat.Class c : list)
