@@ -35,10 +35,10 @@ public class Program {
             FileNotFoundException, FileFormatNotSupportedException, ParserConfigurationException,
             SAXException, InterruptedException {
         
-        if (args.length != 7) {
+        if (args.length != 9) {
             System.err.println("Usage:");
             System.err.println("  java -jar Xmi2Graphml.jar xmiFileName"
-                    + " authorityThreshold(float) hubThreshold(float) pathToSDMetrics.jar pathToAuthorityXml pathToHubXml pathToCycleXml");
+                    + " authorityThreshold(float) hubThreshold(float) pathToSDMetrics.jar pathToAuthorityXml pathToHubXml pathToCycleXml pathToAllXml pathToFilteredXml");
             System.exit(1);
         }
         
@@ -143,6 +143,8 @@ public class Program {
         String pathToAuthorityXml = args[4];
         String pathToHubXml = args[5];
         String pathToCycleXml = args[6];
+        String pathToAllXml = args[7];
+        String pathToFilteredXml = args[8];
         
         Runtime r = Runtime.getRuntime();
         // java -jar SDMetrics.jar -xmi projects/antlrworks-1.4.3/xmi/antlrworks_bo_12.xmi -f xml projects/antlrworks-1.4.3/xmi/antlrworks_bo_12.xml
@@ -169,6 +171,14 @@ public class Program {
         Document cycleDoc = dBuilder.parse(cycleFile);
         cycleDoc.getDocumentElement().normalize();
 
+        File allFile = new File(pathToAllXml);
+        Document allDoc = dBuilder.parse(allFile);
+        allDoc.getDocumentElement().normalize();
+
+        File filteredFile = new File(pathToFilteredXml);
+        Document filteredDoc = dBuilder.parse(filteredFile);
+        filteredDoc.getDocumentElement().normalize();
+
         NodeList nodeList = metricsDoc.getElementsByTagName("Data");
         for (int i = 0; i < nodeList.getLength(); i++)
         {
@@ -177,11 +187,20 @@ public class Program {
             if (!"ss:Type".equals(attr.getNodeName()) || !"String".equals(attr.getNodeValue()))
                 continue;
 
+            if (i > 33)
+                addNodeToDocument(node, allDoc);
+            
+            boolean shouldBeFilteredOut = true;
             if(!searchForMetrics(authorityList, node, authDoc)) {
                 if (!searchForMetrics(hubList, node, hubDoc)) {
-                    searchForMetrics(cycleList, node, cycleDoc);
+                    if(!searchForMetrics(cycleList, node, cycleDoc)) {
+                        shouldBeFilteredOut = false;
+                    }
                 }
             }
+
+            if (i > 33 && !shouldBeFilteredOut)
+                addNodeToDocument(node, filteredDoc);
         }
 
         // write found metric values
@@ -189,6 +208,22 @@ public class Program {
         xmlTrans.transform(new DOMSource(authDoc), new StreamResult(authFile));
         xmlTrans.transform(new DOMSource(hubDoc), new StreamResult(hubFile));
         xmlTrans.transform(new DOMSource(cycleDoc), new StreamResult(cycleFile));
+        xmlTrans.transform(new DOMSource(allDoc), new StreamResult(allFile));
+        xmlTrans.transform(new DOMSource(filteredDoc), new StreamResult(filteredFile));
+    }
+
+    private static void addNodeToDocument(Node node, Document doc)
+    {
+        if (node.getFirstChild() != null && node.getFirstChild().getNodeType() == Node.TEXT_NODE)
+        {
+            String value = node.getFirstChild().getNodeValue();
+            if (!"Name".equals(value))
+            {
+                NodeList nodeList = doc.getElementsByTagName("Table");
+                Node importedNode = doc.importNode(node.getParentNode().getParentNode(), true);
+                nodeList.item(0).appendChild(importedNode);
+            }
+        }
     }
 
     private static boolean searchForMetrics(List<simpleformat.Class> list, Node node, Document doc)
