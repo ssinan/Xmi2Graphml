@@ -1,6 +1,7 @@
 
 import java.io.*;
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
 import java.util.logging.Level;
 import java.util.logging.Logger;
@@ -18,6 +19,9 @@ import org.w3c.dom.NodeList;
 import org.xml.sax.SAXException;
 import simpleformat.*;
 import simpleformat2clutograph.SimpleFormat2ClutoGraph;
+import simpleformat2mclgraph.MclResultReader;
+import simpleformat2mclgraph.SimpleFormat2MclGraph;
+import simpleformat.Class;
 
 /*
  * To change this template, choose Tools | Templates
@@ -35,10 +39,10 @@ public class Program {
             FileNotFoundException, FileFormatNotSupportedException, ParserConfigurationException,
             SAXException, InterruptedException {
         
-        if (args.length != 9) {
+        if (args.length != 10) {
             System.err.println("Usage:");
             System.err.println("  java -jar Xmi2Graphml.jar xmiFileName"
-                    + " authorityThreshold(float) hubThreshold(float) pathToSDMetrics.jar pathToAuthorityXml pathToHubXml pathToCycleXml pathToAllXml pathToFilteredXml");
+                    + " authorityThreshold(float) hubThreshold(float) pathToSDMetrics.jar pathToAuthorityXml pathToHubXml pathToCycleXml pathToAllXml pathToFilteredXml pathToIslandXml");
             System.exit(1);
         }
         
@@ -89,6 +93,15 @@ public class Program {
             sf2cg.write(graphFile);
             System.out.println("Transformation completed. Output file: " + graphFile.getCanonicalPath());
         }        
+        
+        // create graph matrix file for mcl clustering tool
+        File mciFile = new File("./" + fileName + ".mci");
+        if (createFile(mciFile)) {
+            System.out.println("Creating mci file...");
+            SimpleFormat2MclGraph sf2mg = new SimpleFormat2MclGraph(simpleFormat);
+            sf2mg.write(mciFile);
+            System.out.println("Transformation completed. Output file: " + mciFile.getCanonicalPath());
+        }    
         
         // calculate authority, hub and cycle classes from simpleformat
         System.out.println("Calculating authority, hub and cycle classes.");
@@ -145,11 +158,12 @@ public class Program {
         String pathToCycleXml = args[6];
         String pathToAllXml = args[7];
         String pathToFilteredXml = args[8];
+        String pathToIslandXml = args[9];
         
         Runtime r = Runtime.getRuntime();
         // java -jar SDMetrics.jar -xmi projects/antlrworks-1.4.3/xmi/antlrworks_bo_12.xmi -f xml projects/antlrworks-1.4.3/xmi/antlrworks_bo_12.xml
-        Process p = r.exec("java -jar " + pathToSDMetricsjar + " -xmi " + fileName + ".xmi -f xml " +  fileName + ".xml");
-        p.waitFor();
+        Process p1 = r.exec("java -jar " + pathToSDMetricsjar + " -xmi " + fileName + ".xmi -f xml " +  fileName + ".xml");
+        p1.waitFor();
   
         File metricsFile = new File(fileName + "_Class.xml"); 
         // search for authority-hub-cycle class metrics
@@ -210,6 +224,90 @@ public class Program {
         xmlTrans.transform(new DOMSource(cycleDoc), new StreamResult(cycleFile));
         xmlTrans.transform(new DOMSource(allDoc), new StreamResult(allFile));
         xmlTrans.transform(new DOMSource(filteredDoc), new StreamResult(filteredFile));
+        
+        // create cluster file mciFileName.I20
+        Process p2 = r.exec("/usr/local/bin/mcl " + mciFile.getCanonicalPath() + " -o " + mciFile.getCanonicalPath() + ".I20");
+        p2.waitFor();
+        
+        File clusterResultFile = new File(mciFile.getCanonicalPath() + ".I20");
+        MclResultReader mclReader = new MclResultReader(clusterResultFile, klasses);
+        HashMap<String, Integer> map = mclReader.read();
+        HashMap<Integer, List<Node>> clusters = new HashMap<Integer, List<Node>>();
+
+        for (int i = 34; i < nodeList.getLength(); i++) {
+            Node node = nodeList.item(i);
+            Node attr = node.getAttributes().item(0);
+            if (!"ss:Type".equals(attr.getNodeName()) || !"String".equals(attr.getNodeValue())) {
+                continue;
+            }
+
+            if (node.getFirstChild() != null && node.getFirstChild().getNodeType() == Node.TEXT_NODE) {
+                String value = node.getFirstChild().getNodeValue();
+                String reducedName = value.substring(value.lastIndexOf(".") + 1);
+                
+                if (map.containsKey(reducedName)) {
+                    int clusterNumber = map.get(reducedName);
+                    node.getFirstChild().setNodeValue(String.valueOf(clusterNumber) + " " + value);
+                    if (clusters.containsKey(clusterNumber)) {
+                        List<Node> clist = clusters.get(clusterNumber);
+                        clist.add(node);
+                    } else {
+                        List<Node> clist = new ArrayList<Node>();
+                        clist.add(node);
+                        clusters.put(clusterNumber, clist);
+                    }
+                }
+            }
+        }
+        
+        File islandFile = new File(pathToIslandXml);
+        Document islandDoc = dBuilder.parse(islandFile);
+        islandDoc.getDocumentElement().normalize();
+
+        // write metrics per class
+        int islandThreshold = 5;
+        /*
+         * 
+        for (Integer key : clusters.keySet()) {
+            List<Node> clist = clusters.get(key);
+            if (clist.size() > islandThreshold) {
+                for (Node node : clist) {
+                    NodeList islandNodeList = islandDoc.getElementsByTagName("Table");
+                    Node importedNode = islandDoc.importNode(node.getParentNode().getParentNode(), true);
+                    islandNodeList.item(0).appendChild(importedNode);
+                }
+            }
+        }
+        */
+        
+        // write island metrics by taking average values among class metrics in an island
+        for (Integer key : clusters.keySet()) {
+            List<Node> clist = clusters.get(key);
+            if (clist.size() > islandThreshold) {
+                NodeList islandNodeList = islandDoc.getElementsByTagName("Table");
+                String name = fileName.substring(fileName.lastIndexOf("/") + 1, fileName.length());
+                clist.get(0).getFirstChild().setNodeValue(name + " - island " + String.valueOf(key));
+                Node rootNode = clist.get(0).getParentNode().getParentNode();
+                for (int i=1; i<clist.size(); i++) {
+                    rootNode = calcAverageMetrics(rootNode, clist.get(i).getParentNode().getParentNode(), i+1);
+                }
+                Node importedNode = islandDoc.importNode(rootNode, true);
+                islandNodeList.item(0).appendChild(importedNode);
+            }
+        }
+        
+        xmlTrans.transform(new DOMSource(islandDoc), new StreamResult(islandFile));
+        
+    }
+    
+    private static Node calcAverageMetrics(Node n1, Node n2, int size) {
+        for (int i=3; i<=65; i=i+2) {
+            float m1 = Float.parseFloat(n1.getChildNodes().item(i).getFirstChild().getFirstChild().getNodeValue());
+            float m2 = Float.parseFloat(n2.getChildNodes().item(i).getFirstChild().getFirstChild().getNodeValue());
+            float average = ((m1 * (size - 1)) + m2) / size; 
+            n1.getChildNodes().item(i).getFirstChild().getFirstChild().setNodeValue(String.valueOf(average));
+        }
+        return n1;
     }
 
     private static void addNodeToDocument(Node node, Document doc)

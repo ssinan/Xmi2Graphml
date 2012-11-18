@@ -98,6 +98,11 @@ public class Tokenizer {
                 classList.add(c2);
             }
         }
+        
+        // set default tags
+        for (int i=0; i<classList.size(); i++) {
+            classList.get(i).setTag(i);
+        }
 
         in.close();
         return classList;
