@@ -240,21 +240,27 @@ public class Program {
             if (!"ss:Type".equals(attr.getNodeName()) || !"String".equals(attr.getNodeValue())) {
                 continue;
             }
+            
 
             if (node.getFirstChild() != null && node.getFirstChild().getNodeType() == Node.TEXT_NODE) {
                 String value = node.getFirstChild().getNodeValue();
                 String reducedName = value.substring(value.lastIndexOf(".") + 1);
                 
                 if (map.containsKey(reducedName)) {
-                    int clusterNumber = map.get(reducedName);
-                    node.getFirstChild().setNodeValue(String.valueOf(clusterNumber) + " " + value);
-                    if (clusters.containsKey(clusterNumber)) {
-                        List<Node> clist = clusters.get(clusterNumber);
-                        clist.add(node);
-                    } else {
-                        List<Node> clist = new ArrayList<Node>();
-                        clist.add(node);
-                        clusters.put(clusterNumber, clist);
+                    
+                    if (!authorityList.contains(new Class(reducedName)) && !hubList.contains(new Class(reducedName)) 
+                            && !cycleList.contains(new Class(reducedName)) && !godList.contains(new Class(reducedName))) {
+                        
+                        int clusterNumber = map.get(reducedName);
+                        node.getFirstChild().setNodeValue(String.valueOf(clusterNumber) + " " + value);
+                        if (clusters.containsKey(clusterNumber)) {
+                            List<Node> clist = clusters.get(clusterNumber);
+                            clist.add(node);
+                        } else {
+                            List<Node> clist = new ArrayList<Node>();
+                            clist.add(node);
+                            clusters.put(clusterNumber, clist);
+                        }    
                     }
                 }
             }
@@ -266,21 +272,23 @@ public class Program {
 
         // write metrics per class
         int islandThreshold = 5;
-        /*
-         * 
         for (Integer key : clusters.keySet()) {
             List<Node> clist = clusters.get(key);
             if (clist.size() > islandThreshold) {
+                NodeList islandNodeList = islandDoc.getElementsByTagName("Table");
                 for (Node node : clist) {
-                    NodeList islandNodeList = islandDoc.getElementsByTagName("Table");
                     Node importedNode = islandDoc.importNode(node.getParentNode().getParentNode(), true);
                     islandNodeList.item(0).appendChild(importedNode);
                 }
+                Node emptyNode = getEmptyNode(clist.get(0).getParentNode().getParentNode());                
+                Node importedNode = islandDoc.importNode(emptyNode, true);
+                islandNodeList.item(0).appendChild(importedNode);
             }
         }
-        */
         
         // write island metrics by taking average values among class metrics in an island
+        /*
+         * 
         for (Integer key : clusters.keySet()) {
             List<Node> clist = clusters.get(key);
             if (clist.size() > islandThreshold) {
@@ -294,10 +302,17 @@ public class Program {
                 Node importedNode = islandDoc.importNode(rootNode, true);
                 islandNodeList.item(0).appendChild(importedNode);
             }
-        }
-        
+        } 
+        */
         xmlTrans.transform(new DOMSource(islandDoc), new StreamResult(islandFile));
         
+    }
+    
+    private static Node getEmptyNode(Node n1) {
+        for (int i=1; i<=65; i=i+2) {
+            n1.getChildNodes().item(i).getFirstChild().getFirstChild().setNodeValue("");
+        }
+        return n1;
     }
     
     private static Node calcAverageMetrics(Node n1, Node n2, int size) {
