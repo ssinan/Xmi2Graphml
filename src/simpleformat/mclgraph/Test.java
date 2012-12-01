@@ -2,7 +2,7 @@
  * To change this template, choose Tools | Templates
  * and open the template in the editor.
  */
-package simpleformat2mclgraph;
+package simpleformat.mclgraph;
 
 import java.io.File;
 import java.io.FileNotFoundException;
@@ -13,7 +13,7 @@ import java.util.List;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import simpleformat.FileFormatNotSupportedException;
-import simpleformat2clutograph.SimpleFormat2ClutoGraph;
+import simpleformat.clutograph.SimpleFormat2ClutoGraph;
 import simpleformat.Class;
 
 /**

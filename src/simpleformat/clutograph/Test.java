@@ -3,8 +3,9 @@
  * and open the template in the editor.
  */
 
-package simpleformat2clutograph;
+package simpleformat.clutograph;
 
+import simpleformat.clutograph.SimpleFormat2ClutoGraph;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.IOException;

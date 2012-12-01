@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="ISO-8859-1" standalone="no"?><Workbook xmlns="urn:schemas-microsoft-com:office:spreadsheet" xmlns:html="http://www.w3.org/TR/REC-html40" xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:ss="urn:schemas-microsoft-com:office:spreadsheet" xmlns:x="urn:schemas-microsoft-com:office:excel">
+ <Worksheet ss:Name="Class">
+  <Table>
+   <Row>
+    <Cell><Data ss:Type="String">Name</Data></Cell>
+    <Cell><Data ss:Type="String">NumAttr</Data></Cell>
+    <Cell><Data ss:Type="String">NumOps</Data></Cell>
+    <Cell><Data ss:Type="String">NumPubOps</Data></Cell>
+    <Cell><Data ss:Type="String">Setters</Data></Cell>
+    <Cell><Data ss:Type="String">Getters</Data></Cell>
+    <Cell><Data ss:Type="String">Nesting</Data></Cell>
+    <Cell><Data ss:Type="String">IFImpl</Data></Cell>
+    <Cell><Data ss:Type="String">NOC</Data></Cell>
+    <Cell><Data ss:Type="String">NumDesc</Data></Cell>
+    <Cell><Data ss:Type="String">NumAnc</Data></Cell>
+    <Cell><Data ss:Type="String">DIT</Data></Cell>
+    <Cell><Data ss:Type="String">CLD</Data></Cell>
+    <Cell><Data ss:Type="String">OpsInh</Data></Cell>
+    <Cell><Data ss:Type="String">AttrInh</Data></Cell>
+    <Cell><Data ss:Type="String">Dep_Out</Data></Cell>
+    <Cell><Data ss:Type="String">Dep_In</Data></Cell>
+    <Cell><Data ss:Type="String">NumAssEl_ssc</Data></Cell>
+    <Cell><Data ss:Type="String">NumAssEl_sb</Data></Cell>
+    <Cell><Data ss:Type="String">NumAssEl_nsb</Data></Cell>
+    <Cell><Data ss:Type="String">EC_Attr</Data></Cell>
+    <Cell><Data ss:Type="String">IC_Attr</Data></Cell>
+    <Cell><Data ss:Type="String">EC_Par</Data></Cell>
+    <Cell><Data ss:Type="String">IC_Par</Data></Cell>
+    <Cell><Data ss:Type="String">ObjInst</Data></Cell>
+    <Cell><Data ss:Type="String">StimSent</Data></Cell>
+    <Cell><Data ss:Type="String">StimRecv</Data></Cell>
+    <Cell><Data ss:Type="String">StimSelf</Data></Cell>
+    <Cell><Data ss:Type="String">ClassifInst</Data></Cell>
+    <Cell><Data ss:Type="String">MsgSent</Data></Cell>
+    <Cell><Data ss:Type="String">MsgRecv</Data></Cell>
+    <Cell><Data ss:Type="String">MsgSelf</Data></Cell>
+    <Cell><Data ss:Type="String">Diags</Data></Cell>
+   </Row>
+  </Table>
+ </Worksheet>
+</Workbook>
