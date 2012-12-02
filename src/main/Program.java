@@ -1,6 +1,7 @@
 package main;
 
 
+import bridge.MyClust;
 import java.io.*;
 import java.util.HashMap;
 import java.util.List;
@@ -18,6 +19,7 @@ import simpleformat.FileFormatNotSupportedException;
 import simpleformat.GodClassFinder;
 import simpleformat.HubClassFinder;
 import simpleformat.clutograph.SimpleFormat2ClutoGraph;
+import simpleformat.graph.SimpleFormat2Graph;
 import simpleformat.mclgraph.MclCluster;
 import simpleformat.mclgraph.MclResultReader;
 import simpleformat.mclgraph.SimpleFormat2MclGraph;
@@ -149,7 +151,19 @@ public class Program {
         sdMetrics.setCycleList(cycleList);
         sdMetrics.setGodList(godList);
         sdMetrics.writeMetricsOfIslands(map, SDMetrics.ISLAND_METRICS_PER_CLASS, true);
+        
+        // create graph matrix file for mcl clustering tool
+        File grph = new File("./" + fileName + ".grph");
+        if (Util.createFile(grph)) {
+            System.out.println("Creating grph file...");
+            SimpleFormat2Graph sf2g = new SimpleFormat2Graph(simpleFormat);
+            sf2g.write(grph);
+            System.out.println("Transformation completed. Output file: " + grph.getCanonicalPath());
+        }         
+        
+        MyClust bridgeCluster = new MyClust(grph.getCanonicalPath(), "1", "2", "1");
+        bridgeCluster.getBridgeNodes();
+        
     }
-    
 
 }
