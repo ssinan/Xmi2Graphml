@@ -6,6 +6,7 @@ package bridge;
 
 import java.io.File;
 import java.io.IOException;
+import java.util.Map;
 
 /**
  *
@@ -17,7 +18,12 @@ public class Test {
         
         File graphFile = new File("./test/graph/testbridge.graph");
         MyClust bridgeCluster = new MyClust(graphFile.getCanonicalPath(), "1", "2", "1");
-        bridgeCluster.getBridgeNodes();
+        Map<Integer[], Integer[]> bridgeMap = bridgeCluster.getBridgeNodes();
+        for (Integer[] bridges : bridgeMap.values()) {
+            if (bridges.length > 2) {
+                System.out.println(bridges.length);
+            }
+        }
     }
     
 }

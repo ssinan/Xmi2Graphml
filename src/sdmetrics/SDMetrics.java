@@ -9,6 +9,8 @@ import java.io.IOException;
 import java.io.UnsupportedEncodingException;
 import java.net.URLDecoder;
 import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Comparator;
 import java.util.HashMap;
 import java.util.List;
 import javax.xml.parsers.ParserConfigurationException;
@@ -35,11 +37,13 @@ public class SDMetrics {
     public static int ISLAND_METRICS_AVERAGE = 1;
     
     private int islandThreshold = 5;
+    private int bridgeThreshold = 3;
     private String pathToAuthorityXml = "auth.xml";
     private String pathToHubXml = "hub.xml";
     private String pathToCycleXml = "cycle.xml";
     private String pathToAllXml = "all.xml";
     private String pathToIslandXml = "";
+    private String pathToBridgeXml = "";
     
     private String fileName;
     private String pathToSDMetricsjar;
@@ -55,12 +59,14 @@ public class SDMetrics {
         this.fileName = fileName;
         String path = SDMetrics.class.getProtectionDomain().getCodeSource().getLocation().getPath();
         String decodedPath = URLDecoder.decode(path, "UTF-8");
+        decodedPath = decodedPath.substring(0, decodedPath.lastIndexOf("/") + 1);
         pathToAuthorityXml = decodedPath + pathToAuthorityXml;
         pathToHubXml = decodedPath + pathToHubXml;
         pathToCycleXml = decodedPath + pathToCycleXml;
         pathToAllXml = decodedPath + pathToAllXml;
         String name = fileName.substring(fileName.lastIndexOf("/"), fileName.length());
         pathToIslandXml = decodedPath + name + "_Island.xml";
+        pathToBridgeXml = decodedPath + name + "_Bridge.xml";
     }
     
     public void clearMetricsFiles() throws IOException {
@@ -332,5 +338,98 @@ public class SDMetrics {
     public void setGodList(List<Class> godList) {
         this.godList = godList;
     }
+
+    public void writeMetricsOfBridges(List<Integer[]> bridges, List<Class> klasses) 
+            throws IOException, ParserConfigurationException, SAXException, InterruptedException, TransformerConfigurationException, TransformerException {
+        
+        this.calculateMetrics();
+        Document metricsDoc = Util.getDocumentFromFile(metricsFile);
+        
+        HashMap<Integer, List<Node>> bridgeMap = new HashMap<Integer, List<Node>>();
+        NodeList nodeList = metricsDoc.getElementsByTagName("Data");
+        
+        Collections.sort(bridges, new Comparator<Integer[]>() {
+
+            @Override
+            public int compare(Integer[] t, Integer[] t1) {
+                if (t.length < t1.length)
+                    return 1;
+                if (t.length == t1.length)
+                    return 0;
+                return -1;
+            }
+        });
+        
+        for (int j = 0; j < bridges.size(); j++) {
+            
+            for (int i = 34; i < nodeList.getLength(); i++) {
+                Node node = nodeList.item(i);
+                Node attr = node.getAttributes().item(0);
+                if (!"ss:Type".equals(attr.getNodeName()) || !"String".equals(attr.getNodeValue())) {
+                    continue;
+                }
+
+                if (node.getFirstChild() != null && node.getFirstChild().getNodeType() == Node.TEXT_NODE) {
+                    String value = node.getFirstChild().getNodeValue();
+                    String reducedName = value.substring(value.lastIndexOf(".") + 1);
+
+                    if (contains(klasses, bridges.get(j), reducedName)) {
+
+                        node.getFirstChild().setNodeValue(String.valueOf(j) + " " + value);
+                        if (bridgeMap.containsKey(j)) {
+                            List<Node> clist = bridgeMap.get(j);
+                            clist.add(node);
+                        } else {
+                            List<Node> clist = new ArrayList<Node>();
+                            clist.add(node);
+                            bridgeMap.put(j, clist);
+                        }
+                    }
+                }
+            }
+        }
+        
+        File bridgeFile = new File(pathToBridgeXml);
+        Util.createFile(bridgeFile);
+        Util.copy("/sdmetrics/excel/template.xml", pathToBridgeXml);  
+        Document bridgeDoc = Util.getDocumentFromFile(bridgeFile);
+        
+        // write metrics per class
+        for (Integer key : bridgeMap.keySet()) {
+            List<Node> clist = bridgeMap.get(key);
+            if (clist.size() > bridgeThreshold) {
+                NodeList islandNodeList = bridgeDoc.getElementsByTagName("Table");
+                for (Node node : clist) {
+                    Node importedNode = bridgeDoc.importNode(node.getParentNode().getParentNode(), true);
+                    islandNodeList.item(0).appendChild(importedNode);
+                }
+                Node emptyNode = getEmptyNode(clist.get(0).getParentNode().getParentNode());
+                Node importedNode = bridgeDoc.importNode(emptyNode, true);
+                islandNodeList.item(0).appendChild(importedNode);
+            }
+        }
+
+        // write found metric values
+        TransformerFactory transFact = TransformerFactory.newInstance();
+        Transformer xmlTrans = transFact.newTransformer();
+        xmlTrans.transform(new DOMSource(bridgeDoc), new StreamResult(bridgeFile));
+    }
     
+    private boolean contains(List<Class> klasses, Integer[] bridge, String className) {
+        for (Integer i : bridge) {
+            if (classByTag(klasses, i - 1).getName().equals(className))
+                return true;
+        }
+        return false;
+    }
+    
+    private Class classByTag(List<Class> classList, int tag) {
+        for (Class c : classList) {
+            if (c.getTag() == tag) {
+                return c;
+            }
+        }
+        return null;
+    }
+
 }

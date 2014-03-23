@@ -13,6 +13,7 @@ import java.util.Map;
 import java.util.TreeMap;
 import java.util.Comparator;
 import java.util.Set;
+import main.Util;
 
 public class MyClust {
 
@@ -49,31 +50,41 @@ public class MyClust {
     }
 
     public Map<Integer[], Integer[]> getBridgeNodes() {
+        Util.log(this, "getBridgeNodes start");
         ArrayList<int[]> jointRows = new ArrayList<int[]>();
         ArrayList<Integer> tempSet = new ArrayList<Integer>();
         int t;
         Integer[] temPair;
 
         getHammingPairs();
+        Util.log(this, "hammingPairs count: " + String.valueOf(hammingPairs.size()));
 
         ArrayList<Integer[]> temp = new ArrayList<Integer[]>(hammingPairs);
         boolean[] dirty = new boolean[hammingPairs.size()];
 
+        int loopCount = 0;
         for (Integer[] i : hammingPairs) {
             jointRows.add(andRows(graph[i[0] - 1], graph[i[1] - 1]));
             if (sum(jointRows.get(jointRows.size() - 1)) <= 1) {
                 jointRows.remove(jointRows.size() - 1);
                 temp.remove(i);
             }
+            Util.log(this, "firstLoop: " + String.valueOf(++loopCount));
         }
 
-        while (joinRows(temp, jointRows) > 0);
+        loopCount = 0;
+        Util.log(this, "joinRows count: " + String.valueOf(jointRows.size()));
+        while (joinRows(temp, jointRows) > 0) {
+            Util.log(this, "secondLoop: " + String.valueOf(++loopCount));
+        }
 
+        loopCount = 0;
         for (Integer[] i : temp) {
             temPair = getBridgeSources(jointRows.get(temp.indexOf(i)));
             if (!Arrays.asList(i).contains(temPair[0]) && !Arrays.asList(i).contains(temPair[1])) {
                 bridges.put(i, temPair.clone());
             }
+            Util.log(this, "secondLoop: " + String.valueOf(++loopCount));
         }
 
         return bridges;
@@ -92,6 +103,7 @@ public class MyClust {
     }
 
     private int joinRows(ArrayList<Integer[]> pairs, ArrayList<int[]> rows) {
+        Util.log(this, "joinRows start");
         int joins = 0;
         Map<Integer[], int[]> pairTab = new TreeMap<Integer[], int[]>(new PairComparator());
         Map<Integer[], int[]> tempPairTab = new TreeMap<Integer[], int[]>(new PairComparator());
@@ -99,13 +111,22 @@ public class MyClust {
         Integer[] tempJPair;
         int[] tempANDRow;
 
+        int loopCount = 0;
+        int mod = -1;
         for (Integer[] i : pairs) {
             pairTab.put(i, rows.get(pairs.indexOf(i)));
+            ++loopCount;
+            if ((loopCount % 10000) > mod) {
+                mod = loopCount % 10000;
+                Util.log(this, "firstLoop: " + String.valueOf(mod));
+            }
         }
 
         newPairTab.clear();
         newPairTab.putAll(pairTab);
 
+        loopCount = 0;
+        mod = -1;
         for (Map.Entry<Integer[], int[]> e : pairTab.entrySet()) {
             tempPairTab.clear();
             tempPairTab.putAll(pairTab);
@@ -122,6 +143,11 @@ public class MyClust {
                 }
             }
             newPairTab.put(tempJPair, tempANDRow);
+            ++loopCount;
+            if ((loopCount % 10000) > mod) {
+                mod = loopCount % 10000;
+                Util.log(this, "firstLoop: " + String.valueOf(mod));
+            }
         }
 
 
@@ -136,6 +162,7 @@ public class MyClust {
         pairTab = null;
         tempPairTab = null;
         newPairTab = null;
+        Util.log(this, "joinRows finish");
         return joins;
     }
 
@@ -183,6 +210,7 @@ public class MyClust {
     }
 
     private void getHammingPairs() {
+        Util.log(this, "getHammingPairs start");
         for (int i = 0; i < hamDist.length; i++) {
             if (!(centers.contains(i + 1) || singles.contains(i + 1))) {
                 for (int j = i + 1; j < hamDist[i].length; j++) {
@@ -192,8 +220,7 @@ public class MyClust {
                 }
             }
         }
-
-
+        Util.log(this, "getHammingPairs finish");
     }
 
     private int[] andRows(int[] row1, int[] row2) {
@@ -388,6 +415,7 @@ public class MyClust {
     }
 
     private void readSolution(String file) {
+        Util.log(this, "readSolution start");
         if (file != null) {
             try {
                 FileReader fReader = new FileReader(new File(file));
@@ -412,6 +440,7 @@ public class MyClust {
                 e.printStackTrace();
             }
         }
+        Util.log(this, "readSolution finish");
     }
 
     public void readBidGraph(String fname) throws IOException {

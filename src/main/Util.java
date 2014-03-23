@@ -5,6 +5,9 @@
 package main;
 
 import java.io.*;
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.List;
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
@@ -18,7 +21,18 @@ import org.xml.sax.SAXException;
  */
 public class Util {
     
+    private static boolean LOGGING_ON = true;
+    
+    public static void log(Object klass, String string) {
+        if (LOGGING_ON) {
+            DateFormat dateFormat = new SimpleDateFormat("dd-MM-yyyy HH:mm:ss");
+            Date date = new Date();
+            System.out.println(dateFormat.format(date) + " " + klass.getClass().toString() + ": " + string);
+        }
+    }
+    
     public static void copy(String resource, String destination) throws FileNotFoundException, IOException {
+        System.out.println("copying resource " + resource + " to destination " + destination);
         InputStream resStreamIn = Util.class.getResourceAsStream(resource);
         File resDestFile = new File(destination);
         Util.createFile(resDestFile);
@@ -31,6 +45,7 @@ public class Util {
     }
 
     public static boolean deleteFile(File f) throws IOException {
+        System.out.println("deleting file " + f.getCanonicalPath());
         if (!f.getParentFile().exists()) {
             f.getParentFile().mkdirs();
         }
@@ -41,6 +56,7 @@ public class Util {
     }     
     
     public static boolean createFile(File f) throws IOException {
+        System.out.println("creating file " + f.getCanonicalPath());
         if (!f.getParentFile().exists()) {
             f.getParentFile().mkdirs();
         }

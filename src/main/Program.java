@@ -3,8 +3,10 @@ package main;
 
 import bridge.MyClust;
 import java.io.*;
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 import javax.xml.parsers.ParserConfigurationException;
 import javax.xml.transform.Source;
 import javax.xml.transform.TransformerConfigurationException;
@@ -161,9 +163,16 @@ public class Program {
             System.out.println("Transformation completed. Output file: " + grph.getCanonicalPath());
         }         
         
+        // get bridge classes
+        List<Integer[]> bridges = new ArrayList<Integer[]>();
         MyClust bridgeCluster = new MyClust(grph.getCanonicalPath(), "1", "2", "1");
-        bridgeCluster.getBridgeNodes();
-        
+        Map<Integer[], Integer[]> bridgeMap = bridgeCluster.getBridgeNodes();
+        for (Integer[] set : bridgeMap.values()) {
+            if (set.length > 2) {
+                bridges.add(set);
+            }
+        }
+        sdMetrics.writeMetricsOfBridges(bridges, klasses);
     }
 
 }
