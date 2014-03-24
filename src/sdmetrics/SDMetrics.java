@@ -25,6 +25,7 @@ import org.w3c.dom.Document;
 import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
 import org.xml.sax.SAXException;
+import sdmetrics.weka.ARFFWriter;
 import simpleformat.Class;
 
 /**
@@ -54,6 +55,9 @@ public class SDMetrics {
     private List<Class> cycleList;
     private List<Class> godList;
     
+    private ARFFWriter arffWriter;
+    private String pathToAllArff = "all.arff";
+    
     public SDMetrics(String pathToSDMetricsjar, String fileName) throws UnsupportedEncodingException {
         this.pathToSDMetricsjar = pathToSDMetricsjar;
         this.fileName = fileName;
@@ -74,10 +78,12 @@ public class SDMetrics {
         Util.deleteFile(new File(pathToAuthorityXml));
         Util.deleteFile(new File(pathToHubXml));
         Util.deleteFile(new File(pathToCycleXml));
+        Util.deleteFile(new File(pathToAllArff));
         Util.copy("/sdmetrics/excel/template.xml", pathToAllXml);
         Util.copy("/sdmetrics/excel/template.xml", pathToAuthorityXml);
         Util.copy("/sdmetrics/excel/template.xml", pathToHubXml);
-        Util.copy("/sdmetrics/excel/template.xml", pathToCycleXml);        
+        Util.copy("/sdmetrics/excel/template.xml", pathToCycleXml);   
+        Util.copy("/sdmetrics/weka/template.arff", pathToAllArff); 
     }
     
     public File calculateMetrics() throws IOException, InterruptedException {
@@ -106,6 +112,7 @@ public class SDMetrics {
 
         File allFile = new File(pathToAllXml);
         Document allDoc = Util.getDocumentFromFile(allFile);
+        arffWriter = new ARFFWriter(pathToAllArff);        
 
         NodeList nodeList = metricsDoc.getElementsByTagName("Data");
         for (int i = 0; i < nodeList.getLength(); i++)
@@ -115,12 +122,14 @@ public class SDMetrics {
             if (!"ss:Type".equals(attr.getNodeName()) || !"String".equals(attr.getNodeValue()))
                 continue;
 
-            if (i > 33)
-                addNodeToDocument(node, allDoc);
+            if (i <= 33)
+                continue;
             
-            if(!searchForMetrics(authorityList, node, authDoc)) {
-                if (!searchForMetrics(hubList, node, hubDoc)) {
-                    searchForMetrics(cycleList, node, cycleDoc);
+            if(!searchForMetrics(authorityList, node, authDoc, "AUTHORITY")) {
+                if (!searchForMetrics(hubList, node, hubDoc, "HUB")) {
+                    if (!searchForMetrics(cycleList, node, cycleDoc, "CYCLE")) {
+                        addNodeToDocument(node, allDoc, "NONCLASSIFIED");
+                    }
                 }
             }
         }
@@ -132,9 +141,10 @@ public class SDMetrics {
         xmlTrans.transform(new DOMSource(hubDoc), new StreamResult(hubFile));
         xmlTrans.transform(new DOMSource(cycleDoc), new StreamResult(cycleFile));
         xmlTrans.transform(new DOMSource(allDoc), new StreamResult(allFile));
+        arffWriter.write();
     }
     
-    private void addNodeToDocument(Node node, Document doc)
+    private void addNodeToDocument(Node node, Document doc, String type)
     {
         if (node.getFirstChild() != null && node.getFirstChild().getNodeType() == Node.TEXT_NODE)
         {
@@ -144,11 +154,12 @@ public class SDMetrics {
                 NodeList nodeList = doc.getElementsByTagName("Table");
                 Node importedNode = doc.importNode(node.getParentNode().getParentNode(), true);
                 nodeList.item(0).appendChild(importedNode);
+                arffWriter.addData(importedNode, type);
             }
         }
     }    
     
-    private boolean searchForMetrics(List<Class> list, Node node, Document doc) {
+    private boolean searchForMetrics(List<Class> list, Node node, Document doc, String type) {
         if (node.getFirstChild() != null && node.getFirstChild().getNodeType() == Node.TEXT_NODE) {
             String value = node.getFirstChild().getNodeValue();
             for (Class c : list) {
@@ -157,6 +168,7 @@ public class SDMetrics {
                     NodeList nodeList = doc.getElementsByTagName("Table");
                     Node importedNode = doc.importNode(node.getParentNode().getParentNode(), true);
                     nodeList.item(0).appendChild(importedNode);
+                    arffWriter.addData(importedNode, type);
                     return true;
                 }
             }

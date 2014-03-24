@@ -114,6 +114,17 @@ public class Program {
         Util.printResults("God", godList, wr);
         wr.close();
         
+        // calculate metrics with SDMetrics
+        String pathToSDMetricsjar = args[3];
+        String clearMetricsFiles = args[4];
+        SDMetrics sdMetrics = new SDMetrics(pathToSDMetricsjar, fileName);
+        if (Integer.parseInt(clearMetricsFiles) == 1) {
+            sdMetrics.clearMetricsFiles();
+        }
+        sdMetrics.writeMetricsOfClasses(authorityList, hubList, cycleList);
+        
+        /*
+         * 
         // create sparse graph matrix file for cluto clustering tool
         File graphFile = new File("./" + fileName + ".graph");
         if (Util.createFile(graphFile)) {
@@ -131,15 +142,6 @@ public class Program {
             sf2mg.write(mciFile);
             System.out.println("Transformation completed. Output file: " + mciFile.getCanonicalPath());
         } 
-        
-        // calculate metrics with SDMetrics
-        String pathToSDMetricsjar = args[3];
-        String clearMetricsFiles = args[4];
-        SDMetrics sdMetrics = new SDMetrics(pathToSDMetricsjar, fileName);
-        if (Integer.parseInt(clearMetricsFiles) == 1) {
-            sdMetrics.clearMetricsFiles();
-        }
-        sdMetrics.writeMetricsOfClasses(authorityList, hubList, cycleList);
         
         // create cluster file mciFileName.I20 
         MclCluster mcl = new MclCluster(mciFile.getCanonicalPath());
@@ -173,6 +175,8 @@ public class Program {
             }
         }
         sdMetrics.writeMetricsOfBridges(bridges, klasses);
+        *           
+        */
     }
 
 }

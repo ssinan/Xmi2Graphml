@@ -1,0 +1,39 @@
+@relation template
+
+@attribute Name string
+@attribute NumAttr numeric
+@attribute NumOps numeric
+@attribute NumPubOps numeric
+@attribute Setters numeric
+@attribute Getters numeric
+@attribute Nesting numeric
+@attribute IFImpl numeric
+@attribute NOC numeric
+@attribute NumDesc numeric
+@attribute NumAnc numeric
+@attribute DIT numeric
+@attribute CLD numeric
+@attribute OpsInh numeric
+@attribute AttrInh numeric
+@attribute Dep_Out numeric
+@attribute Dep_In numeric
+@attribute NumAssEl_ssc numeric
+@attribute NumAssEl_sb numeric
+@attribute NumAssEl_nsb numeric
+@attribute EC_Attr numeric
+@attribute IC_Attr numeric
+@attribute EC_Par numeric
+@attribute IC_Par numeric
+@attribute ObjInst numeric
+@attribute StimSent numeric
+@attribute StimRecv numeric
+@attribute StimSelf numeric
+@attribute ClassifInst numeric
+@attribute MsgSent numeric
+@attribute MsgRecv numeric
+@attribute MsgSelf numeric
+@attribute Diags numeric
+@attribute Type {NONCLASSIFIED,AUTHORITY,HUB,CYCLE,ISLAND,BRIDGE}
+
+@data
+
